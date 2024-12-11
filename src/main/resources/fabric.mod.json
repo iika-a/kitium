@@ -5,11 +5,13 @@
 	"name": "awesome-mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"DonutsAreGreat",
+		"iika",
+		"NateGrenade"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/DonutsAreGreat/awesome-mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/awesome-mod/icon.png",
@@ -29,7 +31,8 @@
 		"fabricloader": ">=0.16.9",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.13.0+kotlin.2.1.0"
 	},
 	"suggests": {
 		"another-mod": "*"
