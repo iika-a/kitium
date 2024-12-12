@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "awesome-mod:block/cool_item_block"
+  }
+}

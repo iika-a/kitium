@@ -1,4 +1,6 @@
 {
   "item.awesome-mod.cool_item": "Cool Item",
-  "item.awesome-mod.blue_cool_item": "Blue Cool Item"
+  "item.awesome-mod.blue_cool_item": "Blue Cool Item",
+  "block.awesome-mod.cool_item_block": "Block of Cool Item",
+  "block.awesome-mod.blue_cool_item_block": "Block of Blue Cool Item"
 }
