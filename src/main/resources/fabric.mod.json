@@ -3,7 +3,7 @@
 	"id": "awesome-mod",
 	"version": "${version}",
 	"name": "awesome-mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Mod made by Tony, Earl, and Nate for APCS Portfolio Project #2!",
 	"authors": [
 		"DonutsAreGreat",
 		"iika",
@@ -18,10 +18,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.tonyearlnate.awesomemod.Awesomemod"
+			"net.tonyearlnate.awesomemod.AwesomeMod"
 		],
 		"fabric-datagen": [
-			"net.tonyearlnate.awesomemod.AwesomemodDataGenerator"
+			"net.tonyearlnate.awesomemod.AwesomeModDataGenerator"
 		]
 	},
 	"mixins": [

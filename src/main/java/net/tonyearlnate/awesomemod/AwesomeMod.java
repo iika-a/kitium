@@ -2,10 +2,11 @@ package net.tonyearlnate.awesomemod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tonyearlnate.awesomemod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Awesomemod implements ModInitializer {
+public class AwesomeMod implements ModInitializer {
 	
 	public static final String MOD_ID = "awesome-mod";
 
@@ -14,7 +15,7 @@ public class Awesomemod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }
