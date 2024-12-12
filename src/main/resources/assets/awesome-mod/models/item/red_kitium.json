@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "awesome-mod:item/cool_item"
+    "layer0": "awesome-mod:item/red_kitium"
   }
 }

@@ -11,12 +11,12 @@ import net.minecraft.util.Identifier;
 import net.tonyearlnate.awesomemod.AwesomeMod;
 
 public class ModItems {
-    public static final Item COOL_ITEM = registerItem("cool_item", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"cool_item")))));
-    public static final Item BLUE_COOL_ITEM = registerItem("blue_cool_item", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"blue_cool_item")))));
-    public static final Item ENERGIZED_COOL_ITEM = registerItem("energized_cool_item", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"energized_cool_item")))));
+    public static final Item RED_KITIUM = registerItem("red_kitium", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"red_kitium")))));
+    public static final Item BLUE_KITIUM = registerItem("blue_kitium", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"blue_kitium")))));
+    public static final Item ENERGIZED_KITIUM = registerItem("energized_kitium", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"energized_kitium")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AwesomeMod.MOD_ID, name), item);
@@ -26,9 +26,9 @@ public class ModItems {
         AwesomeMod.LOGGER.info("Registering Mod Items for " + AwesomeMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(COOL_ITEM);
-            entries.add(BLUE_COOL_ITEM);
-            entries.add(ENERGIZED_COOL_ITEM);
+            entries.add(RED_KITIUM);
+            entries.add(BLUE_KITIUM);
+            entries.add(ENERGIZED_KITIUM);
         });
     }
 }

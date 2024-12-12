@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "awesome-mod:block/energized_cool_item_block"
+    "all": "awesome-mod:block/energized_kitium_block"
   }
 }

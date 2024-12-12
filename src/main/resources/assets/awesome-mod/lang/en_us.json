@@ -1,9 +1,9 @@
 {
-  "item.awesome-mod.cool_item": "Cool Item",
-  "item.awesome-mod.blue_cool_item": "Blue Cool Item",
-  "item.awesome-mod.energized_cool_item": "Energized Cool Item",
+  "item.awesome-mod.red_kitium": "Red Kitium",
+  "item.awesome-mod.blue_kitium": "Blue Kitium",
+  "item.awesome-mod.energized_kitium": "Energized Kitium",
 
-  "block.awesome-mod.cool_item_block": "Block of Cool Item",
-  "block.awesome-mod.blue_cool_item_block": "Block of Blue Cool Item",
-  "block.awesome-mod.energized_cool_item_block": "Block of Energized Cool Item"
+  "block.awesome-mod.red_kitium_block": "Block of Red Kitium",
+  "block.awesome-mod.blue_kitium_block": "Block of Blue Kitium",
+  "block.awesome-mod.energized_kitium_block": "Block of Energized Kitium"
 }
