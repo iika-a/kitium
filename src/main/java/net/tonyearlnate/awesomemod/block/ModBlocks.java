@@ -21,6 +21,9 @@ public class ModBlocks {
     public static final Block BLUE_COOL_ITEM_BLOCK = registerBlock("blue_cool_item_block",new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID ,"blue_cool_item_block")))
             .strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block ENERGIZED_COOL_ITEM_BLOCK = registerBlock("energized_cool_item_block",new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID ,"energized_cool_item_block")))
+            .strength(8f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -38,6 +41,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(COOL_ITEM_BLOCK);
             entries.add(BLUE_COOL_ITEM_BLOCK);
+            entries.add(ENERGIZED_COOL_ITEM_BLOCK);
         });
     }
 }
