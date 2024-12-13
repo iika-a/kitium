@@ -9,7 +9,9 @@
   "block.awesome-mod.blue_kitium_block": "Block of Blue Kitium",
   "block.awesome-mod.energized_kitium_block": "Block of Energized Kitium",
   
-  "block.awesome-mod.kitium_pink_ore": "Pink Kitium Ore",
-  "block.awesome-mod.kitium_blue_ore": "Blue Kitium Ore"
+  "block.awesome-mod.pink_kitium_ore": "Pink Kitium Ore",
+  "block.awesome-mod.blue_kitium_ore": "Blue Kitium Ore",
+  "block.awesome-mod.deepslate_pink_kitium_ore": "Deepslate Pink Kitium Ore",
+  "block.awesome-mod.deepslate_blue_kitium_ore": "Deepslate Blue Kitium Ore"
   
 }

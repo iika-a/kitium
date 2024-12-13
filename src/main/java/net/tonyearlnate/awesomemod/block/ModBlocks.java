@@ -24,12 +24,18 @@ public class ModBlocks {
     public static final Block ENERGIZED_KITIUM_BLOCK = registerBlock("energized_kitium_block",new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID ,"energized_kitium_block")))
             .strength(8f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
-	public static final Block KITIUM_PINK_ORE = registerBlock("kitium_pink_ore", new Block(AbstractBlock.Settings.create()
-			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID, "kitium_pink_ore")))
+	public static final Block PINK_KITIUM_ORE = registerBlock("pink_kitium_ore", new Block(AbstractBlock.Settings.create()
+			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID, "pink_kitium_ore")))
 			.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
-	public static final Block KITIUM_BLUE_ORE = registerBlock("kitium_blue_ore", new Block(AbstractBlock.Settings.create()
-			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID, "kitium_blue_ore")))
+	public static final Block BLUE_KITIUM_ORE = registerBlock("blue_kitium_ore", new Block(AbstractBlock.Settings.create()
+			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID, "blue_kitium_ore")))
 			.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block DEEPSLATE_PINK_KITIUM_ORE = registerBlock("deepslate_pink_kitium_ore", new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID, "deepslate_pink_kitium_ore")))
+            .strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block DEEPSLATE_BLUE_KITIUM_ORE = registerBlock("deepslate_blue_kitium_ore", new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID, "deepslate_blue_kitium_ore")))
+            .strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
     
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -48,8 +54,13 @@ public class ModBlocks {
             entries.add(PINK_KITIUM_BLOCK);
             entries.add(BLUE_KITIUM_BLOCK);
             entries.add(ENERGIZED_KITIUM_BLOCK);
-            entries.add(KITIUM_PINK_ORE);
-            entries.add(KITIUM_BLUE_ORE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(PINK_KITIUM_ORE);
+            entries.add(BLUE_KITIUM_ORE);
+            entries.add(DEEPSLATE_PINK_KITIUM_ORE);
+            entries.add(DEEPSLATE_BLUE_KITIUM_ORE);
         });
     }
 }

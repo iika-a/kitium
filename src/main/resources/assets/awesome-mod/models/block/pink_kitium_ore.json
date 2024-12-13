@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "awesome-mod:block/kitium_pink_ore"
+    "all": "awesome-mod:block/pink_kitium_ore"
   }
 }
