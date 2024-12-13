@@ -29,9 +29,6 @@ public class ModItems {
         AwesomeMod.LOGGER.info("Registering Mod Items for " + AwesomeMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(PINK_KITIUM);
-            entries.add(BLUE_KITIUM);
-            entries.add(ENERGIZED_KITIUM);
             entries.add(LIGHTNING_IN_A_BOTTLE);
         });
     }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "awesome-mod:pink_kitium",
+    "@": "awesome-mod:blue_kitium",
+    "$": "awesome-mod:lightning_in_a_bottle"
+  },
+  "pattern": [
+    "#@#",
+    "@$@",
+    "#@#"
+  ],
+  "result": {
+    "count": 4,
+    "id": "awesome-mod:energized_kitium"
+  }
+}
