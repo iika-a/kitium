@@ -15,8 +15,8 @@ import net.minecraft.util.Identifier;
 import net.tonyearlnate.awesomemod.AwesomeMod;
 
 public class ModBlocks {
-    public static final Block RED_KITIUM_BLOCK = registerBlock("red_kitium_block",new Block(AbstractBlock.Settings.create()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID ,"red_kitium_block")))
+    public static final Block PINK_KITIUM_BLOCK = registerBlock("pink_kitium_block",new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID ,"pink_kitium_block")))
             .strength(4f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
     public static final Block BLUE_KITIUM_BLOCK = registerBlock("blue_kitium_block",new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID ,"blue_kitium_block")))
@@ -24,7 +24,13 @@ public class ModBlocks {
     public static final Block ENERGIZED_KITIUM_BLOCK = registerBlock("energized_kitium_block",new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID ,"energized_kitium_block")))
             .strength(8f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
-
+	public static final Block KITIUM_PINK_ORE = registerBlock("kitium_pink_ore", new Block(AbstractBlock.Settings.create()
+			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID, "kitium_pink_ore")))
+			.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
+	public static final Block KITIUM_BLUE_ORE = registerBlock("kitium_blue_ore", new Block(AbstractBlock.Settings.create()
+			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(AwesomeMod.MOD_ID, "kitium_blue_ore")))
+			.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(AwesomeMod.MOD_ID, name), block);
@@ -39,9 +45,11 @@ public class ModBlocks {
         AwesomeMod.LOGGER.info("Registering Mod Blocks for " + AwesomeMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(RED_KITIUM_BLOCK);
+            entries.add(PINK_KITIUM_BLOCK);
             entries.add(BLUE_KITIUM_BLOCK);
             entries.add(ENERGIZED_KITIUM_BLOCK);
+            entries.add(KITIUM_PINK_ORE);
+            entries.add(KITIUM_BLUE_ORE);
         });
     }
 }

@@ -1,9 +1,15 @@
 {
-  "item.awesome-mod.red_kitium": "Red Kitium",
+  "item.awesome-mod.pink_kitium": "Pink Kitium",
   "item.awesome-mod.blue_kitium": "Blue Kitium",
+  
   "item.awesome-mod.energized_kitium": "Energized Kitium",
+  "item.awesome-mod.lightning_in_a_bottle": "Lightning In a Bottle",
 
-  "block.awesome-mod.red_kitium_block": "Block of Red Kitium",
+  "block.awesome-mod.pink_kitium_block": "Block of Pink Kitium",
   "block.awesome-mod.blue_kitium_block": "Block of Blue Kitium",
-  "block.awesome-mod.energized_kitium_block": "Block of Energized Kitium"
+  "block.awesome-mod.energized_kitium_block": "Block of Energized Kitium",
+  
+  "block.awesome-mod.kitium_pink_ore": "Pink Kitium Ore",
+  "block.awesome-mod.kitium_blue_ore": "Blue Kitium Ore"
+  
 }

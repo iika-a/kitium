@@ -11,12 +11,15 @@ import net.minecraft.util.Identifier;
 import net.tonyearlnate.awesomemod.AwesomeMod;
 
 public class ModItems {
-    public static final Item RED_KITIUM = registerItem("red_kitium", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"red_kitium")))));
+    public static final Item PINK_KITIUM = registerItem("pink_kitium", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"pink_kitium")))));
     public static final Item BLUE_KITIUM = registerItem("blue_kitium", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"blue_kitium")))));
     public static final Item ENERGIZED_KITIUM = registerItem("energized_kitium", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"energized_kitium")))));
+	public static final Item LIGHTNING_IN_A_BOTTLE = registerItem("lightning_in_a_bottle", new Item(new Item.Settings()
+			.registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AwesomeMod.MOD_ID,"lightning_in_a_bottle")))));
+			
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AwesomeMod.MOD_ID, name), item);
@@ -26,9 +29,10 @@ public class ModItems {
         AwesomeMod.LOGGER.info("Registering Mod Items for " + AwesomeMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(RED_KITIUM);
+            entries.add(PINK_KITIUM);
             entries.add(BLUE_KITIUM);
             entries.add(ENERGIZED_KITIUM);
+            entries.add(LIGHTNING_IN_A_BOTTLE);
         });
     }
 }

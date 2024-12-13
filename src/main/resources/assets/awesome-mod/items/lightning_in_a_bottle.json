@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "awesome-mod:item/lightning_in_a_bottle"
+  }
+}

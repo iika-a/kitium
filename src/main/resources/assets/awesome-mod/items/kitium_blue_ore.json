@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "awesome-mod:block/red_kitium_block"
+    "model": "awesome-mod:block/kitium_blue_ore"
   }
 }
