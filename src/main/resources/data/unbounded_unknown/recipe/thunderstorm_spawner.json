@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "unbounded_unknown:pink_kitium",
+    "@": "unbounded_unknown:blue_kitium",
+    "$": "unbounded_unknown:energized_kitium"
+  },
+  "pattern": [
+    "@$@",
+    " $ ",
+    "#$#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "unbounded_unknown:thunderstorm_spawner"
+  }
+}
