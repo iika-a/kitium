@@ -1,0 +1,19 @@
+{
+  "item.unbounded_unknown.pink_kitium": "Pink Kitium",
+  "item.unbounded_unknown.blue_kitium": "Blue Kitium",
+  
+  "item.unbounded_unknown.energized_kitium": "Energized Kitium",
+  "item.unbounded_unknown.lightning_in_a_bottle": "Lightning in a Bottle",
+
+  "block.unbounded_unknown.pink_kitium_block": "Block of Pink Kitium",
+  "block.unbounded_unknown.blue_kitium_block": "Block of Blue Kitium",
+  "block.unbounded_unknown.energized_kitium_block": "Block of Energized Kitium",
+  
+  "block.unbounded_unknown.pink_kitium_ore": "Pink Kitium Ore",
+  "block.unbounded_unknown.blue_kitium_ore": "Blue Kitium Ore",
+  "block.unbounded_unknown.deepslate_pink_kitium_ore": "Deepslate Pink Kitium Ore",
+  "block.unbounded_unknown.deepslate_blue_kitium_ore": "Deepslate Blue Kitium Ore",
+
+  "itemgroup.unbounded_unknown.kitium_items": "Kitium Items",
+  "itemgroup.unbounded_unknown.kitium_blocks": "Kitium Blocks"
+}

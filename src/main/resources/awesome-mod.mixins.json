@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.tonyearlnate.awesomemod.mixin",
+	"package": "net.tonyearlnate.unbounded_unknown.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

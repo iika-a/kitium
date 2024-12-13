@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "unbounded_unknown:pink_kitium",
+    "@": "unbounded_unknown:blue_kitium",
+    "$": "unbounded_unknown:lightning_in_a_bottle"
+  },
+  "pattern": [
+    "#@#",
+    "@$@",
+    "#@#"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unbounded_unknown:energized_kitium"
+  }
+}

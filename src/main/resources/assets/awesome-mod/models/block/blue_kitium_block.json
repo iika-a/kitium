@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "awesome-mod:block/blue_kitium_block"
-  }
-}

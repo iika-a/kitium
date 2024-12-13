@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "unbounded_unknown:energized_kitium_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "unbounded_unknown:energized_kitium"
+  }
+}

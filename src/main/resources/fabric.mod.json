@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "awesome-mod",
+	"id": "unbounded_unknown",
 	"version": "${version}",
-	"name": "awesome-mod",
+	"name": "Unbounded Unknown",
 	"description": "Mod made by Tony, Earl, and Nate for APCS Portfolio Project #2!",
 	"authors": [
 		"DonutsAreGreat",
@@ -14,14 +14,14 @@
 		"sources": "https://github.com/DonutsAreGreat/awesome-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/awesome-mod/icon.png",
+	"icon": "assets/unbounded_unknown/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.tonyearlnate.awesomemod.AwesomeMod"
+			"net.tonyearlnate.unbounded_unknown.UnboundedUnknown"
 		],
 		"fabric-datagen": [
-			"net.tonyearlnate.awesomemod.AwesomeModDataGenerator"
+			"net.tonyearlnate.unbounded_unknown.UnboundedUnknownDataGenerator"
 		]
 	},
 	"mixins": [
