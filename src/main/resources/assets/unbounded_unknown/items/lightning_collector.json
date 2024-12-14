@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "unbounded_unknown:block/lightning_collector"
+  }
+}

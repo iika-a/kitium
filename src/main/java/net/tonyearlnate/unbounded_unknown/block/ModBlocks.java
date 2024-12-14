@@ -36,6 +36,9 @@ public class ModBlocks {
     public static final Block DEEPSLATE_BLUE_KITIUM_ORE = registerBlock("deepslate_blue_kitium_ore", new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "deepslate_blue_kitium_ore")))
             .strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block LIGHTNING_COLLECTOR = registerBlock("lightning_collector", new LightningCollectorBlock(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "lightning_collector")))
+            .strength(8f).requiresTool().sounds(BlockSoundGroup.METAL)));
     
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
