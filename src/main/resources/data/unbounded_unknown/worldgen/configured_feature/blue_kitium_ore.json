@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "unbounded_unknown:pink_kitium_ore"
+          "Name": "unbounded_unknown:blue_kitium_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "unbounded_unknown:deepslate_pink_kitium_ore"
+          "Name": "unbounded_unknown:deepslate_blue_kitium_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

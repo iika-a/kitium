@@ -24,6 +24,7 @@ public class ModBlocks {
     public static final Block ENERGIZED_KITIUM_BLOCK = registerBlock("energized_kitium_block",new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"energized_kitium_block")))
             .strength(8f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
+    
 	public static final Block PINK_KITIUM_ORE = registerBlock("pink_kitium_ore", new Block(AbstractBlock.Settings.create()
 			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_ore")))
 			.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
@@ -36,6 +37,7 @@ public class ModBlocks {
     public static final Block DEEPSLATE_BLUE_KITIUM_ORE = registerBlock("deepslate_blue_kitium_ore", new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "deepslate_blue_kitium_ore")))
             .strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    
     public static final Block LIGHTNING_COLLECTOR = registerBlock("lightning_collector", new LightningCollectorBlock(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "lightning_collector")))
             .strength(8f).requiresTool().sounds(BlockSoundGroup.METAL)));
