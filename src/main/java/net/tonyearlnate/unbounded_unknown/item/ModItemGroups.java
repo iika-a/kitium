@@ -15,7 +15,7 @@ public class ModItemGroups {
 
     public static ItemGroup KITIUM_BLOCKS_GROUP;
 
-    public static void registerItemGroups() {
+    public static void registerModItemGroups() {
         UnboundedUnknown.LOGGER.info("Registering Item Groups for " + UnboundedUnknown.MOD_ID);
 
         KITIUM_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,

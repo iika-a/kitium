@@ -6,6 +6,7 @@ import net.tonyearlnate.unbounded_unknown.block.ModBlockEntities;
 import net.tonyearlnate.unbounded_unknown.block.ModBlocks;
 import net.tonyearlnate.unbounded_unknown.item.ModItemGroups;
 import net.tonyearlnate.unbounded_unknown.item.ModItems;
+//import net.tonyearlnate.unbounded_unknown.screen.ModScreenHandlers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +23,7 @@ public class UnboundedUnknown implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerModBlockEntities();
-		ModItemGroups.registerItemGroups();
+		ModItemGroups.registerModItemGroups();
+		//ModScreenHandlers.registerModScreenHandlers();
 	}
 }
