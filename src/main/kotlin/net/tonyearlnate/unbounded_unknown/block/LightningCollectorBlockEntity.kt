@@ -2,9 +2,11 @@ package net.tonyearlnate.unbounded_unknown.block
 
 import net.minecraft.block.BlockState
 import net.minecraft.block.entity.BlockEntity
+import net.minecraft.entity.LightningEntity
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.entity.player.PlayerInventory
 import net.minecraft.inventory.Inventory
+import net.minecraft.inventory.SidedInventory
 import net.minecraft.inventory.SimpleInventory
 import net.minecraft.item.ItemStack
 import net.minecraft.item.Items
@@ -16,50 +18,85 @@ import net.minecraft.screen.ScreenHandler
 import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 import net.minecraft.util.math.BlockPos
-import net.tonyearlnate.unbounded_unknown.UnboundedUnknown
+import net.minecraft.util.math.Box
+import net.minecraft.util.math.Direction
+import net.minecraft.world.World
 import net.tonyearlnate.unbounded_unknown.item.ModItems
 
 
-class LightningCollectorBlockEntity(pos: BlockPos, state: BlockState) : BlockEntity(ModBlockEntities.LIGHTNING_COLLECTOR_BLOCK_ENTITY_TYPE, pos, state), NamedScreenHandlerFactory {
-    private val ALLOWED_ITEM_1 = Identifier.of("minecraft", "glass_bottle")
-    private val ALLOWED_ITEM_2 = Identifier.of(UnboundedUnknown.MOD_ID, "lightning_in_a_bottle")
-    private var inventory: Inventory = SimpleInventory(1)
-
-    fun tryAddItem(itemStack: ItemStack): Boolean {
-        if (isAllowedItem(itemStack)) {
-            inventory.setStack(0, itemStack.copy())
-            markDirty()
-            return true
-        }
-        return false
-    }
-
-    private fun isAllowedItem(itemStack: ItemStack): Boolean {
-        val itemId = Registries.ITEM.getId(itemStack.item)
-        return itemId == ALLOWED_ITEM_1 || itemId == ALLOWED_ITEM_2
-    }
+class LightningCollectorBlockEntity(pos: BlockPos, state: BlockState)
+    : BlockEntity(ModBlockEntities.LIGHTNING_COLLECTOR_BLOCK_ENTITY_TYPE, pos, state), NamedScreenHandlerFactory, SidedInventory {
+    private var inventory: Inventory = SimpleInventory(2)
 
     fun onLightningStrike() {
-        if (Registries.ITEM.getId(inventory.getStack(0).item) == ALLOWED_ITEM_1) {
-            inventory.setStack(0, ItemStack(ModItems.LIGHTNING_IN_A_BOTTLE))
+        if (Registries.ITEM.getId(inventory.getStack(0).item) == Identifier.of("minecraft", "glass_bottle")) {
+            inventory.setStack(0, ItemStack.EMPTY)
+            inventory.setStack(1, ItemStack(ModItems.LIGHTNING_IN_A_BOTTLE))
         }
     }
 
-    fun canPlayerUse(player: PlayerEntity): Boolean {
+    override fun clear() {
+        for (i in 0 until size()) {
+            inventory.setStack(i, ItemStack.EMPTY)
+        }
+    }
+
+    override fun size(): Int = 2
+
+    override fun isEmpty(): Boolean {
+        return (0 until size()).all { inventory.getStack(it).isEmpty }
+    }
+
+    override fun getStack(slot: Int): ItemStack = inventory.getStack(slot)
+
+    override fun removeStack(slot: Int, amount: Int): ItemStack {
+        return inventory.removeStack(slot, amount)
+    }
+
+    override fun removeStack(slot: Int): ItemStack {
+        return inventory.removeStack(slot)
+    }
+
+    override fun setStack(slot: Int, stack: ItemStack?) {
+        inventory.setStack(slot, stack)
+    }
+
+    override fun canPlayerUse(player: PlayerEntity): Boolean {
         return pos.isWithinDistance(player.blockPos, 6.0)
+    }
+
+    override fun getAvailableSlots(side: Direction?): IntArray {
+        return when (side) {
+            Direction.UP -> intArrayOf()
+            Direction.DOWN -> intArrayOf(1)
+            else -> intArrayOf(0)
+        }
+    }
+
+    override fun canInsert(slot: Int, stack: ItemStack?, dir: Direction?): Boolean {
+        return dir != Direction.UP && dir != Direction.DOWN &&
+                Registries.ITEM.getId(stack?.item) == Identifier.of("minecraft", "glass_bottle") && slot == 0 && stack?.count == 1
+    }
+
+    override fun canExtract(slot: Int, stack: ItemStack?, dir: Direction?): Boolean {
+        return dir == Direction.DOWN && slot == 1
     }
 
     override fun writeNbt(nbt: NbtCompound, registries: RegistryWrapper.WrapperLookup) {
         super.writeNbt(nbt, registries)
-        if (inventory.getStack(0).isEmpty) return
-        else nbt.put("inventory", inventory.getStack(0).toNbt(registries))
+        for (i in 0..<inventory.size()) {
+            if (inventory.getStack(i).isEmpty) return
+            else nbt.put("inventory$i", inventory.getStack(i).toNbt(registries))
+        }
     }
 
     override fun readNbt(nbt: NbtCompound, registries: RegistryWrapper.WrapperLookup) {
         super.readNbt(nbt, registries)
-        if (nbt.contains("inventory")) {
-            val itemStack = ItemStack.fromNbt(registries, nbt.get("Inventory"))
-            inventory.setStack(0, itemStack.orElse(ItemStack(Items.AIR)))
+        for (i in 0..<inventory.size()) {
+            if (nbt.contains("inventory$i")) {
+                val itemStack = ItemStack.fromNbt(registries, nbt.get("inventory$i"))
+                inventory.setStack(i, itemStack.orElse(ItemStack(Items.AIR)))
+            }
         }
     }
 
@@ -68,6 +105,23 @@ class LightningCollectorBlockEntity(pos: BlockPos, state: BlockState) : BlockEnt
     }
 
     override fun getDisplayName(): Text {
-        return Text.literal("Lightning Collector")
+        TODO("Not yet implemented")
+    }
+
+    companion object {
+        @Suppress("UNUSED_PARAMETER")
+        @JvmStatic
+        fun tick(world: World, pos: BlockPos, state: BlockState, blockEntity: LightningCollectorBlockEntity) {
+            if (!world.isClient) {
+                if (checkForLightning(world, pos)) blockEntity.onLightningStrike()
+            }
+        }
+
+        private fun checkForLightning(world: World, blockPos: BlockPos): Boolean {
+            val area = Box(blockPos.x.toDouble(), blockPos.y.toDouble(), blockPos.z.toDouble(), blockPos.x + 1.0, blockPos.y + 3.0, blockPos.z + 1.0)
+            val entities = world.getEntitiesByClass(LightningEntity::class.java, area) { _ -> true }
+
+            return entities.isNotEmpty()
+        }
     }
 }

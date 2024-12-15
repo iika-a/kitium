@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "unbounded_unknown:block/lightning_collector"
+    "down": "unbounded_unknown:block/lightning_collector_bottom",
+    "east": "unbounded_unknown:block/lightning_collector_side2",
+    "north": "unbounded_unknown:block/lightning_collector_side1",
+    "particle": "unbounded_unknown:block/lightning_collector_bottom",
+    "south": "unbounded_unknown:block/lightning_collector_side1",
+    "up": "unbounded_unknown:block/lightning_collector_top",
+    "west": "unbounded_unknown:block/lightning_collector_side2"
   }
 }
