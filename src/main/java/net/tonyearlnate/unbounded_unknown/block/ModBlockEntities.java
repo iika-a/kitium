@@ -6,8 +6,6 @@ import net.minecraft.util.Identifier;
 import net.tonyearlnate.unbounded_unknown.UnboundedUnknown;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 
 public class ModBlockEntities {
 
@@ -18,6 +16,6 @@ public class ModBlockEntities {
     );
 
     public static void registerModBlockEntities() {
-        UnboundedUnknown.LOGGER.info("Registering Block Entities for" + UnboundedUnknown.MOD_ID);
+        UnboundedUnknown.LOGGER.info("Registering Block Entities for " + UnboundedUnknown.MOD_ID);
     }
 }

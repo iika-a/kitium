@@ -1,12 +1,10 @@
-/*package net.tonyearlnate.unbounded_unknown.screen;
+package net.tonyearlnate.unbounded_unknown.screen;
 
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.resource.featuretoggle.FeatureSet;
-import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
-import net.tonyearlnate.unbounded_unknown.screen.LightningCollectorBlockScreenHandler;
 import net.tonyearlnate.unbounded_unknown.UnboundedUnknown;
 
 public class ModScreenHandlers {
@@ -17,4 +15,4 @@ public class ModScreenHandlers {
     public static void registerModScreenHandlers() {
         UnboundedUnknown.LOGGER.info("Registering Screen Handlers for " + UnboundedUnknown.MOD_ID);
     }
-}*/
+}

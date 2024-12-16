@@ -22,6 +22,7 @@ import net.minecraft.util.math.Box
 import net.minecraft.util.math.Direction
 import net.minecraft.world.World
 import net.tonyearlnate.unbounded_unknown.item.ModItems
+import net.tonyearlnate.unbounded_unknown.screen.LightningCollectorBlockScreenHandler
 
 
 class LightningCollectorBlockEntity(pos: BlockPos, state: BlockState)
@@ -29,7 +30,7 @@ class LightningCollectorBlockEntity(pos: BlockPos, state: BlockState)
     private var inventory: Inventory = SimpleInventory(2)
 
     fun onLightningStrike() {
-        if (Registries.ITEM.getId(inventory.getStack(0).item) == Identifier.of("minecraft", "glass_bottle")) {
+        if (Registries.ITEM.getId(inventory.getStack(0).item) == Identifier.of("minecraft", "splash_potion")) {
             inventory.setStack(0, ItemStack.EMPTY)
             inventory.setStack(1, ItemStack(ModItems.LIGHTNING_IN_A_BOTTLE))
         }
@@ -75,11 +76,19 @@ class LightningCollectorBlockEntity(pos: BlockPos, state: BlockState)
 
     override fun canInsert(slot: Int, stack: ItemStack?, dir: Direction?): Boolean {
         return dir != Direction.UP && dir != Direction.DOWN &&
-                Registries.ITEM.getId(stack?.item) == Identifier.of("minecraft", "glass_bottle") && slot == 0 && stack?.count == 1
+                Registries.ITEM.getId(stack?.item) == Identifier.of("minecraft", "splash_potion") && slot == 0 && stack?.count == 1
     }
 
     override fun canExtract(slot: Int, stack: ItemStack?, dir: Direction?): Boolean {
         return dir == Direction.DOWN && slot == 1
+    }
+
+    override fun isValid(slot: Int, stack: ItemStack): Boolean {
+        return when (slot) {
+            0 -> stack.item == Items.SPLASH_POTION
+            1 -> stack.item == Items.AIR
+            else -> false
+        }
     }
 
     override fun writeNbt(nbt: NbtCompound, registries: RegistryWrapper.WrapperLookup) {
@@ -100,12 +109,12 @@ class LightningCollectorBlockEntity(pos: BlockPos, state: BlockState)
         }
     }
 
-    override fun createMenu(syncId: Int, playerInventory: PlayerInventory?, player: PlayerEntity?): ScreenHandler? {
-        TODO("Not yet implemented")
+    override fun createMenu(syncId: Int, playerInventory: PlayerInventory, player: PlayerEntity?): ScreenHandler {
+        return LightningCollectorBlockScreenHandler(syncId, playerInventory, this)
     }
 
     override fun getDisplayName(): Text {
-        TODO("Not yet implemented")
+        return Text.translatable(cachedState.block.translationKey)
     }
 
     companion object {

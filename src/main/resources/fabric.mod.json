@@ -22,6 +22,9 @@
 		],
 		"fabric-datagen": [
 			"net.tonyearlnate.unbounded_unknown.UnboundedUnknownDataGenerator"
+		],
+		"client": [
+			"net.tonyearlnate.unbounded_unknown.UnboundedUnknownClient"
 		]
 	},
 	"mixins": [
