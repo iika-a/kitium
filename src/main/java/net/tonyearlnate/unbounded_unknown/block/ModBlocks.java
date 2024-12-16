@@ -30,12 +30,9 @@ public class ModBlocks {
 			.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
 	public static final Block BLUE_KITIUM_ORE = registerBlock("blue_kitium_ore", new Block(AbstractBlock.Settings.create()
 			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_ore")))
-			.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
+			.strength(3f).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
     public static final Block DEEPSLATE_PINK_KITIUM_ORE = registerBlock("deepslate_pink_kitium_ore", new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "deepslate_pink_kitium_ore")))
-            .strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
-    public static final Block DEEPSLATE_BLUE_KITIUM_ORE = registerBlock("deepslate_blue_kitium_ore", new Block(AbstractBlock.Settings.create()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "deepslate_blue_kitium_ore")))
             .strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
     
     public static final Block LIGHTNING_COLLECTOR = registerBlock("lightning_collector", new LightningCollectorBlock(AbstractBlock.Settings.create()
@@ -65,7 +62,6 @@ public class ModBlocks {
             entries.add(PINK_KITIUM_ORE);
             entries.add(BLUE_KITIUM_ORE);
             entries.add(DEEPSLATE_PINK_KITIUM_ORE);
-            entries.add(DEEPSLATE_BLUE_KITIUM_ORE);
         });
     }
 }

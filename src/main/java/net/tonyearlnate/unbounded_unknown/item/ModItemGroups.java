@@ -39,7 +39,6 @@ public class ModItemGroups {
                             entries.add(ModBlocks.PINK_KITIUM_ORE);
                             entries.add(ModBlocks.BLUE_KITIUM_ORE);
                             entries.add(ModBlocks.DEEPSLATE_PINK_KITIUM_ORE);
-                            entries.add(ModBlocks.DEEPSLATE_BLUE_KITIUM_ORE);
                             entries.add(ModBlocks.LIGHTNING_COLLECTOR);
                         }).build());
     }

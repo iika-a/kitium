@@ -31,8 +31,6 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.PINK_KITIUM_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_PINK_KITIUM_ORE.getDefaultState()));
-			    List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.BLUE_KITIUM_ORE.getDefaultState()),
-			            OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_BLUE_KITIUM_ORE.getDefaultState()));
 
 
         register(context, PINK_KITIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldOres, 10));
