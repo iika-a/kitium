@@ -22,6 +22,7 @@ import net.minecraft.util.math.Box
 import net.minecraft.util.math.Direction
 import net.minecraft.world.World
 import net.tonyearlnate.unbounded_unknown.item.ModItems
+import net.tonyearlnate.unbounded_unknown.item.ModThrowables
 import net.tonyearlnate.unbounded_unknown.screen.LightningCollectorBlockScreenHandler
 
 
@@ -32,7 +33,7 @@ class LightningCollectorBlockEntity(pos: BlockPos, state: BlockState)
     fun onLightningStrike() {
         if (Registries.ITEM.getId(inventory.getStack(0).item) == Identifier.of("minecraft", "splash_potion")) {
             inventory.setStack(0, ItemStack.EMPTY)
-            inventory.setStack(1, ItemStack(ModItems.LIGHTNING_IN_A_BOTTLE))
+            inventory.setStack(1, ItemStack(ModThrowables.LIGHTNING_IN_A_BOTTLE))
         }
     }
 
