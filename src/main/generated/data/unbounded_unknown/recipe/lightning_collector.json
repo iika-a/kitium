@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "unbounded_unknown:blue_kitium",
+    "C": "minecraft:copper_ingot",
+    "I": "minecraft:iron_ingot",
+    "N": "minecraft:netherite_scrap",
+    "P": "unbounded_unknown:pink_kitium"
+  },
+  "pattern": [
+    "ICI",
+    "PNB",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "unbounded_unknown:lightning_collector"
+  }
+}

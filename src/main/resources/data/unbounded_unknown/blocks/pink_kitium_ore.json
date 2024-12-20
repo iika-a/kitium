@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:block",
-  "name": "pink_kitium_ore",
-  "hardness": 3.0,
-  "tool": "pickaxe",
-  "min_tool_level": 2
-}

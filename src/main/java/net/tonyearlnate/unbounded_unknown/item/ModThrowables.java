@@ -21,7 +21,7 @@ public class ModThrowables{
     }
 
     public static void registerModThrowables() {
-        UnboundedUnknown.LOGGER.info("Registering Mod Items for " + UnboundedUnknown.MOD_ID);
+        UnboundedUnknown.LOGGER.info("Registering Mod Throwables for " + UnboundedUnknown.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LIGHTNING_IN_A_BOTTLE);
