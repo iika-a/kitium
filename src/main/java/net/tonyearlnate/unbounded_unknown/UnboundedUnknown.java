@@ -2,8 +2,9 @@ package net.tonyearlnate.unbounded_unknown;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.tonyearlnate.unbounded_unknown.block.ModBlockEntities;
+import net.tonyearlnate.unbounded_unknown.block.entity.ModBlockEntities;
 import net.tonyearlnate.unbounded_unknown.block.ModBlocks;
+import net.tonyearlnate.unbounded_unknown.entity.ModEntities;
 import net.tonyearlnate.unbounded_unknown.item.ModItemGroups;
 import net.tonyearlnate.unbounded_unknown.item.ModItems;
 import net.tonyearlnate.unbounded_unknown.item.ModThrowables;
@@ -29,5 +30,6 @@ public class UnboundedUnknown implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModScreenHandlers.registerModScreenHandlers();
 		ModThrowables.registerModThrowables();
+		ModEntities.registerModEntities();
 	}
 }

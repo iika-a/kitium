@@ -44,11 +44,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("BLB")
                         .pattern("PBP")
                         .input('B', ModItems.BLUE_KITIUM)
-                        .input('L', ModThrowables.LIGHTNING_IN_A_BOTTLE)
+                        .input('L', ModThrowables.LIGHTNING_BOTTLE)
                         .input('P', ModItems.PINK_KITIUM)
                         .criterion(hasItem(ModItems.PINK_KITIUM), conditionsFromItem(ModItems.PINK_KITIUM))
                         .criterion(hasItem(ModItems.BLUE_KITIUM), conditionsFromItem(ModItems.BLUE_KITIUM))
-                        .criterion(hasItem(ModThrowables.LIGHTNING_IN_A_BOTTLE), conditionsFromItem(ModThrowables.LIGHTNING_IN_A_BOTTLE))
+                        .criterion(hasItem(ModThrowables.LIGHTNING_BOTTLE), conditionsFromItem(ModThrowables.LIGHTNING_BOTTLE))
                         .offerTo(recipeExporter, "energized_kitium_from_kitium");
 
                 createShaped(RecipeCategory.TOOLS, ModItems.THUNDERSTORM_SPAWNER)

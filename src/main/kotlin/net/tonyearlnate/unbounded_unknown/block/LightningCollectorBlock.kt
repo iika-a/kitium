@@ -14,6 +14,7 @@ import net.minecraft.util.ItemScatterer
 import net.minecraft.util.hit.BlockHitResult
 import net.minecraft.util.math.BlockPos
 import net.minecraft.world.World
+import net.tonyearlnate.unbounded_unknown.block.entity.ModBlockEntities
 
 
 class LightningCollectorBlock(settings: Settings) : BlockWithEntity(settings), BlockEntityProvider {

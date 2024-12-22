@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "unbounded_unknown:item/lightning_in_a_bottle"
+    "layer0": "unbounded_unknown:item/lightning_bottle"
   }
 }

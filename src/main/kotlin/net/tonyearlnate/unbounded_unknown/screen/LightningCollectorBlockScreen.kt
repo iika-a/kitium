@@ -12,7 +12,6 @@ import net.tonyearlnate.unbounded_unknown.UnboundedUnknown
 
 
 class LightningCollectorBlockScreen(handler: LightningCollectorBlockScreenHandler?, inventory: PlayerInventory?, title: Text?) : HandledScreen<LightningCollectorBlockScreenHandler?>(handler, inventory, title) {
-
     override fun drawBackground(context: DrawContext, delta: Float, mouseX: Int, mouseY: Int) {
         RenderSystem.setShader(ShaderProgramKeys.POSITION_TEX)
         RenderSystem.setShaderColor(1.0f, 1.0f, 1.0f, 1.0f)

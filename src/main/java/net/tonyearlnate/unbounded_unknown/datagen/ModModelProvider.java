@@ -31,6 +31,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLUE_KITIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.THUNDERSTORM_SPAWNER, Models.GENERATED);
-        itemModelGenerator.register(ModThrowables.LIGHTNING_IN_A_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModThrowables.LIGHTNING_BOTTLE, Models.GENERATED);
     }
 }

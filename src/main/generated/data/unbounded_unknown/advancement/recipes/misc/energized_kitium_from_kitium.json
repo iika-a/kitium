@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_lightning_in_a_bottle": {
+    "has_lightning_bottle": {
       "conditions": {
         "items": [
           {
-            "items": "unbounded_unknown:lightning_in_a_bottle"
+            "items": "unbounded_unknown:lightning_bottle"
           }
         ]
       },
@@ -43,7 +43,7 @@
       "has_the_recipe",
       "has_pink_kitium",
       "has_blue_kitium",
-      "has_lightning_in_a_bottle"
+      "has_lightning_bottle"
     ]
   ],
   "rewards": {
