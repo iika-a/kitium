@@ -2,6 +2,8 @@ package net.tonyearlnate.unbounded_unknown;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.block.DispenserBlock;
+import net.tonyearlnate.unbounded_unknown.block.dispenser.LightningBottleDispenserBehavior;
 import net.tonyearlnate.unbounded_unknown.block.entity.ModBlockEntities;
 import net.tonyearlnate.unbounded_unknown.block.ModBlocks;
 import net.tonyearlnate.unbounded_unknown.entity.ModEntities;
@@ -31,5 +33,6 @@ public class UnboundedUnknown implements ModInitializer {
 		ModScreenHandlers.registerModScreenHandlers();
 		ModThrowables.registerModThrowables();
 		ModEntities.registerModEntities();
+		DispenserBlock.registerBehavior(ModThrowables.LIGHTNING_BOTTLE, new LightningBottleDispenserBehavior());
 	}
 }
