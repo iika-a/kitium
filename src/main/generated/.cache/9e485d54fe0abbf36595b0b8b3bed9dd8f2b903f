@@ -1,0 +1,8 @@
+// 1.21.4	-999999999-01-01T00:00:00	Unbounded Unknown/Block Loot Tables
+64fbcf0c4ab26fa835802fed64a8900b0ddcefcc data/unbounded_unknown/loot_table/blocks/blue_kitium_block.json
+4802e3260b9c538e5af7a2ba3b85a89df1ea272d data/unbounded_unknown/loot_table/blocks/blue_kitium_ore.json
+5927aae0180f2c9764f9cd06a237f22da358a8fb data/unbounded_unknown/loot_table/blocks/deepslate_pink_kitium_ore.json
+6b15676083b421bd63b81a56007b051e4a33a638 data/unbounded_unknown/loot_table/blocks/energized_kitium_block.json
+0eee10273a8691a0f52f262d62560a0faf413b59 data/unbounded_unknown/loot_table/blocks/lightning_collector.json
+562d8010bb8a11e26112afaf35341198d33c8b82 data/unbounded_unknown/loot_table/blocks/pink_kitium_block.json
+88356c696ded536058f6ecf61cb85d542d6c9942 data/unbounded_unknown/loot_table/blocks/pink_kitium_ore.json

@@ -26,6 +26,9 @@ public class ModItemGroups {
                             entries.add(ModItems.PINK_KITIUM);
                             entries.add(ModItems.BLUE_KITIUM);
                             entries.add(ModItems.ENERGIZED_KITIUM);
+                            entries.add(ModItems.RAW_PINK_KITIUM);
+                            entries.add(ModItems.RAW_BLUE_KITIUM);
+                            entries.add(ModItems.THUNDERSTORM_SPAWNER);
                         }).build());
 
         KITIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

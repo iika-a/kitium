@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "blue_kitium",
+  "ingredient": "unbounded_unknown:raw_blue_kitium",
+  "result": {
+    "id": "unbounded_unknown:blue_kitium"
+  }
+}

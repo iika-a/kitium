@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_kitium_ore": {
+    "has_raw_blue_kitium": {
       "conditions": {
         "items": [
           {
-            "items": "unbounded_unknown:blue_kitium_ore"
+            "items": "unbounded_unknown:raw_blue_kitium"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pink_kitium_from_blasting_blue_kitium_ore"
+        "recipe": "minecraft:blue_kitium_from_smelting_raw_blue_kitium"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_blue_kitium_ore"
+      "has_raw_blue_kitium"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pink_kitium_from_blasting_blue_kitium_ore"
+      "minecraft:blue_kitium_from_smelting_raw_blue_kitium"
     ]
   }
 }

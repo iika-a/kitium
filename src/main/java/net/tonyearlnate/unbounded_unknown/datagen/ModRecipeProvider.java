@@ -27,13 +27,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(wrapperLookup, recipeExporter) {
             @Override
             public void generate() {
-                List<ItemConvertible> PINK_KITIUM_SMELTABLES = List.of(ModBlocks.PINK_KITIUM_ORE, ModBlocks.DEEPSLATE_PINK_KITIUM_ORE);
-                List<ItemConvertible> BLUE_KITIUM_SMELTABLES = List.of(ModBlocks.BLUE_KITIUM_ORE);
+                List<ItemConvertible> PINK_KITIUM_SMELTABLES = List.of(ModBlocks.PINK_KITIUM_ORE, ModBlocks.DEEPSLATE_PINK_KITIUM_ORE, ModItems.RAW_PINK_KITIUM);
+                List<ItemConvertible> BLUE_KITIUM_SMELTABLES = List.of(ModBlocks.BLUE_KITIUM_ORE, ModItems.RAW_BLUE_KITIUM);
 
                 offerSmelting(PINK_KITIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_KITIUM, 0.25f, 200, "pink_kitium");
                 offerBlasting(PINK_KITIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_KITIUM, 0.25f, 100, "pink_kitium");
                 offerSmelting(BLUE_KITIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BLUE_KITIUM, 0.25f, 200, "blue_kitium");
-                offerBlasting(BLUE_KITIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_KITIUM, 0.25f, 200, "blue_kitium");
+                offerBlasting(BLUE_KITIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BLUE_KITIUM, 0.25f, 100, "blue_kitium");
 
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.PINK_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_KITIUM_BLOCK);
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.BLUE_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_KITIUM_BLOCK);
