@@ -21,6 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PINK_KITIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_KITIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_KITIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PINK_KITIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENERGIZED_KITIUM_BLOCK);
         blockStateModelGenerator.registerGeneric(ModBlocks.LIGHTNING_COLLECTOR);
     }

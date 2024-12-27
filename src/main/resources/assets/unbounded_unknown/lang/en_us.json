@@ -8,10 +8,10 @@
   "item.unbounded_unknown.lightning_bottle": "Bottle of Lightning",
   "item.unbounded_unknown.thunderstorm_spawner": "Thunderstorm Spawner",
 
-
   "block.unbounded_unknown.pink_kitium_block": "Block of Pink Kitium",
   "block.unbounded_unknown.blue_kitium_block": "Block of Blue Kitium",
   "block.unbounded_unknown.energized_kitium_block": "Block of Energized Kitium",
+  "block.unbounded_unknown.raw_pink_kitium_block": "Block of Raw Pink Kitium",
   
   "block.unbounded_unknown.pink_kitium_ore": "Pink Kitium Ore",
   "block.unbounded_unknown.blue_kitium_ore": "Blue Kitium Ore",
