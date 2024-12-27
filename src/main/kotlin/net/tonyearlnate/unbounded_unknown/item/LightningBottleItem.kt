@@ -2,7 +2,6 @@ package net.tonyearlnate.unbounded_unknown.item
 
 import net.minecraft.entity.SpawnReason
 import net.minecraft.entity.player.PlayerEntity
-import net.minecraft.entity.projectile.ProjectileEntity
 import net.minecraft.item.ThrowablePotionItem
 import net.minecraft.server.world.ServerWorld
 import net.minecraft.sound.SoundCategory

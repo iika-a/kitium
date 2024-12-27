@@ -27,6 +27,9 @@ public class ModBlocks {
     public static final Block RAW_PINK_KITIUM_BLOCK = registerBlock("raw_pink_kitium_block",new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"raw_pink_kitium_block")))
             .strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block RAW_BLUE_KITIUM_BLOCK = registerBlock("raw_blue_kitium_block",new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"raw_blue_kitium_block")))
+            .strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
     
 	public static final Block PINK_KITIUM_ORE = registerBlock("pink_kitium_ore", new Block(AbstractBlock.Settings.create()
 			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_ore")))
@@ -60,6 +63,7 @@ public class ModBlocks {
             entries.add(BLUE_KITIUM_BLOCK);
             entries.add(ENERGIZED_KITIUM_BLOCK);
             entries.add(RAW_PINK_KITIUM_BLOCK);
+            entries.add(RAW_BLUE_KITIUM_BLOCK);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
