@@ -2,7 +2,7 @@
 
 ![Mod Logo](src/main/resources/assets/unbounded_unknown/icon.png)
 
-[![License](https://img.shields.io/github/license/DonutsAreGreat/unbounded_unknown)](LICENSE) [![Mod Version](https://img.shields.io/github/v/release/DonutsAreGreat/unbounded_unknown)](https://github.com/DonutsAreGreat/unbounded_unknown/releases) [![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.4-blue)](https://minecraft.net)
+[![License](https://img.shields.io/github/license/DonutsAreGreat/unbounded_unknown)](LICENSE.md) [![Mod Version](https://img.shields.io/github/v/release/DonutsAreGreat/unbounded_unknown)](https://github.com/DonutsAreGreat/unbounded_unknown/releases) [![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.4-blue)](https://minecraft.net)
 
 ## Description
 this is a pretty awesome mod that currently has no direction
