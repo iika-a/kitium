@@ -39,6 +39,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.BLUE_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_KITIUM_BLOCK);
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENERGIZED_KITIUM_BLOCK);
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.RAW_PINK_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_PINK_KITIUM_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.RAW_BLUE_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_BLUE_KITIUM_BLOCK);
 
                 createShaped(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM)
                         .pattern("PBP")
