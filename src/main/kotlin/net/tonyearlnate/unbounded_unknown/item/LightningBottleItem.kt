@@ -2,6 +2,7 @@ package net.tonyearlnate.unbounded_unknown.item
 
 import net.minecraft.entity.SpawnReason
 import net.minecraft.entity.player.PlayerEntity
+import net.minecraft.entity.projectile.ProjectileEntity
 import net.minecraft.item.ThrowablePotionItem
 import net.minecraft.server.world.ServerWorld
 import net.minecraft.sound.SoundCategory
@@ -21,10 +22,11 @@ class LightningBottleItem(settings: Settings) : ThrowablePotionItem(settings) {
             val entity = ModEntities.LIGHTNING_BOTTLE_ENTITY_TYPE.create(world, SpawnReason.SPAWN_ITEM_USE)
             if (entity is LightningBottleEntity) {
                 entity.initialize(user, itemStack)
-                entity.setPosition(user.x, user.eyeY, user.z)
-                entity.setVelocity(user, user.pitch, user.yaw, 0.0f, POWER, 1.0f)
+                entity.setPosition(user.x, user.eyeY - 0.2, user.z)
+                entity.setVelocity(user, user.pitch, user.yaw, -20.0f, 0.5f, 1.0f)
                 world.spawnEntity(entity)
             }
+
             world.playSound(
                 null,
                 user.x,

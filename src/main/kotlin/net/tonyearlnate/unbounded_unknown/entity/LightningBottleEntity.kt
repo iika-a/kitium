@@ -4,10 +4,9 @@ import net.minecraft.entity.*
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
-import net.minecraft.sound.SoundCategory
-import net.minecraft.sound.SoundEvents
 import net.minecraft.util.hit.HitResult
 import net.minecraft.world.World
+import net.minecraft.world.WorldEvents
 import net.tonyearlnate.unbounded_unknown.item.ModThrowables
 
 class LightningBottleEntity(
@@ -32,17 +31,8 @@ class LightningBottleEntity(
             val lightning = EntityType.LIGHTNING_BOLT.create(world, SpawnReason.TRIGGERED)
             lightning!!.refreshPositionAfterTeleport(this.x, this.y, this.z)
             world.spawnEntity(lightning)
+            world.syncWorldEvent(WorldEvents.INSTANT_SPLASH_POTION_SPLASHED, this.blockPos, 0xFFFFFF)
             this.discard()
-            world.playSound(
-                null,
-                x,
-                y,
-                z,
-                SoundEvents.ENTITY_SPLASH_POTION_BREAK,
-                SoundCategory.NEUTRAL,
-                1f,
-                0.9f + world.getRandom().nextFloat() * 0.1f
-            )
         }
     }
 
