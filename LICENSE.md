@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright © 2024 DonutsAreGreat, iika, NateGrenade
+Copyright © 2024 iika, DonutsAreGreat, NateGrenade
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
