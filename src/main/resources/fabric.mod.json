@@ -5,13 +5,13 @@
 	"name": "Unbounded Unknown",
 	"description": "Mod made by Tony, Earl, and Nate for APCS Portfolio Project #2!",
 	"authors": [
-		"DonutsAreGreat",
 		"iika",
+		"DonutsAreGreat",
 		"NateGrenade"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/DonutsAreGreat/awesome-mod"
+		"sources": "https://github.com/iika-a/awesome-mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/unbounded_unknown/icon.png",
