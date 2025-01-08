@@ -9,11 +9,12 @@ import net.minecraft.world.World
 
 class ThunderstormSpawnerItem(settings: Settings): Item(settings) {
     override fun use(world: World, user: PlayerEntity, hand: Hand): ActionResult {
-        if (world is ServerWorld) {
+        if (world is ServerWorld && world.dimension.hasSkyLight) {
             world.setWeather(0, 6000, true, true)
+            user.getStackInHand(hand).decrement(1)
+            return ActionResult.SUCCESS
         }
 
-        user.getStackInHand(hand).decrement(1)
-        return ActionResult.SUCCESS
+        return ActionResult.FAIL
     }
 }
