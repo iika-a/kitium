@@ -41,7 +41,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.RAW_PINK_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_PINK_KITIUM_BLOCK);
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.RAW_BLUE_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_BLUE_KITIUM_BLOCK);
 
-                createShaped(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM)
+                createShaped(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM, 4)
                         .pattern("PBP")
                         .pattern("BLB")
                         .pattern("PBP")
@@ -79,6 +79,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                         .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                         .criterion(hasItem(Items.NETHERITE_SCRAP), conditionsFromItem(Items.NETHERITE_SCRAP))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.PINK_KITIUM_PANEL)
+                        .pattern("AA")
+                        .input('A', ModItems.PINK_KITIUM)
+                        .criterion(hasItem(ModItems.PINK_KITIUM), conditionsFromItem(ModItems.PINK_KITIUM))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.BLUE_KITIUM_PANEL)
+                        .pattern("AA")
+                        .input('A', ModItems.BLUE_KITIUM)
+                        .criterion(hasItem(ModItems.BLUE_KITIUM), conditionsFromItem(ModItems.BLUE_KITIUM))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM_PANEL)
+                        .pattern("AA")
+                        .input('A', ModItems.ENERGIZED_KITIUM)
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
                         .offerTo(recipeExporter);
             }
         };

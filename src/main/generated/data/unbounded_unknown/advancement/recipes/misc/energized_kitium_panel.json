@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_energized_kitium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unbounded_unknown:energized_kitium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unbounded_unknown:energized_kitium_panel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_energized_kitium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unbounded_unknown:energized_kitium_panel"
+    ]
+  }
+}

@@ -11,7 +11,7 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/iika-a/awesome-mod"
+		"sources": "https://github.com/iika-a/unbounded_unknown"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/unbounded_unknown/icon.png",
@@ -28,7 +28,7 @@
 		]
 	},
 	"mixins": [
-		"awesome-mod.mixins.json"
+		"unbounded_unknown.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
