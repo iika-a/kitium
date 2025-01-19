@@ -42,6 +42,9 @@ public class ModItemGroups {
                             entries.add(ModBlocks.PINK_KITIUM_BLOCK);
                             entries.add(ModBlocks.BLUE_KITIUM_BLOCK);
                             entries.add(ModBlocks.ENERGIZED_KITIUM_BLOCK);
+                            entries.add(ModBlocks.PINK_KITIUM_PANELING);
+                            entries.add(ModBlocks.BLUE_KITIUM_PANELING);
+                            entries.add(ModBlocks.ENERGIZED_KITIUM_PANELING);
                             entries.add(ModBlocks.PINK_KITIUM_ORE);
                             entries.add(ModBlocks.BLUE_KITIUM_ORE);
                             entries.add(ModBlocks.DEEPSLATE_PINK_KITIUM_ORE);

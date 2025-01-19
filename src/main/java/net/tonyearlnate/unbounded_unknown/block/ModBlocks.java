@@ -30,6 +30,15 @@ public class ModBlocks {
     public static final Block RAW_BLUE_KITIUM_BLOCK = registerBlock("raw_blue_kitium_block",new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"raw_blue_kitium_block")))
             .strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block PINK_KITIUM_PANELING = registerBlock("pink_kitium_paneling",new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"pink_kitium_paneling")))
+            .strength(4f).requiresTool().sounds(BlockSoundGroup.COPPER)));
+    public static final Block BLUE_KITIUM_PANELING = registerBlock("blue_kitium_paneling",new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"blue_kitium_paneling")))
+            .strength(4f).requiresTool().sounds(BlockSoundGroup.COPPER)));
+    public static final Block ENERGIZED_KITIUM_PANELING = registerBlock("energized_kitium_paneling",new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"energized_kitium_paneling")))
+            .strength(8f).requiresTool().sounds(BlockSoundGroup.COPPER)));
     
 	public static final Block PINK_KITIUM_ORE = registerBlock("pink_kitium_ore", new Block(AbstractBlock.Settings.create()
 			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_ore")))

@@ -98,6 +98,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('A', ModItems.ENERGIZED_KITIUM)
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
                         .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModBlocks.PINK_KITIUM_PANELING, 4)
+                        .pattern(" A ")
+                        .pattern("ABA")
+                        .pattern(" A ")
+                        .input('A', ModItems.PINK_KITIUM_PANEL)
+                        .input('B', Items.TUFF)
+                        .criterion(hasItem(ModItems.PINK_KITIUM_PANEL), conditionsFromItem(ModItems.PINK_KITIUM_PANEL))
+                        .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModBlocks.BLUE_KITIUM_PANELING, 4)
+                        .pattern(" A ")
+                        .pattern("ABA")
+                        .pattern(" A ")
+                        .input('A', ModItems.BLUE_KITIUM_PANEL)
+                        .input('B', Items.TUFF)
+                        .criterion(hasItem(ModItems.BLUE_KITIUM_PANEL), conditionsFromItem(ModItems.BLUE_KITIUM_PANEL))
+                        .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModBlocks.ENERGIZED_KITIUM_PANELING, 4)
+                        .pattern(" A ")
+                        .pattern("ABA")
+                        .pattern(" A ")
+                        .input('A', ModItems.ENERGIZED_KITIUM_PANEL)
+                        .input('B', Items.TUFF)
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_PANEL), conditionsFromItem(ModItems.ENERGIZED_KITIUM_PANEL))
+                        .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
+                        .offerTo(recipeExporter);
             }
         };
     }
