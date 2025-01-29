@@ -27,14 +27,17 @@ public class ModConfiguredFeatures {
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        
 
         List<OreFeatureConfig.Target> overworldOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.PINK_KITIUM_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_PINK_KITIUM_ORE.getDefaultState()));
-
+		List<OreFeatureConfig.Target> netherOres = 
+				List.of(OreFeatureConfig.createTarget(null, ModBlocks.BLUE_KITIUM_ORE.getDefaultState()));
+		
 
         register(context, PINK_KITIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldOres, 10));
-        register(context, BLUE_KITIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldOres, 10));
+        register(context, BLUE_KITIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherOres, 10));
 
     }
 
