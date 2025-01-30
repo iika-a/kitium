@@ -1,4 +1,4 @@
-package net.tonyearlnate.unbounded_unknown.effect;
+/*package net.tonyearlnate.unbounded_unknown.effect;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
@@ -10,3 +10,4 @@ public class LightningEffect extends StatusEffect {
 		super(category, color);
 	}
 }
+NOT NEEDED I THINK*/
