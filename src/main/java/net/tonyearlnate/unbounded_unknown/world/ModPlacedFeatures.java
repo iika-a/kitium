@@ -23,6 +23,7 @@ public class ModPlacedFeatures {
         register(context, PINK_KITIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PINK_KITIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(6, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        
         register(context, BLUE_KITIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_KITIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(6, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));

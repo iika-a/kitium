@@ -81,25 +81,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.NETHERITE_SCRAP), conditionsFromItem(Items.NETHERITE_SCRAP))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModItems.PINK_KITIUM_PANEL)
+                createShaped(RecipeCategory.MISC, ModItems.PINK_KITIUM_PANEL, 2)
                         .pattern("AA")
                         .input('A', ModItems.PINK_KITIUM)
                         .criterion(hasItem(ModItems.PINK_KITIUM), conditionsFromItem(ModItems.PINK_KITIUM))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModItems.BLUE_KITIUM_PANEL)
+                createShaped(RecipeCategory.MISC, ModItems.BLUE_KITIUM_PANEL, 2)
                         .pattern("AA")
                         .input('A', ModItems.BLUE_KITIUM)
                         .criterion(hasItem(ModItems.BLUE_KITIUM), conditionsFromItem(ModItems.BLUE_KITIUM))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM_PANEL)
+                createShaped(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM_PANEL, 2)
                         .pattern("AA")
                         .input('A', ModItems.ENERGIZED_KITIUM)
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModBlocks.PINK_KITIUM_PANELING, 16)
+                createShaped(RecipeCategory.MISC, ModBlocks.PINK_KITIUM_PANELING, 8)
                         .pattern(" A ")
                         .pattern("ABA")
                         .pattern(" A ")
@@ -109,7 +109,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModBlocks.BLUE_KITIUM_PANELING, 16)
+                createShaped(RecipeCategory.MISC, ModBlocks.BLUE_KITIUM_PANELING, 8)
                         .pattern(" A ")
                         .pattern("ABA")
                         .pattern(" A ")
@@ -119,7 +119,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModBlocks.ENERGIZED_KITIUM_PANELING, 16)
+                createShaped(RecipeCategory.MISC, ModBlocks.ENERGIZED_KITIUM_PANELING, 8)
                         .pattern(" A ")
                         .pattern("ABA")
                         .pattern(" A ")

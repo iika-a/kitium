@@ -1,4 +1,4 @@
-package net.tonyearlnate.unbounded_unknown.effect;
+/*package net.tonyearlnate.unbounded_unknown.effect;
 
 import net.tonyearlnate.unbounded_unknown.UnboundedUnknown;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -22,4 +22,4 @@ public class ModEffects {
     public static void registerEffects() {
         UnboundedUnknown.LOGGER.info("Registering Mod Effects for " + UnboundedUnknown.MOD_ID);
     }
-}
+} NOT NEEDED I THINK*/
