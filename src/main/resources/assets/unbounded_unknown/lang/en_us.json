@@ -7,6 +7,7 @@
   "item.unbounded_unknown.pink_kitium_panel": "Pink Kitium Panel",
   "item.unbounded_unknown.blue_kitium_panel": "Blue Kitium Panel",
   "item.unbounded_unknown.energized_kitium_panel": "Energized Kitium Panel",
+  "ite.unbounded_unknown.pink_kitium_apple": "Pink Kitium Apple",
 
   "item.unbounded_unknown.lightning_bottle": "Bottle of Lightning",
   "item.unbounded_unknown.thunderstorm_spawner": "Thunderstorm Spawner",
@@ -25,7 +26,7 @@
   "block.unbounded_unknown.deepslate_pink_kitium_ore": "Deepslate Pink Kitium Ore",
   "block.unbounded_unknown.lightning_collector": "Lightning Collector",
 
-  "entity.unbounded_unknown_lightning_bottle": "Bottle of Lightning",
+  "entity.unbounded_unknown.lightning_bottle": "Bottle of Lightning",
 
   "itemgroup.unbounded_unknown.kitium_items": "Kitium Items",
   "itemgroup.unbounded_unknown.kitium_blocks": "Kitium Blocks"
