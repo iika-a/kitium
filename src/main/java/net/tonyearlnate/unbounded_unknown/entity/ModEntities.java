@@ -21,7 +21,7 @@ public class ModEntities {
 			EntityType.Builder.create(KitiumGolemEntity::new, SpawnGroup.CREATURE)
 					.dimensions(EntityType.ZOMBIE.getDimensions()).build(RegistryKey.of(RegistryKeys.ENTITY_TYPE,
 							Identifier.of(UnboundedUnknown.MOD_ID, "kitium_golem"))));
-// eclipse is awesome
+// eclipse is awesome 2
     public static void registerModEntities() {
         UnboundedUnknown.LOGGER.info("Registering Entities for " + UnboundedUnknown.MOD_ID);
     }
