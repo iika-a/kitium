@@ -42,12 +42,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.RAW_BLUE_KITIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_BLUE_KITIUM_BLOCK);
 
                 createShaped(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM, 4)
-                        .pattern("PBP")
+                        .pattern("DPD")
                         .pattern("BLB")
-                        .pattern("PBP")
+                        .pattern("DPD")
                         .input('B', ModItems.BLUE_KITIUM)
                         .input('L', ModThrowables.LIGHTNING_BOTTLE)
                         .input('P', ModItems.PINK_KITIUM)
+                        .input('D', Items.NETHERITE_SCRAP)
                         .criterion(hasItem(ModItems.PINK_KITIUM), conditionsFromItem(ModItems.PINK_KITIUM))
                         .criterion(hasItem(ModItems.BLUE_KITIUM), conditionsFromItem(ModItems.BLUE_KITIUM))
                         .criterion(hasItem(ModThrowables.LIGHTNING_BOTTLE), conditionsFromItem(ModThrowables.LIGHTNING_BOTTLE))
