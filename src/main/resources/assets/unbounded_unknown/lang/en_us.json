@@ -25,6 +25,8 @@
   "block.unbounded_unknown.deepslate_pink_kitium_ore": "Deepslate Pink Kitium Ore",
   "block.unbounded_unknown.lightning_collector": "Lightning Collector",
 
+  "entity.unbounded_unknown_lightning_bottle": "Bottle of Lightning",
+
   "itemgroup.unbounded_unknown.kitium_items": "Kitium Items",
   "itemgroup.unbounded_unknown.kitium_blocks": "Kitium Blocks"
 }
