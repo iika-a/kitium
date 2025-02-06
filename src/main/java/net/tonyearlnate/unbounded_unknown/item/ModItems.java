@@ -1,8 +1,7 @@
 package net.tonyearlnate.unbounded_unknown.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -31,6 +30,22 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"pink_kitium_apple")))));
     public static final Item THUNDERSTORM_SPAWNER = registerItem("thunderstorm_spawner", new ThunderstormSpawnerItem(new Item.Settings().maxCount(1)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"thunderstorm_spawner")))));
+
+    public static final Item PINK_KITIUM_SWORD = registerItem("pink_kitium_sword",
+            new SwordItem(ModToolMaterials.PINK_KITIUM, 3, -2.4f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_sword")))));
+    public static final Item PINK_KITIUM_PICKAXE = registerItem("pink_kitium_pickaxe",
+            new PickaxeItem(ModToolMaterials.PINK_KITIUM, 1, -2.8f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_pickaxe")))));
+    public static final Item PINK_KITIUM_AXE = registerItem("pink_kitium_axe",
+            new AxeItem(ModToolMaterials.PINK_KITIUM, 6, -3.2f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_axe")))));
+    public static final Item PINK_KITIUM_SHOVEL = registerItem("pink_kitium_shovel",
+            new ShovelItem(ModToolMaterials.PINK_KITIUM, 1.5f, -3.2f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_shovel")))));
+    public static final Item PINK_KITIUM_HOE = registerItem("pink_kitium_hoe",
+            new HoeItem(ModToolMaterials.PINK_KITIUM, 0, -3f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_hoe")))));
 
 
     private static Item registerItem(String name, Item item) {

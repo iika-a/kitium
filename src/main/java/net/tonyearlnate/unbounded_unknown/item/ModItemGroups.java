@@ -33,6 +33,12 @@ public class ModItemGroups {
                             entries.add(ModItems.RAW_BLUE_KITIUM);
                             entries.add(ModItems.PINK_KITIUM_APPLE);
                             entries.add(ModItems.THUNDERSTORM_SPAWNER);
+                            entries.add(ModItems.PINK_KITIUM_SWORD);
+                            entries.add(ModItems.PINK_KITIUM_PICKAXE);
+                            entries.add(ModItems.PINK_KITIUM_AXE);
+                            entries.add(ModItems.PINK_KITIUM_SHOVEL);
+                            entries.add(ModItems.PINK_KITIUM_HOE);
+
                         }).build());
 
         KITIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

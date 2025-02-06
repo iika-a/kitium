@@ -7,7 +7,13 @@
   "item.unbounded_unknown.pink_kitium_panel": "Pink Kitium Panel",
   "item.unbounded_unknown.blue_kitium_panel": "Blue Kitium Panel",
   "item.unbounded_unknown.energized_kitium_panel": "Energized Kitium Panel",
-  "ite.unbounded_unknown.pink_kitium_apple": "Pink Kitium Apple",
+  "item.unbounded_unknown.pink_kitium_apple": "Pink Kitium Apple",
+
+  "item.unbounded_unknown.pink_kitium_sword": "Pink Kitium Sword",
+  "item.unbounded_unknown.pink_kitium_pickaxe": "Pink Kitium Pickaxe",
+  "item.unbounded_unknown.pink_kitium_axe": "Pink Kitium Axe",
+  "item.unbounded_unknown.pink_kitium_shovel": "Pink Kitium Shovel",
+  "item.unbounded_unknown.pink_kitium_hoe": "Pink Kitium Hoe",
 
   "item.unbounded_unknown.lightning_bottle": "Bottle of Lightning",
   "item.unbounded_unknown.thunderstorm_spawner": "Thunderstorm Spawner",

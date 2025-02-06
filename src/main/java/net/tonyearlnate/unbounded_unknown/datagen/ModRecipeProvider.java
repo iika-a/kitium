@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -17,6 +18,7 @@ import net.tonyearlnate.unbounded_unknown.item.ModThrowables;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("SameParameterValue")
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -129,8 +131,74 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM_PANEL), conditionsFromItem(ModItems.ENERGIZED_KITIUM_PANEL))
                         .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
                         .offerTo(recipeExporter);
+
+                createSwordRecipe(ModItems.PINK_KITIUM_SWORD, ModItems.PINK_KITIUM, this, recipeExporter);
+                createPickaxeRecipe(ModItems.PINK_KITIUM_PICKAXE, ModItems.PINK_KITIUM, this, recipeExporter);
+                createAxeRecipe(ModItems.PINK_KITIUM_AXE, ModItems.PINK_KITIUM, this, recipeExporter);
+                createShovelRecipe(ModItems.PINK_KITIUM_SHOVEL, ModItems.PINK_KITIUM, this, recipeExporter);
+                createHoeRecipe(ModItems.PINK_KITIUM_HOE, ModItems.PINK_KITIUM, this, recipeExporter);
             }
         };
+    }
+
+    private static void createSwordRecipe(Item result, Item material, RecipeGenerator recipeGenerator, RecipeExporter recipeExporter) {
+        recipeGenerator.createShaped(RecipeCategory.TOOLS, result)
+                .pattern("M")
+                .pattern("M")
+                .pattern("S")
+                .input('M', material)
+                .input('S', Items.STICK)
+                .criterion(RecipeGenerator.hasItem(material), recipeGenerator.conditionsFromItem(material))
+                .criterion(RecipeGenerator.hasItem(Items.STICK), recipeGenerator.conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+    }
+
+    private static void createPickaxeRecipe(Item result, Item material, RecipeGenerator recipeGenerator, RecipeExporter recipeExporter) {
+        recipeGenerator.createShaped(RecipeCategory.TOOLS, result)
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('M', material)
+                .input('S', Items.STICK)
+                .criterion(RecipeGenerator.hasItem(material), recipeGenerator.conditionsFromItem(material))
+                .criterion(RecipeGenerator.hasItem(Items.STICK), recipeGenerator.conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+    }
+
+    private static void createAxeRecipe(Item result, Item material, RecipeGenerator recipeGenerator, RecipeExporter recipeExporter) {
+        recipeGenerator.createShaped(RecipeCategory.TOOLS, result)
+                .pattern("MM")
+                .pattern("SM")
+                .pattern("S ")
+                .input('M', material)
+                .input('S', Items.STICK)
+                .criterion(RecipeGenerator.hasItem(material), recipeGenerator.conditionsFromItem(material))
+                .criterion(RecipeGenerator.hasItem(Items.STICK), recipeGenerator.conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+    }
+
+    private static void createShovelRecipe(Item result, Item material, RecipeGenerator recipeGenerator, RecipeExporter recipeExporter) {
+        recipeGenerator.createShaped(RecipeCategory.TOOLS, result)
+                .pattern("M")
+                .pattern("S")
+                .pattern("S")
+                .input('M', material)
+                .input('S', Items.STICK)
+                .criterion(RecipeGenerator.hasItem(material), recipeGenerator.conditionsFromItem(material))
+                .criterion(RecipeGenerator.hasItem(Items.STICK), recipeGenerator.conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+    }
+
+    private static void createHoeRecipe(Item result, Item material, RecipeGenerator recipeGenerator, RecipeExporter recipeExporter) {
+        recipeGenerator.createShaped(RecipeCategory.TOOLS, result)
+                .pattern("MM")
+                .pattern("S ")
+                .pattern("S ")
+                .input('M', material)
+                .input('S', Items.STICK)
+                .criterion(RecipeGenerator.hasItem(material), recipeGenerator.conditionsFromItem(material))
+                .criterion(RecipeGenerator.hasItem(Items.STICK), recipeGenerator.conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
     }
 
     @Override
