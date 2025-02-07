@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "unbounded_unknown:item/blue_kitium_shovel"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "unbounded_unknown:blue_kitium_axe",
+    "E": "unbounded_unknown:energized_kitium",
+    "P": "unbounded_unknown:pink_kitium_axe"
+  },
+  "pattern": [
+    "BEP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "unbounded_unknown:energized_kitium_axe_frame"
+  }
+}

@@ -48,7 +48,12 @@ public class ModItemGroups {
                             entries.add(ModItems.ENERGIZED_KITIUM_AXE);
                             entries.add(ModItems.ENERGIZED_KITIUM_SHOVEL);
                             entries.add(ModItems.ENERGIZED_KITIUM_HOE);
-
+                            entries.add(ModItems.ENERGIZED_KITIUM_SWORD_FRAME);
+                            entries.add(ModItems.ENERGIZED_KITIUM_PICKAXE_FRAME);
+                            entries.add(ModItems.ENERGIZED_KITIUM_AXE_FRAME);
+                            entries.add(ModItems.ENERGIZED_KITIUM_SHOVEL_FRAME);
+                            entries.add(ModItems.ENERGIZED_KITIUM_HOE_FRAME);
+                            entries.add(ModItems.ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE);
                         }).build());
 
         KITIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

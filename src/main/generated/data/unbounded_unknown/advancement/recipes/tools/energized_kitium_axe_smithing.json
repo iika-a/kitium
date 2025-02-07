@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_energized_kitium_panel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unbounded_unknown:energized_kitium_panel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:energized_kitium_axe_smithing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_energized_kitium_panel"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:energized_kitium_axe_smithing"
+    ]
+  }
+}

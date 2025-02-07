@@ -43,6 +43,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLUE_KITIUM_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_KITIUM_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PINK_KITIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_KITIUM_PICKAXE, Models.HANDHELD);
@@ -61,6 +62,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_SWORD_FRAME, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_PICKAXE_FRAME, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_AXE_FRAME, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_SHOVEL_FRAME, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_HOE_FRAME, Models.HANDHELD);
         //meowmeow
     }
 }

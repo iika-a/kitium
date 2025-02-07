@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "unbounded_unknown:item/energized_kitium_sword"
+  }
+}

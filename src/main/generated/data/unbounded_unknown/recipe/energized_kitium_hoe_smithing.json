@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "unbounded_unknown:energized_kitium_panel",
+  "base": "unbounded_unknown:energized_kitium_hoe_frame",
+  "result": {
+    "count": 1,
+    "id": "unbounded_unknown:energized_kitium_hoe"
+  },
+  "template": "unbounded_unknown:energized_kitium_upgrade_smithing_template"
+}

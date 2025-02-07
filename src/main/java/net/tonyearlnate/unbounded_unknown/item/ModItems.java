@@ -30,6 +30,19 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"pink_kitium_apple")))));
     public static final Item THUNDERSTORM_SPAWNER = registerItem("thunderstorm_spawner", new ThunderstormSpawnerItem(new Item.Settings().maxCount(1)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"thunderstorm_spawner")))));
+    public static final Item ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("energized_kitium_upgrade_smithing_template", new EnergizedKitiumUpgradeSmithingTemplateItem(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_upgrade_smithing_template")))));
+
+    public static final Item ENERGIZED_KITIUM_SWORD_FRAME = registerItem("energized_kitium_sword_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_sword_frame")))));
+    public static final Item ENERGIZED_KITIUM_PICKAXE_FRAME = registerItem("energized_kitium_pickaxe_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_pickaxe_frame")))));
+    public static final Item ENERGIZED_KITIUM_AXE_FRAME = registerItem("energized_kitium_axe_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_axe_frame")))));
+    public static final Item ENERGIZED_KITIUM_SHOVEL_FRAME = registerItem("energized_kitium_shovel_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_shovel_frame")))));
+    public static final Item ENERGIZED_KITIUM_HOE_FRAME = registerItem("energized_kitium_hoe_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_hoe_frame")))));
 
     public static final Item PINK_KITIUM_SWORD = registerItem("pink_kitium_sword",
             new SwordItem(ModToolMaterials.PINK_KITIUM, 3, -2.4f, new Item.Settings()
