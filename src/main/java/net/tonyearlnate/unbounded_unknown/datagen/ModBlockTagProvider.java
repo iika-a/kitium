@@ -46,5 +46,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_KITIUM_TOOL)
                 .forceAddTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BLUE_KITIUM_TOOL)
+                .forceAddTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ENERGIZED_KITIUM_TOOL)
+                .forceAddTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }

@@ -47,6 +47,38 @@ public class ModItems {
             new HoeItem(ModToolMaterials.PINK_KITIUM, 0, -3f, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_hoe")))));
 
+    public static final Item BLUE_KITIUM_SWORD = registerItem("blue_kitium_sword",
+            new SwordItem(ModToolMaterials.BLUE_KITIUM, 3, -2.4f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_sword")))));
+    public static final Item BLUE_KITIUM_PICKAXE = registerItem("blue_kitium_pickaxe",
+            new PickaxeItem(ModToolMaterials.BLUE_KITIUM, 1, -2.8f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_pickaxe")))));
+    public static final Item BLUE_KITIUM_AXE = registerItem("blue_kitium_axe",
+            new AxeItem(ModToolMaterials.BLUE_KITIUM, 6, -3.2f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_axe")))));
+    public static final Item BLUE_KITIUM_SHOVEL = registerItem("blue_kitium_shovel",
+            new ShovelItem(ModToolMaterials.BLUE_KITIUM, 1.5f, -3.2f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_shovel")))));
+    public static final Item BLUE_KITIUM_HOE = registerItem("blue_kitium_hoe",
+            new HoeItem(ModToolMaterials.BLUE_KITIUM, 0, -3f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_hoe")))));
+
+    public static final Item ENERGIZED_KITIUM_SWORD = registerItem("energized_kitium_sword",
+            new SwordItem(ModToolMaterials.ENERGIZED_KITIUM, 3, -2.4f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_sword")))));
+    public static final Item ENERGIZED_KITIUM_PICKAXE = registerItem("energized_kitium_pickaxe",
+            new PickaxeItem(ModToolMaterials.ENERGIZED_KITIUM, 1, -2.8f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_pickaxe")))));
+    public static final Item ENERGIZED_KITIUM_AXE = registerItem("energized_kitium_axe",
+            new AxeItem(ModToolMaterials.ENERGIZED_KITIUM, 6, -3.2f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_axe")))));
+    public static final Item ENERGIZED_KITIUM_SHOVEL = registerItem("energized_kitium_shovel",
+            new ShovelItem(ModToolMaterials.ENERGIZED_KITIUM, 1.5f, -3.2f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_shovel")))));
+    public static final Item ENERGIZED_KITIUM_HOE = registerItem("energized_kitium_hoe",
+            new HoeItem(ModToolMaterials.ENERGIZED_KITIUM, 0, -3f, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_hoe")))));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, name), item);

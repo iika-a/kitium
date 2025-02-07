@@ -35,5 +35,27 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_KITIUM_SHOVEL);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.PINK_KITIUM_HOE);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.BLUE_KITIUM_SWORD);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.BLUE_KITIUM_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.BLUE_KITIUM_AXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.BLUE_KITIUM_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.BLUE_KITIUM_HOE);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.ENERGIZED_KITIUM_SWORD);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.ENERGIZED_KITIUM_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.ENERGIZED_KITIUM_AXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.ENERGIZED_KITIUM_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.ENERGIZED_KITIUM_HOE);
     }
 }

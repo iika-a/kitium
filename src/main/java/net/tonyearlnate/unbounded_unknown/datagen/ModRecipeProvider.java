@@ -137,6 +137,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createAxeRecipe(ModItems.PINK_KITIUM_AXE, ModItems.PINK_KITIUM, this, recipeExporter);
                 createShovelRecipe(ModItems.PINK_KITIUM_SHOVEL, ModItems.PINK_KITIUM, this, recipeExporter);
                 createHoeRecipe(ModItems.PINK_KITIUM_HOE, ModItems.PINK_KITIUM, this, recipeExporter);
+                createSwordRecipe(ModItems.BLUE_KITIUM_SWORD, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createPickaxeRecipe(ModItems.BLUE_KITIUM_PICKAXE, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createAxeRecipe(ModItems.BLUE_KITIUM_AXE, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createShovelRecipe(ModItems.BLUE_KITIUM_SHOVEL, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createHoeRecipe(ModItems.BLUE_KITIUM_HOE, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createSwordRecipe(ModItems.ENERGIZED_KITIUM_SWORD, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createPickaxeRecipe(ModItems.ENERGIZED_KITIUM_PICKAXE, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createAxeRecipe(ModItems.ENERGIZED_KITIUM_AXE, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createShovelRecipe(ModItems.ENERGIZED_KITIUM_SHOVEL, ModItems.BLUE_KITIUM, this, recipeExporter);
+                createHoeRecipe(ModItems.ENERGIZED_KITIUM_HOE, ModItems.BLUE_KITIUM, this, recipeExporter);
             }
         };
     }

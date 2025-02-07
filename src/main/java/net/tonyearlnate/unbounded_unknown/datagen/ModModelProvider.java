@@ -43,11 +43,24 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLUE_KITIUM_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_KITIUM_APPLE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.PINK_KITIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_KITIUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_KITIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_KITIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_KITIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.BLUE_KITIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLUE_KITIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLUE_KITIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLUE_KITIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLUE_KITIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_HOE, Models.HANDHELD);
         //meowmeow
     }
 }

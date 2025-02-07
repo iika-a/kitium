@@ -38,6 +38,16 @@ public class ModItemGroups {
                             entries.add(ModItems.PINK_KITIUM_AXE);
                             entries.add(ModItems.PINK_KITIUM_SHOVEL);
                             entries.add(ModItems.PINK_KITIUM_HOE);
+                            entries.add(ModItems.BLUE_KITIUM_SWORD);
+                            entries.add(ModItems.BLUE_KITIUM_PICKAXE);
+                            entries.add(ModItems.BLUE_KITIUM_AXE);
+                            entries.add(ModItems.BLUE_KITIUM_SHOVEL);
+                            entries.add(ModItems.BLUE_KITIUM_HOE);
+                            entries.add(ModItems.ENERGIZED_KITIUM_SWORD);
+                            entries.add(ModItems.ENERGIZED_KITIUM_PICKAXE);
+                            entries.add(ModItems.ENERGIZED_KITIUM_AXE);
+                            entries.add(ModItems.ENERGIZED_KITIUM_SHOVEL);
+                            entries.add(ModItems.ENERGIZED_KITIUM_HOE);
 
                         }).build());
 
