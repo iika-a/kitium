@@ -21,6 +21,16 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_netherite_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_pink_kitium_sword": {
       "conditions": {
         "items": [
@@ -41,9 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_energized_kitium",
+      "has_pink_kitium_sword",
       "has_blue_kitium_sword",
-      "has_pink_kitium_sword"
+      "has_energized_kitium",
+      "has_netherite_sword"
     ]
   ],
   "rewards": {

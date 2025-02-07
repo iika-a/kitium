@@ -21,6 +21,16 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_netherite_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_pink_kitium_hoe": {
       "conditions": {
         "items": [
@@ -41,9 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_energized_kitium",
+      "has_pink_kitium_hoe",
       "has_blue_kitium_hoe",
-      "has_pink_kitium_hoe"
+      "has_energized_kitium",
+      "has_netherite_hoe"
     ]
   ],
   "rewards": {

@@ -1,13 +1,11 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "equipment",
-  "key": {
-    "B": "unbounded_unknown:blue_kitium_sword",
-    "E": "unbounded_unknown:energized_kitium",
-    "P": "unbounded_unknown:pink_kitium_sword"
-  },
-  "pattern": [
-    "BEP"
+  "ingredients": [
+    "unbounded_unknown:pink_kitium_sword",
+    "unbounded_unknown:blue_kitium_sword",
+    "unbounded_unknown:energized_kitium",
+    "minecraft:netherite_sword"
   ],
   "result": {
     "count": 1,
