@@ -51,14 +51,12 @@
   "item.unbounded_unknown.energized_kitium_leggings_frame": "Energized Kitium Leggings Frame",
   "item.unbounded_unknown.energized_kitium_boots_frame": "Energized Kitium Boots Frame",
 
-
-
   "item.unbounded_unknown.lightning_bottle": "Bottle of Lightning",
   "item.unbounded_unknown.thunderstorm_spawner": "Thunderstorm Spawner",
 
   "item.unbounded_unknown.energized_kitium_upgrade_smithing_template": "Energized Kitium Upgrade",
   "item.unbounded_unknown.smithing_template.energized_kitium_upgrade.applies_to": "Energized Kitium Equipment Frames",
-  "item.unbounded_unknown.smithing_template.energized_kitium_upgrade.ingredients": "Energized Kitium",
+  "item.unbounded_unknown.smithing_template.energized_kitium_upgrade.ingredients": "Energized Kitium Panel",
   "item.unbounded_unknown.smithing_template.energized_kitium_upgrade.base_slot_description": "Add Energized Kitium Armor, Weapon, or Tool frame",
   "item.unbounded_unknown.smithing_template.energized_kitium_upgrade.additions_slot_description": "Add Energized Kitium Panel",
 
