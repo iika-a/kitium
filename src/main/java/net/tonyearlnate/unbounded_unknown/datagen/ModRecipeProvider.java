@@ -106,7 +106,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModBlocks.PINK_KITIUM_PANELING, 8)
+                createShaped(RecipeCategory.MISC, ModBlocks.PINK_KITIUM_PANELING, 16)
                         .pattern(" A ")
                         .pattern("ABA")
                         .pattern(" A ")
@@ -116,7 +116,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModBlocks.BLUE_KITIUM_PANELING, 8)
+                createShaped(RecipeCategory.MISC, ModBlocks.BLUE_KITIUM_PANELING, 16)
                         .pattern(" A ")
                         .pattern("ABA")
                         .pattern(" A ")
@@ -126,7 +126,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, ModBlocks.ENERGIZED_KITIUM_PANELING, 8)
+                createShaped(RecipeCategory.MISC, ModBlocks.ENERGIZED_KITIUM_PANELING, 16)
                         .pattern(" A ")
                         .pattern("ABA")
                         .pattern(" A ")
@@ -148,6 +148,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.BLUE_KITIUM), conditionsFromItem(ModItems.BLUE_KITIUM))
                         .criterion(hasItem(ModItems.PINK_KITIUM), conditionsFromItem(ModItems.PINK_KITIUM))
                         .criterion(hasItem(Items.NETHERITE_SCRAP), conditionsFromItem(Items.NETHERITE_SCRAP))
+                        .offerTo(recipeExporter);
+
+                createShapeless(RecipeCategory.MISC, ModBlocks.WHITE_KITIUM_BLOCK)
+                        .input(ModItems.ENERGIZED_KITIUM_SWORD)
+                        .input(ModItems.ENERGIZED_KITIUM_PICKAXE)
+                        .input(ModItems.ENERGIZED_KITIUM_AXE)
+                        .input(ModItems.ENERGIZED_KITIUM_SHOVEL)
+                        .input(ModItems.ENERGIZED_KITIUM_HOE)
+                        .input(ModItems.ENERGIZED_KITIUM_HELMET)
+                        .input(ModItems.ENERGIZED_KITIUM_CHESTPLATE)
+                        .input(ModItems.ENERGIZED_KITIUM_LEGGINGS)
+                        .input(ModItems.ENERGIZED_KITIUM_BOOTS)
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_SWORD), conditionsFromItem(ModItems.ENERGIZED_KITIUM_SWORD))
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_PICKAXE), conditionsFromItem(ModItems.ENERGIZED_KITIUM_PICKAXE))
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_AXE), conditionsFromItem(ModItems.ENERGIZED_KITIUM_AXE))
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_SHOVEL), conditionsFromItem(ModItems.ENERGIZED_KITIUM_SHOVEL))
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_HOE), conditionsFromItem(ModItems.ENERGIZED_KITIUM_HOE))
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_HELMET), conditionsFromItem(ModItems.ENERGIZED_KITIUM_HELMET))
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_CHESTPLATE), conditionsFromItem(ModItems.ENERGIZED_KITIUM_CHESTPLATE))
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_LEGGINGS), conditionsFromItem(ModItems.ENERGIZED_KITIUM_LEGGINGS))
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM_BOOTS), conditionsFromItem(ModItems.ENERGIZED_KITIUM_BOOTS))
                         .offerTo(recipeExporter);
 
                 offerEnergizedKitiumFrameRecipe(ModItems.BLUE_KITIUM_SWORD, ModItems.PINK_KITIUM_SWORD, Items.NETHERITE_SWORD, ModItems.ENERGIZED_KITIUM_SWORD_FRAME, RecipeCategory.COMBAT, this, recipeExporter);

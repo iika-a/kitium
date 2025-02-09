@@ -18,6 +18,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLUE_KITIUM_BLOCK);
         addDrop(ModBlocks.PINK_KITIUM_BLOCK);
         addDrop(ModBlocks.ENERGIZED_KITIUM_BLOCK);
+        addDrop(ModBlocks.WHITE_KITIUM_BLOCK);
         addDrop(ModBlocks.RAW_BLUE_KITIUM_BLOCK);
         addDrop(ModBlocks.RAW_PINK_KITIUM_BLOCK);
         addDrop(ModBlocks.LIGHTNING_COLLECTOR);

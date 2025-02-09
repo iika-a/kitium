@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.tonyearlnate.unbounded_unknown.UnboundedUnknown;
 
 public class ModItems {
@@ -31,7 +32,7 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"pink_kitium_apple")))));
     public static final Item THUNDERSTORM_SPAWNER = registerItem("thunderstorm_spawner", new ThunderstormSpawnerItem(new Item.Settings().maxCount(1)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"thunderstorm_spawner")))));
-    public static final Item ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("energized_kitium_upgrade_smithing_template", new EnergizedKitiumUpgradeSmithingTemplateItem(new Item.Settings()
+    public static final Item ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("energized_kitium_upgrade_smithing_template", new EnergizedKitiumUpgradeSmithingTemplateItem(new Item.Settings().rarity(Rarity.UNCOMMON)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_upgrade_smithing_template")))));
 
     public static final Item ENERGIZED_KITIUM_SWORD_FRAME = registerItem("energized_kitium_sword_frame", new Item(new Item.Settings().maxCount(1)

@@ -12,6 +12,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.tonyearlnate.unbounded_unknown.UnboundedUnknown;
 
 public class ModBlocks {
@@ -39,6 +40,10 @@ public class ModBlocks {
     public static final Block ENERGIZED_KITIUM_PANELING = registerBlock("energized_kitium_paneling",new Block(AbstractBlock.Settings.create()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"energized_kitium_paneling")))
             .strength(8f).requiresTool().sounds(BlockSoundGroup.COPPER)));
+
+    public static final Block WHITE_KITIUM_BLOCK = registerWhiteKitiumBlock(new Block(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID ,"white_kitium_block")))
+            .strength(12f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
     
 	public static final Block PINK_KITIUM_ORE = registerBlock("pink_kitium_ore", new Block(AbstractBlock.Settings.create()
 			.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_ore")))
@@ -62,6 +67,16 @@ public class ModBlocks {
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, name), new BlockItem(block, new Item.Settings()
                 .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, name))).useBlockPrefixedTranslationKey()));
+    }
+
+    private static Block registerWhiteKitiumBlock(Block block) {
+        registerWhiteKitiumBlockItem(block);
+        return Registry.register(Registries.BLOCK, Identifier.of(UnboundedUnknown.MOD_ID, "white_kitium_block"), block);
+    }
+
+    private static void registerWhiteKitiumBlockItem(Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "white_kitium_block"), new BlockItem(block, new Item.Settings().rarity(Rarity.EPIC)
+                .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "white_kitium_block"))).useBlockPrefixedTranslationKey()));
     }
 
     public static void registerModBlocks() {
