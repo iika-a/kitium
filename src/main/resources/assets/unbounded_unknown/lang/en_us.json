@@ -15,11 +15,21 @@
   "item.unbounded_unknown.pink_kitium_shovel": "Pink Kitium Shovel",
   "item.unbounded_unknown.pink_kitium_hoe": "Pink Kitium Hoe",
 
+  "item.unbounded_unknown.pink_kitium_helmet": "Pink Kitium Helmet",
+  "item.unbounded_unknown.pink_kitium_chestplate": "Pink Kitium Chestplate",
+  "item.unbounded_unknown.pink_kitium_leggings": "Pink Kitium Leggings",
+  "item.unbounded_unknown.pink_kitium_boots": "Pink Kitium Boots",
+
   "item.unbounded_unknown.blue_kitium_sword": "Blue Kitium Sword",
   "item.unbounded_unknown.blue_kitium_pickaxe": "Blue Kitium Pickaxe",
   "item.unbounded_unknown.blue_kitium_axe": "Blue Kitium Axe",
   "item.unbounded_unknown.blue_kitium_shovel": "Blue Kitium Shovel",
   "item.unbounded_unknown.blue_kitium_hoe": "Blue Kitium Hoe",
+
+  "item.unbounded_unknown.blue_kitium_helmet": "Blue Kitium Helmet",
+  "item.unbounded_unknown.blue_kitium_chestplate": "Blue Kitium Chestplate",
+  "item.unbounded_unknown.blue_kitium_leggings": "Blue Kitium Leggings",
+  "item.unbounded_unknown.blue_kitium_boots": "Blue Kitium Boots",
 
   "item.unbounded_unknown.energized_kitium_sword": "Energized Kitium Sword",
   "item.unbounded_unknown.energized_kitium_pickaxe": "Energized Kitium Pickaxe",
@@ -31,6 +41,17 @@
   "item.unbounded_unknown.energized_kitium_axe_frame": "Energized Kitium Axe Frame",
   "item.unbounded_unknown.energized_kitium_shovel_frame": "Energized Kitium Shovel Frame",
   "item.unbounded_unknown.energized_kitium_hoe_frame": "Energized Kitium Hoe Frame",
+
+  "item.unbounded_unknown.energized_kitium_helmet": "Energized Kitium Helmet",
+  "item.unbounded_unknown.energized_kitium_chestplate": "Energized Kitium Chestplate",
+  "item.unbounded_unknown.energized_kitium_leggings": "Energized Kitium Leggings",
+  "item.unbounded_unknown.energized_kitium_boots": "Energized Kitium Boots",
+  "item.unbounded_unknown.energized_kitium_helmet_frame": "Energized Kitium Helmet Frame",
+  "item.unbounded_unknown.energized_kitium_chestplate_frame": "Energized Kitium Chestplate Frame",
+  "item.unbounded_unknown.energized_kitium_leggings_frame": "Energized Kitium Leggings Frame",
+  "item.unbounded_unknown.energized_kitium_boots_frame": "Energized Kitium Boots Frame",
+
+
 
   "item.unbounded_unknown.lightning_bottle": "Bottle of Lightning",
   "item.unbounded_unknown.thunderstorm_spawner": "Thunderstorm Spawner",
@@ -54,6 +75,17 @@
   "block.unbounded_unknown.blue_kitium_ore": "Blue Kitium Ore",
   "block.unbounded_unknown.deepslate_pink_kitium_ore": "Deepslate Pink Kitium Ore",
   "block.unbounded_unknown.lightning_collector": "Lightning Collector",
+
+  "tag.block.unbounded_unknown.needs_pink_kitium_tool": "Needs a Pink Kitium tool",
+  "tag.block.unbounded_unknown.incorrect_for_pink_kitium_tool": "Incorrect for Pink Kitium Tools",
+  "tag.block.unbounded_unknown.needs_blue_kitium_tool": "Needs a Blue Kitium tool",
+  "tag.block.unbounded_unknown.incorrect_for_blue_kitium_tool": "Incorrect for Blue Kitium Tools",
+  "tag.block.unbounded_unknown.needs_energized_kitium_tool": "Needs an Energized Kitium tool",
+  "tag.block.unbounded_unknown.incorrect_for_energized_kitium_tool": "Incorrect for Energized Kitium Tools",
+
+  "tag.item.unbounded_unknown.pink_kitium_repair": "Repaired by Pink Kitium",
+  "tag.item.unbounded_unknown.blue_kitium_repair": "Repaired by Blue Kitium",
+  "tag.item.unbounded_unknown.energized_kitium_repair": "Repaired by Energized Kitium",
 
   "entity.unbounded_unknown.lightning_bottle": "Bottle of Lightning",
 

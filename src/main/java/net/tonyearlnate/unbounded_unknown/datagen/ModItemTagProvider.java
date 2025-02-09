@@ -57,5 +57,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ENERGIZED_KITIUM_SHOVEL);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.ENERGIZED_KITIUM_HOE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.PINK_KITIUM_HELMET)
+                .add(ModItems.PINK_KITIUM_CHESTPLATE)
+                .add(ModItems.PINK_KITIUM_LEGGINGS)
+                .add(ModItems.PINK_KITIUM_BOOTS)
+                .add(ModItems.BLUE_KITIUM_HELMET)
+                .add(ModItems.BLUE_KITIUM_CHESTPLATE)
+                .add(ModItems.BLUE_KITIUM_LEGGINGS)
+                .add(ModItems.BLUE_KITIUM_BOOTS)
+                .add(ModItems.ENERGIZED_KITIUM_HELMET)
+                .add(ModItems.ENERGIZED_KITIUM_CHESTPLATE)
+                .add(ModItems.ENERGIZED_KITIUM_LEGGINGS)
+                .add(ModItems.ENERGIZED_KITIUM_BOOTS);
     }
 }

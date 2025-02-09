@@ -4,6 +4,7 @@ aa930e2630a831fdb5ef3074220f6651303cad92 data/minecraft/tags/item/hoes.json
 394ab55518c15f96fcd72c2c8132029bbac1b8b4 data/minecraft/tags/item/pickaxes.json
 392996b3911505a911585715745b0a6aa23bdd8e data/minecraft/tags/item/shovels.json
 302e4fe2ce12ca92297d44dccc43a98190f60bd1 data/minecraft/tags/item/swords.json
+de4c1533204e18c1ce0f2758d2d1b13dbab26e3e data/minecraft/tags/item/trimmable_armor.json
 564d2edd09aa99e6958a58ddacb1071b1ba7571b data/unbounded_unknown/tags/item/blue_kitium_repair.json
 50f5333c3a730cfaac053402ebb4078707dc3faa data/unbounded_unknown/tags/item/energized_kitium_repair.json
 71826574ebe56081cf2f0fc5e2b8cbb7ef5458da data/unbounded_unknown/tags/item/pink_kitium_repair.json

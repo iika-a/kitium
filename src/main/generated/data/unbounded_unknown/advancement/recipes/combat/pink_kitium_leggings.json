@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_energized_kitium_panel": {
+    "has_pink_kitium": {
       "conditions": {
         "items": [
           {
-            "items": "unbounded_unknown:energized_kitium_panel"
+            "items": "unbounded_unknown:pink_kitium"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:energized_kitium_sword_smithing"
+        "recipe": "unbounded_unknown:pink_kitium_leggings"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_energized_kitium_panel"
+      "has_pink_kitium"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:energized_kitium_sword_smithing"
+      "unbounded_unknown:pink_kitium_leggings"
     ]
   }
 }

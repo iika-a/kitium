@@ -1,13 +1,11 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "equipment",
-  "key": {
-    "B": "unbounded_unknown:blue_kitium_shovel",
-    "E": "unbounded_unknown:energized_kitium",
-    "P": "unbounded_unknown:pink_kitium_shovel"
-  },
-  "pattern": [
-    "BEP"
+  "ingredients": [
+    "unbounded_unknown:blue_kitium_shovel",
+    "unbounded_unknown:pink_kitium_shovel",
+    "minecraft:netherite_shovel",
+    "unbounded_unknown:energized_kitium"
   ],
   "result": {
     "count": 1,

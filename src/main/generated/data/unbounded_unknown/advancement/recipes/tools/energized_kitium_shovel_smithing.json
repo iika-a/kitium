@@ -11,6 +11,16 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_energized_kitium_shovel_frame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unbounded_unknown:energized_kitium_shovel_frame"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:energized_kitium_shovel_smithing"
@@ -21,7 +31,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_energized_kitium_panel"
+      "has_energized_kitium_panel",
+      "has_energized_kitium_shovel_frame"
     ]
   ],
   "rewards": {

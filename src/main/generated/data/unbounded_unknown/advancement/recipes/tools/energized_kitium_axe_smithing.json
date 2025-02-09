@@ -1,6 +1,16 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_energized_kitium_axe_frame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unbounded_unknown:energized_kitium_axe_frame"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_energized_kitium_panel": {
       "conditions": {
         "items": [
@@ -21,7 +31,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_energized_kitium_panel"
+      "has_energized_kitium_panel",
+      "has_energized_kitium_axe_frame"
     ]
   ],
   "rewards": {

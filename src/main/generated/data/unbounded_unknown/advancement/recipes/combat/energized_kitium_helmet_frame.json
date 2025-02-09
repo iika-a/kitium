@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_kitium_sword": {
+    "has_blue_kitium_helmet": {
       "conditions": {
         "items": [
           {
-            "items": "unbounded_unknown:blue_kitium_sword"
+            "items": "unbounded_unknown:blue_kitium_helmet"
           }
         ]
       },
@@ -21,11 +21,21 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_pink_kitium_sword": {
+    "has_netherite_helmet": {
       "conditions": {
         "items": [
           {
-            "items": "unbounded_unknown:pink_kitium_sword"
+            "items": "minecraft:netherite_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pink_kitium_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unbounded_unknown:pink_kitium_helmet"
           }
         ]
       },
@@ -33,7 +43,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unbounded_unknown:energized_kitium_sword_frame"
+        "recipe": "unbounded_unknown:energized_kitium_helmet_frame"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -42,13 +52,14 @@
     [
       "has_the_recipe",
       "has_energized_kitium",
-      "has_blue_kitium_sword",
-      "has_pink_kitium_sword"
+      "has_blue_kitium_helmet",
+      "has_pink_kitium_helmet",
+      "has_netherite_helmet"
     ]
   ],
   "rewards": {
     "recipes": [
-      "unbounded_unknown:energized_kitium_sword_frame"
+      "unbounded_unknown:energized_kitium_helmet_frame"
     ]
   }
 }

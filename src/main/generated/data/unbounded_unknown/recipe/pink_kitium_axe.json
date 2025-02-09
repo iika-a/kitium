@@ -7,8 +7,8 @@
   },
   "pattern": [
     "MM",
-    "SM",
-    "S "
+    "MS",
+    " S"
   ],
   "result": {
     "count": 1,

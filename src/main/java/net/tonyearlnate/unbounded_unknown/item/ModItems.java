@@ -2,6 +2,7 @@ package net.tonyearlnate.unbounded_unknown.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -44,8 +45,17 @@ public class ModItems {
     public static final Item ENERGIZED_KITIUM_HOE_FRAME = registerItem("energized_kitium_hoe_frame", new Item(new Item.Settings().maxCount(1)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_hoe_frame")))));
 
+    public static final Item ENERGIZED_KITIUM_HELMET_FRAME = registerItem("energized_kitium_helmet_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_helmet_frame")))));
+    public static final Item ENERGIZED_KITIUM_CHESTPLATE_FRAME = registerItem("energized_kitium_chestplate_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_chestplate_frame")))));
+    public static final Item ENERGIZED_KITIUM_LEGGINGS_FRAME = registerItem("energized_kitium_leggings_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_leggings_frame")))));
+    public static final Item ENERGIZED_KITIUM_BOOTS_FRAME = registerItem("energized_kitium_boots_frame", new Item(new Item.Settings().maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID,"energized_kitium_boots_frame")))));
+
     public static final Item PINK_KITIUM_SWORD = registerItem("pink_kitium_sword",
-            new SwordItem(ModToolMaterials.PINK_KITIUM, 3, -2.4f, new Item.Settings()
+            new PinkKitiumSwordItem(new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_sword")))));
     public static final Item PINK_KITIUM_PICKAXE = registerItem("pink_kitium_pickaxe",
             new PickaxeItem(ModToolMaterials.PINK_KITIUM, 1, -2.8f, new Item.Settings()
@@ -91,6 +101,46 @@ public class ModItems {
     public static final Item ENERGIZED_KITIUM_HOE = registerItem("energized_kitium_hoe",
             new HoeItem(ModToolMaterials.ENERGIZED_KITIUM, 0, -3f, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_hoe")))));
+
+    public static final Item PINK_KITIUM_HELMET = registerItem("pink_kitium_helmet",
+            new ArmorItem(ModArmorMaterials.PINK_KITIUM, EquipmentType.HELMET, new Item.Settings().maxDamage(EquipmentType.HELMET.getMaxDamage(35))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_helmet")))));
+    public static final Item PINK_KITIUM_CHESTPLATE = registerItem("pink_kitium_chestplate",
+            new ArmorItem(ModArmorMaterials.PINK_KITIUM, EquipmentType.CHESTPLATE, new Item.Settings().maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(35))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_chestplate")))));
+    public static final Item PINK_KITIUM_LEGGINGS = registerItem("pink_kitium_leggings",
+            new ArmorItem(ModArmorMaterials.PINK_KITIUM, EquipmentType.LEGGINGS, new Item.Settings().maxDamage(EquipmentType.LEGGINGS.getMaxDamage(35))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_leggings")))));
+    public static final Item PINK_KITIUM_BOOTS = registerItem("pink_kitium_boots",
+            new ArmorItem(ModArmorMaterials.PINK_KITIUM, EquipmentType.BOOTS, new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(35))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_boots")))));
+
+    public static final Item BLUE_KITIUM_HELMET = registerItem("blue_kitium_helmet",
+            new ArmorItem(ModArmorMaterials.BLUE_KITIUM, EquipmentType.HELMET, new Item.Settings().maxDamage(EquipmentType.HELMET.getMaxDamage(35))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_helmet")))));
+    public static final Item BLUE_KITIUM_CHESTPLATE = registerItem("blue_kitium_chestplate",
+            new ArmorItem(ModArmorMaterials.BLUE_KITIUM, EquipmentType.CHESTPLATE, new Item.Settings().maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(35))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_chestplate")))));
+    public static final Item BLUE_KITIUM_LEGGINGS = registerItem("blue_kitium_leggings",
+            new ArmorItem(ModArmorMaterials.BLUE_KITIUM, EquipmentType.LEGGINGS, new Item.Settings().maxDamage(EquipmentType.LEGGINGS.getMaxDamage(35))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_leggings")))));
+    public static final Item BLUE_KITIUM_BOOTS = registerItem("blue_kitium_boots",
+            new ArmorItem(ModArmorMaterials.BLUE_KITIUM, EquipmentType.BOOTS, new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(35))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_boots")))));
+
+    public static final Item ENERGIZED_KITIUM_HELMET = registerItem("energized_kitium_helmet",
+            new ArmorItem(ModArmorMaterials.ENERGIZED_KITIUM, EquipmentType.HELMET, new Item.Settings().maxDamage(EquipmentType.HELMET.getMaxDamage(40))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_helmet")))));
+    public static final Item ENERGIZED_KITIUM_CHESTPLATE = registerItem("energized_kitium_chestplate",
+            new ArmorItem(ModArmorMaterials.ENERGIZED_KITIUM, EquipmentType.CHESTPLATE, new Item.Settings().maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(40))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_chestplate")))));
+    public static final Item ENERGIZED_KITIUM_LEGGINGS = registerItem("energized_kitium_leggings",
+            new ArmorItem(ModArmorMaterials.ENERGIZED_KITIUM, EquipmentType.LEGGINGS, new Item.Settings().maxDamage(EquipmentType.LEGGINGS.getMaxDamage(40))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_leggings")))));
+    public static final Item ENERGIZED_KITIUM_BOOTS = registerItem("energized_kitium_boots",
+            new ArmorItem(ModArmorMaterials.ENERGIZED_KITIUM, EquipmentType.BOOTS, new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(40))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_boots")))));
+
 
 
     private static Item registerItem(String name, Item item) {

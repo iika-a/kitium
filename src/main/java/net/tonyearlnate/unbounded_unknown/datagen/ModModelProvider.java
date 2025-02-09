@@ -6,6 +6,7 @@ import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
 import net.tonyearlnate.unbounded_unknown.block.ModBlocks;
+import net.tonyearlnate.unbounded_unknown.item.ModArmorMaterials;
 import net.tonyearlnate.unbounded_unknown.item.ModItems;
 import net.tonyearlnate.unbounded_unknown.item.ModThrowables;
 
@@ -68,6 +69,26 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_AXE_FRAME, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_SHOVEL_FRAME, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_HOE_FRAME, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_HELMET_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_CHESTPLATE_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_LEGGINGS_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME, Models.GENERATED);
+
+        itemModelGenerator.registerArmor(ModItems.PINK_KITIUM_HELMET, ModArmorMaterials.ModEquipmentAssetKeys.PINK_KITIUM, "helmet", false);
+        itemModelGenerator.registerArmor(ModItems.PINK_KITIUM_CHESTPLATE, ModArmorMaterials.ModEquipmentAssetKeys.PINK_KITIUM, "chestplate", false);
+        itemModelGenerator.registerArmor(ModItems.PINK_KITIUM_LEGGINGS, ModArmorMaterials.ModEquipmentAssetKeys.PINK_KITIUM, "leggings", false);
+        itemModelGenerator.registerArmor(ModItems.PINK_KITIUM_BOOTS, ModArmorMaterials.ModEquipmentAssetKeys.PINK_KITIUM, "boots", false);
+
+        itemModelGenerator.registerArmor(ModItems.BLUE_KITIUM_HELMET, ModArmorMaterials.ModEquipmentAssetKeys.BLUE_KITIUM, "helmet", false);
+        itemModelGenerator.registerArmor(ModItems.BLUE_KITIUM_CHESTPLATE, ModArmorMaterials.ModEquipmentAssetKeys.BLUE_KITIUM, "chestplate", false);
+        itemModelGenerator.registerArmor(ModItems.BLUE_KITIUM_LEGGINGS, ModArmorMaterials.ModEquipmentAssetKeys.BLUE_KITIUM, "leggings", false);
+        itemModelGenerator.registerArmor(ModItems.BLUE_KITIUM_BOOTS, ModArmorMaterials.ModEquipmentAssetKeys.BLUE_KITIUM, "boots", false);
+
+        itemModelGenerator.registerArmor(ModItems.ENERGIZED_KITIUM_HELMET, ModArmorMaterials.ModEquipmentAssetKeys.ENERGIZED_KITIUM, "helmet", false);
+        itemModelGenerator.registerArmor(ModItems.ENERGIZED_KITIUM_CHESTPLATE, ModArmorMaterials.ModEquipmentAssetKeys.ENERGIZED_KITIUM, "chestplate", false);
+        itemModelGenerator.registerArmor(ModItems.ENERGIZED_KITIUM_LEGGINGS, ModArmorMaterials.ModEquipmentAssetKeys.ENERGIZED_KITIUM, "leggings", false);
+        itemModelGenerator.registerArmor(ModItems.ENERGIZED_KITIUM_BOOTS, ModArmorMaterials.ModEquipmentAssetKeys.ENERGIZED_KITIUM, "boots", false);
         //meowmeow
     }
 }
