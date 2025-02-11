@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_kitium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unbounded_unknown:blue_kitium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energized_kitium_upgrade_smithing_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unbounded_unknown:energized_kitium_upgrade_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_netherite_scrap": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_scrap"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pink_kitium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unbounded_unknown:pink_kitium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unbounded_unknown:energized_kitium_upgrade_smithing_template"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_energized_kitium_upgrade_smithing_template",
+      "has_blue_kitium",
+      "has_pink_kitium",
+      "has_netherite_scrap"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unbounded_unknown:energized_kitium_upgrade_smithing_template"
+    ]
+  }
+}

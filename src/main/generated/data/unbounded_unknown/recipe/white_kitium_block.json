@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "unbounded_unknown:energized_kitium_sword",
+    "unbounded_unknown:energized_kitium_pickaxe",
+    "unbounded_unknown:energized_kitium_axe",
+    "unbounded_unknown:energized_kitium_shovel",
+    "unbounded_unknown:energized_kitium_hoe",
+    "unbounded_unknown:energized_kitium_helmet",
+    "unbounded_unknown:energized_kitium_chestplate",
+    "unbounded_unknown:energized_kitium_leggings",
+    "unbounded_unknown:energized_kitium_boots"
+  ],
+  "result": {
+    "count": 1,
+    "id": "unbounded_unknown:white_kitium_block"
+  }
+}

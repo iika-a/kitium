@@ -3,13 +3,14 @@
   "category": "misc",
   "key": {
     "B": "unbounded_unknown:blue_kitium",
+    "D": "minecraft:netherite_scrap",
     "L": "unbounded_unknown:lightning_bottle",
     "P": "unbounded_unknown:pink_kitium"
   },
   "pattern": [
-    "PBP",
+    "DPD",
     "BLB",
-    "PBP"
+    "DPD"
   ],
   "result": {
     "count": 4,

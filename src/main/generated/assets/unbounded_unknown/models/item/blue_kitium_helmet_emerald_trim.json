@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "unbounded_unknown:item/blue_kitium_helmet",
+    "layer1": "minecraft:trims/items/helmet_trim_emerald"
+  }
+}

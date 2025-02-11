@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "unbounded_unknown:item/blue_kitium_boots"
+  }
+}

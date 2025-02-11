@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": "unbounded_unknown:blue_kitium",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "MM",
+    "S ",
+    "S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "unbounded_unknown:blue_kitium_hoe"
+  }
+}
