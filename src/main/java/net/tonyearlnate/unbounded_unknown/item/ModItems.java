@@ -72,7 +72,7 @@ public class ModItems {
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "pink_kitium_hoe")))));
 
     public static final Item BLUE_KITIUM_SWORD = registerItem("blue_kitium_sword",
-            new SwordItem(ModToolMaterials.BLUE_KITIUM, 3, -2.4f, new Item.Settings()
+            new BlueKitiumSwordItem(new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_sword")))));
     public static final Item BLUE_KITIUM_PICKAXE = registerItem("blue_kitium_pickaxe",
             new PickaxeItem(ModToolMaterials.BLUE_KITIUM, 1, -2.8f, new Item.Settings()
@@ -88,7 +88,7 @@ public class ModItems {
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "blue_kitium_hoe")))));
 
     public static final Item ENERGIZED_KITIUM_SWORD = registerItem("energized_kitium_sword",
-            new SwordItem(ModToolMaterials.ENERGIZED_KITIUM, 3, -2.4f, new Item.Settings()
+            new EnergizedKitiumSwordItem(new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UnboundedUnknown.MOD_ID, "energized_kitium_sword")))));
     public static final Item ENERGIZED_KITIUM_PICKAXE = registerItem("energized_kitium_pickaxe",
             new PickaxeItem(ModToolMaterials.ENERGIZED_KITIUM, 1, -2.8f, new Item.Settings()
