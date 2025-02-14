@@ -22,6 +22,7 @@ public class ModEntities {
 					.dimensions(0.75f, 0.75f).build(RegistryKey.of(RegistryKeys.ENTITY_TYPE,
 							Identifier.of(UnboundedUnknown.MOD_ID, "kitium_golem"))));
 
+
     public static void registerModEntities() {
         UnboundedUnknown.LOGGER.info("Registering Entities for " + UnboundedUnknown.MOD_ID);
     }

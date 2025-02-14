@@ -21,6 +21,6 @@ public class UnboundedUnknownClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.LIGHTNING_COLLECTOR_BLOCK_SCREEN_HANDLER_TYPE, LightningCollectorBlockScreen::new);
         EntityRendererRegistry.register(ModEntities.LIGHTNING_BOTTLE_ENTITY_TYPE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.KITIUM_GOLEM_ENTITY_TYPE, KitiumGolemEntityRenderer::new);
-        FabricDefaultAttributeRegistry.register(ModEntities.KITIUM_GOLEM_ENTITY_TYPE, KitiumGolemEntity.createMobAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.KITIUM_GOLEM_ENTITY_TYPE, KitiumGolemEntity.createKitiumGolemAttributes());
     }
 }	

@@ -30,7 +30,7 @@ public class KitiumGolemEntityRenderer extends MobEntityRenderer<KitiumGolemEnti
 	public void updateRenderState(KitiumGolemEntity KitiumGolemEntity, KitiumGolemEntityRenderState KitiumGolemEntityRenderState, float f) {
 		super.updateRenderState(KitiumGolemEntity, KitiumGolemEntityRenderState, f);
 		KitiumGolemEntityRenderState.attackTicksLeft = (float)KitiumGolemEntity.getAttackTicksLeft() > 0.0F ? (float)KitiumGolemEntity.getAttackTicksLeft() - f : 0.0F;
-		//KitiumGolemEntityRenderState.crackLevel = KitiumGolemEntity.getCrackLevel();
+		KitiumGolemEntityRenderState.crackLevel = KitiumGolemEntity.getCrackLevel();
 	}
 
 	protected void setupTransforms(KitiumGolemEntityRenderState KitiumGolemEntityRenderState, MatrixStack matrixStack, float f, float g) {
