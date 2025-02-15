@@ -70,6 +70,7 @@ public class ModItemGroups {
                             entries.add(ModItems.ENERGIZED_KITIUM_LEGGINGS_FRAME);
                             entries.add(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME);
                             entries.add(ModItems.ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE);
+                            entries.add(ModThrowables.LIGHTNING_BOTTLE);
                         }).build());
 
         KITIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -80,6 +81,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.PINK_KITIUM_BLOCK);
                             entries.add(ModBlocks.BLUE_KITIUM_BLOCK);
                             entries.add(ModBlocks.ENERGIZED_KITIUM_BLOCK);
+                            entries.add(ModBlocks.WHITE_KITIUM_BLOCK);
                             entries.add(ModBlocks.PINK_KITIUM_PANELING);
                             entries.add(ModBlocks.BLUE_KITIUM_PANELING);
                             entries.add(ModBlocks.ENERGIZED_KITIUM_PANELING);
