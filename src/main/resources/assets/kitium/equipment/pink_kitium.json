@@ -2,12 +2,12 @@
   "layers": {
     "humanoid": [
       {
-        "texture": "unbounded_unknown:pink_kitium"
+        "texture": "kitium:pink_kitium"
       }
     ],
     "humanoid_leggings": [
       {
-        "texture": "unbounded_unknown:pink_kitium"
+        "texture": "kitium:pink_kitium"
       }
     ]
   }
