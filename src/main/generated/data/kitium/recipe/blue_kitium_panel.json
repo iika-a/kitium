@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "kitium:blue_kitium"
+  },
+  "pattern": [
+    "AA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "kitium:blue_kitium_panel"
+  }
+}

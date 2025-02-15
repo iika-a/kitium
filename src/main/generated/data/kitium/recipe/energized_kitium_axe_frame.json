@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "kitium:blue_kitium_axe",
+    "kitium:pink_kitium_axe",
+    "minecraft:netherite_axe",
+    "kitium:energized_kitium"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:energized_kitium_axe_frame"
+  }
+}

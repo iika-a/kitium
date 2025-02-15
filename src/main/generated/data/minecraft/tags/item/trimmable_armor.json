@@ -1,16 +1,16 @@
 {
   "values": [
-    "unbounded_unknown:pink_kitium_helmet",
-    "unbounded_unknown:pink_kitium_chestplate",
-    "unbounded_unknown:pink_kitium_leggings",
-    "unbounded_unknown:pink_kitium_boots",
-    "unbounded_unknown:blue_kitium_helmet",
-    "unbounded_unknown:blue_kitium_chestplate",
-    "unbounded_unknown:blue_kitium_leggings",
-    "unbounded_unknown:blue_kitium_boots",
-    "unbounded_unknown:energized_kitium_helmet",
-    "unbounded_unknown:energized_kitium_chestplate",
-    "unbounded_unknown:energized_kitium_leggings",
-    "unbounded_unknown:energized_kitium_boots"
+    "kitium:pink_kitium_helmet",
+    "kitium:pink_kitium_chestplate",
+    "kitium:pink_kitium_leggings",
+    "kitium:pink_kitium_boots",
+    "kitium:blue_kitium_helmet",
+    "kitium:blue_kitium_chestplate",
+    "kitium:blue_kitium_leggings",
+    "kitium:blue_kitium_boots",
+    "kitium:energized_kitium_helmet",
+    "kitium:energized_kitium_chestplate",
+    "kitium:energized_kitium_leggings",
+    "kitium:energized_kitium_boots"
   ]
 }

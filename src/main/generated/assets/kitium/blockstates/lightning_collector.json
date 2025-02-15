@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kitium:block/lightning_collector"
+    }
+  }
+}

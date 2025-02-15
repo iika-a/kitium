@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "kitium:energized_kitium_panel",
+    "B": "minecraft:tuff"
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 16,
+    "id": "kitium:energized_kitium_paneling"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "kitium:blue_kitium_helmet",
+    "kitium:pink_kitium_helmet",
+    "minecraft:netherite_helmet",
+    "kitium:energized_kitium"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:energized_kitium_helmet_frame"
+  }
+}

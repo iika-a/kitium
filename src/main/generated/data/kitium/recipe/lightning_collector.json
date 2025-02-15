@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "kitium:blue_kitium",
+    "C": "minecraft:copper_ingot",
+    "I": "minecraft:iron_ingot",
+    "N": "minecraft:netherite_scrap",
+    "P": "kitium:pink_kitium"
+  },
+  "pattern": [
+    "ICI",
+    "PNB",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:lightning_collector"
+  }
+}
