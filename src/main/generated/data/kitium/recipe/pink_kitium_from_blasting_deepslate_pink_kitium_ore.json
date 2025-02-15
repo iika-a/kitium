@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "pink_kitium",
+  "ingredient": "kitium:deepslate_pink_kitium_ore",
+  "result": {
+    "id": "kitium:pink_kitium"
+  }
+}

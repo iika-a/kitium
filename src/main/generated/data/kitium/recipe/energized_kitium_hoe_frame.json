@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "kitium:blue_kitium_hoe",
+    "kitium:pink_kitium_hoe",
+    "minecraft:netherite_hoe",
+    "kitium:energized_kitium"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:energized_kitium_hoe_frame"
+  }
+}

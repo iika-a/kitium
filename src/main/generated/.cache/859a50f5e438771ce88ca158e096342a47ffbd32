@@ -1,0 +1,10 @@
+// 1.21.4	-999999999-01-01T00:00:00	Kitium/Tags for minecraft:item
+7f6c6da9e85120cdf63f4077719ebe14cdd9b059 data/kitium/tags/item/blue_kitium_repair.json
+4e484d99645582057d7086dd6e31c12a0d5b6c33 data/kitium/tags/item/energized_kitium_repair.json
+20a6b8da37402f2d69b8de20d5c166c9ef23cab8 data/kitium/tags/item/pink_kitium_repair.json
+d4a9417c4e22a763e91da41dde4edd92649da5f9 data/minecraft/tags/item/axes.json
+e40470d7a04cfa7809a8ac383d841dfc1514e39a data/minecraft/tags/item/hoes.json
+2724966293fbadeafc10360c2c7ec7bb9a7bdbe0 data/minecraft/tags/item/pickaxes.json
+d8f90af28fa98ec90d3c75871f43028e89f2acdc data/minecraft/tags/item/shovels.json
+05cdee44b5856e4f70f8681fd04d4cb536fe3954 data/minecraft/tags/item/swords.json
+9a5d54a690b02dc9e3ab729e864dab27ed333ece data/minecraft/tags/item/trimmable_armor.json

@@ -1,7 +1,7 @@
 {
   "values": [
-    "unbounded_unknown:pink_kitium_axe",
-    "unbounded_unknown:blue_kitium_axe",
-    "unbounded_unknown:energized_kitium_axe"
+    "kitium:pink_kitium_axe",
+    "kitium:blue_kitium_axe",
+    "kitium:energized_kitium_axe"
   ]
 }

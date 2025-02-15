@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "kitium:blue_kitium_chestplate",
+    "kitium:pink_kitium_chestplate",
+    "minecraft:netherite_chestplate",
+    "kitium:energized_kitium"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:energized_kitium_chestplate_frame"
+  }
+}

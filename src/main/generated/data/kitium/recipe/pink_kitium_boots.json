@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": "kitium:pink_kitium"
+  },
+  "pattern": [
+    "M M",
+    "M M"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:pink_kitium_boots"
+  }
+}
