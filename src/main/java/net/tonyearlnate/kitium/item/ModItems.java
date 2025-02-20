@@ -151,13 +151,36 @@ public class ModItems {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Kitium.MOD_ID, name), item);
     }
-
-    @SuppressWarnings("CodeBlock2Expr")
+    
     public static void registerModItems() {
         Kitium.LOGGER.info("Registering Mod Items for " + Kitium.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(THUNDERSTORM_SPAWNER);
+            entries.add(PINK_KITIUM_SWORD);
+            entries.add(PINK_KITIUM_PICKAXE);
+            entries.add(PINK_KITIUM_AXE);
+            entries.add(PINK_KITIUM_SHOVEL);
+            entries.add(PINK_KITIUM_HOE);
+            entries.add(BLUE_KITIUM_SWORD);
+            entries.add(BLUE_KITIUM_PICKAXE);
+            entries.add(BLUE_KITIUM_AXE);
+            entries.add(BLUE_KITIUM_SHOVEL);
+            entries.add(BLUE_KITIUM_HOE);
+            entries.add(ENERGIZED_KITIUM_SWORD);
+            entries.add(ENERGIZED_KITIUM_PICKAXE);
+            entries.add(ENERGIZED_KITIUM_AXE);
+            entries.add(ENERGIZED_KITIUM_SHOVEL);
+            entries.add(ENERGIZED_KITIUM_HOE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(PINK_KITIUM_SWORD);
+            entries.add(PINK_KITIUM_AXE);
+            entries.add(BLUE_KITIUM_SWORD);
+            entries.add(BLUE_KITIUM_AXE);
+            entries.add(ENERGIZED_KITIUM_SWORD);
+            entries.add(ENERGIZED_KITIUM_AXE);
         });
     }
 }
