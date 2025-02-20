@@ -33,5 +33,6 @@ public class Kitium implements ModInitializer {
 		ModThrowables.registerModThrowables();
 		ModEntities.registerModEntities();
 		DispenserBlock.registerBehavior(ModThrowables.LIGHTNING_BOTTLE, new LightningBottleDispenserBehavior());
+		
 	}
 }

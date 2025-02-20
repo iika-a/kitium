@@ -8,10 +8,11 @@ package net.tonyearlnate.kitium.entity;
 	import net.minecraft.client.util.math.MatrixStack;
 	import net.minecraft.util.Identifier;
 	import net.minecraft.util.math.RotationAxis;
+	import net.tonyearlnate.kitium.Kitium;
 
 @Environment(EnvType.CLIENT)
 public class KitiumGolemEntityRenderer extends MobEntityRenderer<KitiumGolemEntity, KitiumGolemEntityRenderState, KitiumGolemEntityModel> {
-	private static final Identifier TEXTURE = Identifier.ofVanilla("textures/entity/iron_golem/iron_golem.png");
+	private static final Identifier TEXTURE = Identifier.of(Kitium.MOD_ID, "textures/entity/kitium_golem.png");
 
 	public KitiumGolemEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new KitiumGolemEntityModel(context.getPart(EntityModelLayers.IRON_GOLEM)), 0.7F);
