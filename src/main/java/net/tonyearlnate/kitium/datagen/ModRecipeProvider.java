@@ -171,13 +171,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM_BOOTS), conditionsFromItem(ModItems.ENERGIZED_KITIUM_BOOTS))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, net.tonyearlnate.kitium.item.ModItems.BLUE_KITIUM_APPLE, 1)
+                createShaped(RecipeCategory.MISC, ModItems.BLUE_KITIUM_APPLE, 1)
                         .pattern("AAA")
                         .pattern("ABA")
                         .pattern("AAA")
                         .input('A', net.tonyearlnate.kitium.item.ModItems.BLUE_KITIUM)
                         .input('B', Items.APPLE)
-                        .criterion(hasItem(net.tonyearlnate.kitium.item.ModItems.BLUE_KITIUM), conditionsFromItem(net.tonyearlnate.kitium.item.ModItems.BLUE_KITIUM))
+                        .criterion(hasItem(ModItems.BLUE_KITIUM), conditionsFromItem(ModItems.BLUE_KITIUM))
                         .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                         .offerTo(recipeExporter);
 
@@ -185,9 +185,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("AAA")
                         .pattern("ABA")
                         .pattern("AAA")
-                        .input('A', net.tonyearlnate.kitium.item.ModItems.PINK_KITIUM)
+                        .input('A', ModItems.PINK_KITIUM)
                         .input('B', Items.APPLE)
-                        .criterion(hasItem(net.tonyearlnate.kitium.item.ModItems.PINK_KITIUM), conditionsFromItem(net.tonyearlnate.kitium.item.ModItems.PINK_KITIUM))
+                        .criterion(hasItem(ModItems.PINK_KITIUM), conditionsFromItem(ModItems.PINK_KITIUM))
                         .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                         .offerTo(recipeExporter);
 
