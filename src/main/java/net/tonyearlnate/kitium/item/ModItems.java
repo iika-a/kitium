@@ -1,6 +1,7 @@
 package net.tonyearlnate.kitium.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
@@ -10,6 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.tonyearlnate.kitium.Kitium;
+import net.tonyearlnate.kitium.item.ConsumeEffects.ModFoodEffects;
 
 public class ModItems {
     public static final Item PINK_KITIUM = registerItem("pink_kitium", new Item(new Item.Settings()
@@ -30,6 +32,8 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"energized_kitium_panel")))));
     public static final Item PINK_KITIUM_APPLE = registerItem("pink_kitium_apple", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"pink_kitium_apple")))));
+    public static final Item BLUE_KITIUM_APPLE =  registerItem("blue_kitium_apple", new Item(new Item.Settings().maxCount(64).food(new FoodComponent.Builder().saturationModifier(1.0f).nutrition(1).build(), ModFoodEffects.SPEED_HUNGER_FOOD_CONSUMABLE_COMPONENT)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"blue_kitium_apple")))));
     public static final Item THUNDERSTORM_SPAWNER = registerItem("thunderstorm_spawner", new ThunderstormSpawnerItem(new Item.Settings().maxCount(1)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"thunderstorm_spawner")))));
     public static final Item ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("energized_kitium_upgrade_smithing_template", new EnergizedKitiumUpgradeSmithingTemplateItem(new Item.Settings().rarity(Rarity.UNCOMMON)

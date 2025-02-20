@@ -171,6 +171,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM_BOOTS), conditionsFromItem(ModItems.ENERGIZED_KITIUM_BOOTS))
                         .offerTo(recipeExporter);
 
+                createShaped(RecipeCategory.MISC, net.tonyearlnate.kitium.item.ModItems.BLUE_KITIUM_APPLE, 1)
+                        .pattern("AAA")
+                        .pattern("ABA")
+                        .pattern("AAA")
+                        .input('A', net.tonyearlnate.kitium.item.ModItems.BLUE_KITIUM)
+                        .input('B', Items.APPLE)
+                        .criterion(hasItem(net.tonyearlnate.kitium.item.ModItems.BLUE_KITIUM), conditionsFromItem(net.tonyearlnate.kitium.item.ModItems.BLUE_KITIUM))
+                        .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, net.tonyearlnate.kitium.item.ModItems.PINK_KITIUM_APPLE, 1)
+                        .pattern("AAA")
+                        .pattern("ABA")
+                        .pattern("AAA")
+                        .input('A', net.tonyearlnate.kitium.item.ModItems.PINK_KITIUM)
+                        .input('B', Items.APPLE)
+                        .criterion(hasItem(net.tonyearlnate.kitium.item.ModItems.PINK_KITIUM), conditionsFromItem(net.tonyearlnate.kitium.item.ModItems.PINK_KITIUM))
+                        .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                        .offerTo(recipeExporter);
+
                 offerEnergizedKitiumFrameRecipe(ModItems.BLUE_KITIUM_SWORD, ModItems.PINK_KITIUM_SWORD, Items.NETHERITE_SWORD, ModItems.ENERGIZED_KITIUM_SWORD_FRAME, RecipeCategory.COMBAT, this, recipeExporter);
                 offerEnergizedKitiumFrameRecipe(ModItems.BLUE_KITIUM_PICKAXE, ModItems.PINK_KITIUM_PICKAXE, Items.NETHERITE_PICKAXE, ModItems.ENERGIZED_KITIUM_PICKAXE_FRAME, RecipeCategory.TOOLS, this, recipeExporter);
                 offerEnergizedKitiumFrameRecipe(ModItems.BLUE_KITIUM_AXE, ModItems.PINK_KITIUM_AXE, Items.NETHERITE_AXE, ModItems.ENERGIZED_KITIUM_AXE_FRAME, RecipeCategory.TOOLS, this, recipeExporter);

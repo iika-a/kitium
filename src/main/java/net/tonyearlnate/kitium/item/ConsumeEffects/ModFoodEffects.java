@@ -1,4 +1,4 @@
-package net.tonyearlnate.unbounded_unknown.item.ConsumeEffects;
+package net.tonyearlnate.kitium.item.ConsumeEffects;
 
 import net.minecraft.component.type.ConsumableComponent;
 import net.minecraft.component.type.ConsumableComponents;
@@ -6,7 +6,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
 
-public class foodEffects {
+public class ModFoodEffects {
     public static final ConsumableComponent INSTANT_HEALTH_I_FOOD_CONSUMABLE_COMPONENT = ConsumableComponents.food()
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 1), 1.0f))
             .build();

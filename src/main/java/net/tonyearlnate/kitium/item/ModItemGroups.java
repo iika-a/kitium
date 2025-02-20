@@ -31,46 +31,10 @@ public class ModItemGroups {
                             entries.add(ModItems.ENERGIZED_KITIUM_PANEL);
                             entries.add(ModItems.RAW_PINK_KITIUM);
                             entries.add(ModItems.RAW_BLUE_KITIUM);
-                            entries.add(ModItems.PINK_KITIUM_APPLE);
                             entries.add(ModItems.THUNDERSTORM_SPAWNER);
-                            entries.add(ModItems.PINK_KITIUM_SWORD);
-                            entries.add(ModItems.PINK_KITIUM_PICKAXE);
-                            entries.add(ModItems.PINK_KITIUM_AXE);
-                            entries.add(ModItems.PINK_KITIUM_SHOVEL);
-                            entries.add(ModItems.PINK_KITIUM_HOE);
-                            entries.add(ModItems.PINK_KITIUM_HELMET);
-                            entries.add(ModItems.PINK_KITIUM_CHESTPLATE);
-                            entries.add(ModItems.PINK_KITIUM_LEGGINGS);
-                            entries.add(ModItems.PINK_KITIUM_BOOTS);
-                            entries.add(ModItems.BLUE_KITIUM_SWORD);
-                            entries.add(ModItems.BLUE_KITIUM_PICKAXE);
-                            entries.add(ModItems.BLUE_KITIUM_AXE);
-                            entries.add(ModItems.BLUE_KITIUM_SHOVEL);
-                            entries.add(ModItems.BLUE_KITIUM_HOE);
-                            entries.add(ModItems.BLUE_KITIUM_HELMET);
-                            entries.add(ModItems.BLUE_KITIUM_CHESTPLATE);
-                            entries.add(ModItems.BLUE_KITIUM_LEGGINGS);
-                            entries.add(ModItems.BLUE_KITIUM_BOOTS);
-                            entries.add(ModItems.ENERGIZED_KITIUM_SWORD);
-                            entries.add(ModItems.ENERGIZED_KITIUM_PICKAXE);
-                            entries.add(ModItems.ENERGIZED_KITIUM_AXE);
-                            entries.add(ModItems.ENERGIZED_KITIUM_SHOVEL);
-                            entries.add(ModItems.ENERGIZED_KITIUM_HOE);
-                            entries.add(ModItems.ENERGIZED_KITIUM_HELMET);
-                            entries.add(ModItems.ENERGIZED_KITIUM_CHESTPLATE);
-                            entries.add(ModItems.ENERGIZED_KITIUM_LEGGINGS);
-                            entries.add(ModItems.ENERGIZED_KITIUM_BOOTS);
-                            entries.add(ModItems.ENERGIZED_KITIUM_SWORD_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_PICKAXE_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_AXE_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_SHOVEL_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_HOE_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_HELMET_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_CHESTPLATE_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_LEGGINGS_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME);
-                            entries.add(ModItems.ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE);
-                            entries.add(ModThrowables.LIGHTNING_BOTTLE);
+                            entries.add(ModItems.PINK_KITIUM_APPLE);
+                            entries.add(ModItems.BLUE_KITIUM_APPLE);
+
                         }).build());
 
         KITIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -81,7 +45,6 @@ public class ModItemGroups {
                             entries.add(ModBlocks.PINK_KITIUM_BLOCK);
                             entries.add(ModBlocks.BLUE_KITIUM_BLOCK);
                             entries.add(ModBlocks.ENERGIZED_KITIUM_BLOCK);
-                            entries.add(ModBlocks.WHITE_KITIUM_BLOCK);
                             entries.add(ModBlocks.PINK_KITIUM_PANELING);
                             entries.add(ModBlocks.BLUE_KITIUM_PANELING);
                             entries.add(ModBlocks.ENERGIZED_KITIUM_PANELING);
