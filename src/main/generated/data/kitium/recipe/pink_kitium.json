@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "kitium:pink_kitium_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "kitium:pink_kitium"
+  }
+}

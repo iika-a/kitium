@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "kitium:item/energized_kitium_pickaxe"
+  }
+}

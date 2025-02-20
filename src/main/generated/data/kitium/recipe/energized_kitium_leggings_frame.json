@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "kitium:blue_kitium_leggings",
+    "kitium:pink_kitium_leggings",
+    "minecraft:netherite_leggings",
+    "kitium:energized_kitium"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:energized_kitium_leggings_frame"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "kitium:blue_kitium",
+    "D": "minecraft:netherite_scrap",
+    "L": "kitium:lightning_bottle",
+    "P": "kitium:pink_kitium"
+  },
+  "pattern": [
+    "DPD",
+    "BLB",
+    "DPD"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitium:energized_kitium"
+  }
+}

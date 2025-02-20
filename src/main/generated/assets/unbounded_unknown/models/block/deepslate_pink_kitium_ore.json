@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "unbounded_unknown:block/deepslate_pink_kitium_ore"
-  }
-}

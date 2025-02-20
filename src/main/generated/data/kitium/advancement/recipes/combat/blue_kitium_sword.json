@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_kitium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitium:blue_kitium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kitium:blue_kitium_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blue_kitium",
+      "has_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kitium:blue_kitium_sword"
+    ]
+  }
+}

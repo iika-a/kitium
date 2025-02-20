@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "kitium:block/lightning_collector_down",
+    "east": "kitium:block/lightning_collector_east",
+    "north": "kitium:block/lightning_collector_north",
+    "particle": "kitium:block/lightning_collector_particle",
+    "south": "kitium:block/lightning_collector_south",
+    "up": "kitium:block/lightning_collector_up",
+    "west": "kitium:block/lightning_collector_west"
+  }
+}

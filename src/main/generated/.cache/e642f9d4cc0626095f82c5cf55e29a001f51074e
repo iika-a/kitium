@@ -1,0 +1,7 @@
+// 1.21.4	-999999999-01-01T00:00:00	Kitium/Tags for minecraft:block
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/kitium/tags/block/needs_blue_kitium_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/kitium/tags/block/needs_energized_kitium_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/kitium/tags/block/needs_pink_kitium_tool.json
+edfbe2ef0660f5d02f90a3b1d01201c5666479b9 data/minecraft/tags/block/beacon_base_blocks.json
+4d686d71300ace1edc19d927db33249c10132665 data/minecraft/tags/block/mineable/pickaxe.json
+4d686d71300ace1edc19d927db33249c10132665 data/minecraft/tags/block/needs_iron_tool.json

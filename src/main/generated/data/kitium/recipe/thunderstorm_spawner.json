@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "kitium:blue_kitium",
+    "E": "kitium:energized_kitium",
+    "P": "kitium:pink_kitium"
+  },
+  "pattern": [
+    "BEB",
+    " E ",
+    "PEP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:thunderstorm_spawner"
+  }
+}

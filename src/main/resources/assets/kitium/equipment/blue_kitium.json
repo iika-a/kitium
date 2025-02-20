@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "kitium:blue_kitium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "kitium:blue_kitium"
+      }
+    ]
+  }
+}

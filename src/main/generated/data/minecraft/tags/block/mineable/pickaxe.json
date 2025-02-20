@@ -1,16 +1,16 @@
 {
   "values": [
-    "unbounded_unknown:blue_kitium_block",
-    "unbounded_unknown:pink_kitium_block",
-    "unbounded_unknown:energized_kitium_block",
-    "unbounded_unknown:raw_pink_kitium_block",
-    "unbounded_unknown:raw_blue_kitium_block",
-    "unbounded_unknown:blue_kitium_paneling",
-    "unbounded_unknown:pink_kitium_paneling",
-    "unbounded_unknown:energized_kitium_paneling",
-    "unbounded_unknown:blue_kitium_ore",
-    "unbounded_unknown:pink_kitium_ore",
-    "unbounded_unknown:deepslate_pink_kitium_ore",
-    "unbounded_unknown:lightning_collector"
+    "kitium:blue_kitium_block",
+    "kitium:pink_kitium_block",
+    "kitium:energized_kitium_block",
+    "kitium:raw_pink_kitium_block",
+    "kitium:raw_blue_kitium_block",
+    "kitium:blue_kitium_paneling",
+    "kitium:pink_kitium_paneling",
+    "kitium:energized_kitium_paneling",
+    "kitium:blue_kitium_ore",
+    "kitium:pink_kitium_ore",
+    "kitium:deepslate_pink_kitium_ore",
+    "kitium:lightning_collector"
   ]
 }

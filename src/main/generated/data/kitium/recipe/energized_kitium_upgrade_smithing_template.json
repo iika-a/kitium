@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "kitium:blue_kitium",
+    "N": "minecraft:netherite_ingot",
+    "P": "kitium:pink_kitium",
+    "U": "kitium:energized_kitium_upgrade_smithing_template"
+  },
+  "pattern": [
+    "BUB",
+    "PNP",
+    "BPB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "kitium:energized_kitium_upgrade_smithing_template"
+  }
+}

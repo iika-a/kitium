@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kitium:block/energized_kitium_block"
+    }
+  }
+}

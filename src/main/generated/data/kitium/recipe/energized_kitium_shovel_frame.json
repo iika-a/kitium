@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "kitium:blue_kitium_shovel",
+    "kitium:pink_kitium_shovel",
+    "minecraft:netherite_shovel",
+    "kitium:energized_kitium"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:energized_kitium_shovel_frame"
+  }
+}
