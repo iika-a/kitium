@@ -6,6 +6,7 @@ import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.item.MinecartItem;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -128,6 +129,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('B', Items.TUFF)
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM_PANEL), conditionsFromItem(ModItems.ENERGIZED_KITIUM_PANEL))
                         .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.BLUE_KITIUM_APPLE, 1)
+                        .pattern("AAA")
+                        .pattern("ABA")
+                        .pattern("AAA")
+                        .input('A', ModItems.BLUE_KITIUM)
+                        .input('B', Items.APPLE)
+                        .criterion(hasItem(ModItems.BLUE_KITIUM), conditionsFromItem(ModItems.BLUE_KITIUM))
+                        .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.PINK_KITIUM_APPLE, 1)
+                        .pattern("AAA")
+                        .pattern("ABA")
+                        .pattern("AAA")
+                        .input('A', ModItems.PINK_KITIUM)
+                        .input('B', Items.APPLE)
+                        .criterion(hasItem(ModItems.PINK_KITIUM), conditionsFromItem(ModItems.PINK_KITIUM))
+                        .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                         .offerTo(recipeExporter);
             }
         };
