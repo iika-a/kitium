@@ -49,6 +49,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLUE_KITIUM_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_KITIUM_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_KITIUM_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PINK_KITIUM_SWORD, Models.HANDHELD);
