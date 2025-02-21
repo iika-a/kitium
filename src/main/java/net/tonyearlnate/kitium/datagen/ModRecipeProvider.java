@@ -191,6 +191,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                         .offerTo(recipeExporter);
 
+                createShaped(RecipeCategory.MISC, net.tonyearlnate.kitium.item.ModItems.ENERGIZED_MACE_HUSK, 1)
+                        .pattern("AAA")
+                        .pattern("CBC")
+                        .pattern("AAA")
+                        .input('A', ModItems.ENERGIZED_KITIUM)
+                        .input('B', Items.HEAVY_CORE)
+                        .input('C', Items.NETHERITE_INGOT)
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
+                        .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                        .criterion(hasItem(Items.HEAVY_CORE), conditionsFromItem(Items.HEAVY_CORE))
+                        .offerTo(recipeExporter);
+
+
                 offerEnergizedKitiumFrameRecipe(ModItems.BLUE_KITIUM_SWORD, ModItems.PINK_KITIUM_SWORD, Items.NETHERITE_SWORD, ModItems.ENERGIZED_KITIUM_SWORD_FRAME, RecipeCategory.COMBAT, this, recipeExporter);
                 offerEnergizedKitiumFrameRecipe(ModItems.BLUE_KITIUM_PICKAXE, ModItems.PINK_KITIUM_PICKAXE, Items.NETHERITE_PICKAXE, ModItems.ENERGIZED_KITIUM_PICKAXE_FRAME, RecipeCategory.TOOLS, this, recipeExporter);
                 offerEnergizedKitiumFrameRecipe(ModItems.BLUE_KITIUM_AXE, ModItems.PINK_KITIUM_AXE, Items.NETHERITE_AXE, ModItems.ENERGIZED_KITIUM_AXE_FRAME, RecipeCategory.TOOLS, this, recipeExporter);
@@ -230,6 +243,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_CHESTPLATE_FRAME, RecipeCategory.COMBAT, ModItems.ENERGIZED_KITIUM_CHESTPLATE, this, recipeExporter);
                 offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_LEGGINGS_FRAME, RecipeCategory.COMBAT, ModItems.ENERGIZED_KITIUM_LEGGINGS, this, recipeExporter);
                 offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME, RecipeCategory.COMBAT, ModItems.ENERGIZED_KITIUM_BOOTS, this, recipeExporter);
+                offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_MACE_HUSK, RecipeCategory.COMBAT, ModItems.ENERGIZED_MACE, this, recipeExporter);
             }
         };
     }

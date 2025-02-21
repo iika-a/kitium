@@ -58,6 +58,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.ENERGIZED_KITIUM_HOE);
 
+        getOrCreateTagBuilder(ItemTags.WEAPON_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_MACE);
+
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.PINK_KITIUM_HELMET)
                 .add(ModItems.PINK_KITIUM_CHESTPLATE)

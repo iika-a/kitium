@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.tonyearlnate.kitium.Kitium;
 import net.tonyearlnate.kitium.item.ConsumeEffects.ModFoodEffects;
+import net.tonyearlnate.kitium.item.ItemTypes.EnergizedMaceItem;
 
 public class ModItems {
     public static final Item PINK_KITIUM = registerItem("pink_kitium", new Item(new Item.Settings()
@@ -145,7 +146,11 @@ public class ModItems {
     public static final Item ENERGIZED_KITIUM_BOOTS = registerItem("energized_kitium_boots",
             new ArmorItem(ModArmorMaterials.ENERGIZED_KITIUM, EquipmentType.BOOTS, new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(40))
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "energized_kitium_boots")))));
-
+    public static final Item ENERGIZED_MACE = registerItem("energized_mace",
+            new EnergizedMaceItem(ModToolMaterials.ENERGIZED_KITIUM, 3f, -3.2f, new Item.Settings().maxCount(1)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "energized_mace")))));
+    public static final Item ENERGIZED_MACE_HUSK = registerItem("energized_mace_husk", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"energized_mace_husk")))));
 
 
     private static Item registerItem(String name, Item item) {

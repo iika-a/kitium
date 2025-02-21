@@ -72,6 +72,8 @@ public class ModItemGroups {
                             entries.add(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME);
                             entries.add(ModItems.ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE);
                             entries.add(ModThrowables.LIGHTNING_BOTTLE);
+                            entries.add(ModItems.ENERGIZED_MACE);
+                            entries.add(ModItems.ENERGIZED_MACE_HUSK);
                         }).build());
 
         KITIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
