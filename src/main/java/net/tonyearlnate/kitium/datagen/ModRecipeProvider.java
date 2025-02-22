@@ -61,15 +61,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .offerTo(recipeExporter, "energized_kitium_from_kitium");
 
                 createShaped(RecipeCategory.TOOLS, ModItems.THUNDERSTORM_SPAWNER)
-                        .pattern("BEB")
-                        .pattern(" E ")
-                        .pattern("PEP")
+                        .pattern("BIB")
+                        .pattern(" I ")
+                        .pattern("PIP")
                         .input('B', ModItems.BLUE_KITIUM)
-                        .input('E', ModItems.ENERGIZED_KITIUM)
+                        .input('I', Items.IRON_INGOT)
                         .input('P', ModItems.PINK_KITIUM)
                         .criterion(hasItem(ModItems.PINK_KITIUM), conditionsFromItem(ModItems.PINK_KITIUM))
                         .criterion(hasItem(ModItems.BLUE_KITIUM), conditionsFromItem(ModItems.BLUE_KITIUM))
-                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                         .offerTo(recipeExporter);
 
                 createShaped(RecipeCategory.MISC, ModBlocks.LIGHTNING_COLLECTOR)

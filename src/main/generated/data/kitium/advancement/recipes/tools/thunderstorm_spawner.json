@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_energized_kitium": {
+    "has_iron_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "kitium:energized_kitium"
+            "items": "minecraft:iron_ingot"
           }
         ]
       },
@@ -43,7 +43,7 @@
       "has_the_recipe",
       "has_pink_kitium",
       "has_blue_kitium",
-      "has_energized_kitium"
+      "has_iron_ingot"
     ]
   ],
   "rewards": {
