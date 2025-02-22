@@ -1,31 +1,31 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_kitium": {
+    "has_energized_kitium": {
       "conditions": {
         "items": [
           {
-            "items": "kitium:blue_kitium"
+            "items": "kitium:energized_kitium"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_iron_ingot": {
+    "has_heavy_core": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_ingot"
+            "items": "minecraft:heavy_core"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_pink_kitium": {
+    "has_netherite_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "kitium:pink_kitium"
+            "items": "minecraft:netherite_ingot"
           }
         ]
       },
@@ -33,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "kitium:thunderstorm_spawner"
+        "recipe": "kitium:energized_mace_husk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -41,14 +41,14 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pink_kitium",
-      "has_blue_kitium",
-      "has_iron_ingot"
+      "has_energized_kitium",
+      "has_netherite_ingot",
+      "has_heavy_core"
     ]
   ],
   "rewards": {
     "recipes": [
-      "kitium:thunderstorm_spawner"
+      "kitium:energized_mace_husk"
     ]
   }
 }
