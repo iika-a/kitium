@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "kitium:energized_kitium",
+    "B": "minecraft:heavy_core",
+    "C": "minecraft:netherite_ingot"
+  },
+  "pattern": [
+    "AAA",
+    "CBC",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitium:energized_mace_husk"
+  }
+}
