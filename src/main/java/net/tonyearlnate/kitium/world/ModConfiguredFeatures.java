@@ -34,8 +34,8 @@ public class ModConfiguredFeatures {
 				List.of(OreFeatureConfig.createTarget(null, ModBlocks.BLUE_KITIUM_ORE.getDefaultState()));
 		
 
-        register(context, PINK_KITIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldOres, 10));
-        register(context, BLUE_KITIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherOres, 10));
+        register(context, PINK_KITIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldOres, 8));
+        register(context, BLUE_KITIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherOres, 8));
 
     }
 
