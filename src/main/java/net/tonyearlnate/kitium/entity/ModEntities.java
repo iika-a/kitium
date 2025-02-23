@@ -19,7 +19,7 @@ public class ModEntities {
 	public static final EntityType<KitiumGolemEntity> KITIUM_GOLEM_ENTITY_TYPE = Registry.register(
 			Registries.ENTITY_TYPE, Identifier.of(Kitium.MOD_ID, "kitium_golem"),
 			EntityType.Builder.create(KitiumGolemEntity::new, SpawnGroup.CREATURE)
-					.dimensions(0.75f, 0.75f).build(RegistryKey.of(RegistryKeys.ENTITY_TYPE,
+                    .dimensions(1.4F, 2.7F).build(RegistryKey.of(RegistryKeys.ENTITY_TYPE,
 							Identifier.of(Kitium.MOD_ID, "kitium_golem"))));
 
 
