@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "kitium:corrupt_panel",
+  "base": "minecraft:totem_of_undying",
+  "result": {
+    "count": 1,
+    "id": "kitium:corrupt_totem"
+  },
+  "template": "kitium:energized_kitium_upgrade_smithing_template"
+}
