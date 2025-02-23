@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_energized_mace_husk": {
+    "has_mace_husk": {
       "conditions": {
         "items": [
           {
-            "items": "kitium:energized_mace_husk"
+            "items": "kitium:mace_husk"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_energized_kitium_panel",
-      "has_energized_mace_husk"
+      "has_mace_husk"
     ]
   ],
   "rewards": {

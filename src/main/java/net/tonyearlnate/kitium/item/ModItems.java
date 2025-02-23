@@ -12,6 +12,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.tonyearlnate.kitium.Kitium;
 import net.tonyearlnate.kitium.item.ConsumeEffects.ModFoodEffects;
+import net.tonyearlnate.kitium.item.ItemTypes.CorruptMaceItem;
+import net.tonyearlnate.kitium.item.ItemTypes.CorruptSwordItem;
+import net.tonyearlnate.kitium.item.ItemTypes.CorruptTotemItem;
 import net.tonyearlnate.kitium.item.ItemTypes.EnergizedMaceItem;
 
 public class ModItems {
@@ -31,10 +34,14 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"blue_kitium_panel")))));
     public static final Item ENERGIZED_KITIUM_PANEL = registerItem("energized_kitium_panel", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"energized_kitium_panel")))));
-    public static final Item PINK_KITIUM_APPLE = registerItem("pink_kitium_apple", new Item(new Item.Settings()
+    public static final Item CORRUPT_PANEL = registerItem("corrupt_panel", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"corrupt_panel")))));
+    public static final Item PINK_KITIUM_APPLE = registerItem("pink_kitium_apple", new Item(new Item.Settings().maxCount(64).food(new FoodComponent.Builder().saturationModifier(1.0f).nutrition(1).alwaysEdible().build(), ModFoodEffects.INSTANT_DEATH_FOOD_CONSUMABLE_COMPONENT).rarity(Rarity.UNCOMMON)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"pink_kitium_apple")))));
-    public static final Item BLUE_KITIUM_APPLE =  registerItem("blue_kitium_apple", new Item(new Item.Settings().maxCount(64).food(new FoodComponent.Builder().saturationModifier(1.0f).nutrition(1).build(), ModFoodEffects.SPEED_HUNGER_FOOD_CONSUMABLE_COMPONENT)
+    public static final Item BLUE_KITIUM_APPLE =  registerItem("blue_kitium_apple", new Item(new Item.Settings().maxCount(64).food(new FoodComponent.Builder().saturationModifier(2.0f).nutrition(2).alwaysEdible().build(), ModFoodEffects.SPEED_HUNGER_FOOD_CONSUMABLE_COMPONENT).rarity(Rarity.UNCOMMON)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"blue_kitium_apple")))));
+    public static final Item ENERGIZED_KITIUM_APPLE =  registerItem("energized_kitium_apple", new Item(new Item.Settings().maxCount(16).food(new FoodComponent.Builder().saturationModifier(3.0f).nutrition(4).alwaysEdible().build(), ModFoodEffects.ENERGIZED_FOOD_CONSUMABLE_COMPONENT).rarity(Rarity.EPIC)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"energized_kitium_apple")))));
     public static final Item THUNDERSTORM_SPAWNER = registerItem("thunderstorm_spawner", new ThunderstormSpawnerItem(new Item.Settings().maxCount(1)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"thunderstorm_spawner")))));
     public static final Item ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("energized_kitium_upgrade_smithing_template", new EnergizedKitiumUpgradeSmithingTemplateItem(new Item.Settings().rarity(Rarity.UNCOMMON)
@@ -146,12 +153,21 @@ public class ModItems {
     public static final Item ENERGIZED_KITIUM_BOOTS = registerItem("energized_kitium_boots",
             new ArmorItem(ModArmorMaterials.ENERGIZED_KITIUM, EquipmentType.BOOTS, new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(40))
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "energized_kitium_boots")))));
-    public static final Item ENERGIZED_MACE = registerItem("energized_mace",
-            new EnergizedMaceItem(ModToolMaterials.ENERGIZED_KITIUM, 3f, -3.2f, new Item.Settings().maxCount(1)
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "energized_mace")))));
-    public static final Item ENERGIZED_MACE_HUSK = registerItem("energized_mace_husk", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"energized_mace_husk")))));
 
+    public static final Item ENERGIZED_MACE = registerItem("energized_mace",
+            new EnergizedMaceItem(ModToolMaterials.ENERGIZED_KITIUM, 4f, -3.2f, new Item.Settings().maxCount(1).rarity(Rarity.EPIC)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "energized_mace")))));
+    public static final Item MACE_HUSK = registerItem("mace_husk", new Item(new Item.Settings().rarity(Rarity.RARE)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID,"mace_husk")))));
+    public static final Item CORRUPT_MACE = registerItem("corrupt_mace",
+            new CorruptMaceItem(ModToolMaterials.ENERGIZED_KITIUM, 2f, -3.3f, new Item.Settings().maxCount(1).rarity(Rarity.EPIC)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_mace")))));
+
+    public static final Item CORRUPT_TOTEM = registerItem("corrupt_totem", new CorruptTotemItem(new Item.Settings().maxCount(1).rarity(Rarity.RARE)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_totem")))));
+    public static final Item CORRUPT_SWORD = registerItem("corrupt_sword",
+            new CorruptSwordItem(ModToolMaterials.ENERGIZED_KITIUM, 1f, -1.9f, new Item.Settings().maxCount(1).rarity(Rarity.EPIC).useCooldown(3.0f)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_sword")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Kitium.MOD_ID, name), item);

@@ -9,15 +9,14 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.tonyearlnate.kitium.Kitium;
-import net.tonyearlnate.kitium.enchantment.effect.LightningEnchantmentEffect;
-
 
 
 public class ModEnchantmentEffects {
-    public static final RegistryKey<Enchantment> THUNDERING = of("thundering");
-    public static MapCodec<LightningEnchantmentEffect> LIGHTNING_EFFECT = register("lightning_effect", LightningEnchantmentEffect.CODEC);
+    public static final RegistryKey<Enchantment> THUNDERGOD = of("thundergod");
+    public static MapCodec<ThundergodEffect> LIGHTNING_EFFECT = register("lightning_effect", ThundergodEffect.CODEC);
 
-
+    public static final RegistryKey<Enchantment> SOUL_SIPHON = of("soul_siphon");
+    public static MapCodec<SoulSiphonEffect> SOUL_SIPHON_EFFECT = register("soul_siphon_effect", SoulSiphonEffect.CODEC);
 
 
 

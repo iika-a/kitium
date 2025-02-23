@@ -106,6 +106,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
                         .offerTo(recipeExporter);
 
+                createShaped(RecipeCategory.MISC, ModItems.CORRUPT_PANEL, 2)
+                        .pattern("AAA")
+                        .pattern("ABA")
+                        .pattern("AAA")
+                        .input('A', Items.ECHO_SHARD)
+                        .input('B', ModItems.ENERGIZED_KITIUM)
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
+                        .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
+                        .offerTo(recipeExporter);
+
                 createShaped(RecipeCategory.MISC, ModBlocks.PINK_KITIUM_PANELING, 16)
                         .pattern(" A ")
                         .pattern("ABA")
@@ -191,7 +201,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                         .offerTo(recipeExporter);
 
-                createShaped(RecipeCategory.MISC, net.tonyearlnate.kitium.item.ModItems.ENERGIZED_MACE_HUSK, 1)
+                createShaped(RecipeCategory.MISC, ModItems.ENERGIZED_KITIUM_APPLE, 1)
+                        .pattern("AAA")
+                        .pattern("ABA")
+                        .pattern("AAA")
+                        .input('A', ModItems.ENERGIZED_KITIUM)
+                        .input('B', Items.APPLE)
+                        .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
+                        .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, net.tonyearlnate.kitium.item.ModItems.MACE_HUSK, 1)
                         .pattern("AAA")
                         .pattern("CBC")
                         .pattern("AAA")
@@ -243,7 +263,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_CHESTPLATE_FRAME, RecipeCategory.COMBAT, ModItems.ENERGIZED_KITIUM_CHESTPLATE, this, recipeExporter);
                 offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_LEGGINGS_FRAME, RecipeCategory.COMBAT, ModItems.ENERGIZED_KITIUM_LEGGINGS, this, recipeExporter);
                 offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME, RecipeCategory.COMBAT, ModItems.ENERGIZED_KITIUM_BOOTS, this, recipeExporter);
-                offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_MACE_HUSK, RecipeCategory.COMBAT, ModItems.ENERGIZED_MACE, this, recipeExporter);
+                offerEnergizedKitiumUpgradeRecipe(ModItems.MACE_HUSK, RecipeCategory.COMBAT, ModItems.ENERGIZED_MACE, this, recipeExporter);
+
+                offerCorruptEnergizedKitiumUpgradeRecipe(ModItems.MACE_HUSK, RecipeCategory.COMBAT, ModItems.CORRUPT_MACE, this, recipeExporter);
+                offerCorruptEnergizedKitiumUpgradeRecipe(Items.TOTEM_OF_UNDYING, RecipeCategory.COMBAT, ModItems.CORRUPT_TOTEM, this, recipeExporter);
+
             }
         };
     }
@@ -355,6 +379,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         result
                 )
                 .criterion(RecipeGenerator.hasItem(ModItems.ENERGIZED_KITIUM_PANEL), recipeGenerator.conditionsFromItem(ModItems.ENERGIZED_KITIUM_PANEL))
+                .criterion(RecipeGenerator.hasItem(input), recipeGenerator.conditionsFromItem(input))
+                .offerTo(recipeExporter, getItemPath(result) + "_smithing");
+    }
+    private static void offerCorruptEnergizedKitiumUpgradeRecipe(Item input, RecipeCategory category, Item result, RecipeGenerator recipeGenerator, RecipeExporter recipeExporter) {
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItem(ModItems.ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItem(input),
+                        Ingredient.ofItem(ModItems.CORRUPT_PANEL),
+                        category,
+                        result
+                )
+                .criterion(RecipeGenerator.hasItem(ModItems.CORRUPT_PANEL), recipeGenerator.conditionsFromItem(ModItems.CORRUPT_PANEL))
                 .criterion(RecipeGenerator.hasItem(input), recipeGenerator.conditionsFromItem(input))
                 .offerTo(recipeExporter, getItemPath(result) + "_smithing");
     }

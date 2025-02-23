@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": "kitium:energized_kitium_panel",
-  "base": "kitium:energized_mace_husk",
+  "base": "kitium:mace_husk",
   "result": {
     "count": 1,
     "id": "kitium:energized_mace"

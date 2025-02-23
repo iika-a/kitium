@@ -7,6 +7,7 @@ import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageType;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
@@ -28,11 +29,12 @@ public class EnergizedMaceItem extends Item {
 
         if (r.nextInt(4)+1 == 4) {
             target.getWorld().spawnEntity(l);
-            attacker.heal(3);
+            attacker.heal(2);
         }
         else {
             l.discard();
         }
+        attacker.getStackInHand(attacker.getActiveHand()).damage(1, (PlayerEntity)(attacker));
         return super.postHit(stack, target, attacker);
     }
 }

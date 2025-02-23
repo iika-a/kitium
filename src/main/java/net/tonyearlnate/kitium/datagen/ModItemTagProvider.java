@@ -56,10 +56,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SHOVELS)
                 .add(ModItems.ENERGIZED_KITIUM_SHOVEL);
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.ENERGIZED_KITIUM_HOE);
+                .add(ModItems.ENERGIZED_KITIUM_HOE)
+        .add(ModItems.CORRUPT_MACE)
+                .add(ModItems.CORRUPT_MACE)
+        .add(ModItems.ENERGIZED_MACE)
+                .add(ModItems.CORRUPT_MACE);
 
         getOrCreateTagBuilder(ItemTags.WEAPON_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_MACE)
+                .add(ModItems.CORRUPT_MACE);
+
+        getOrCreateTagBuilder(ModTags.Items.ENERGIZED_MACE_ENCHANTABLE)
                 .add(ModItems.ENERGIZED_MACE);
+
+        getOrCreateTagBuilder(ModTags.Items.CORRUPT_MACE_ENCHANTABLE)
+                .add(ModItems.CORRUPT_MACE);
+
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.PINK_KITIUM_HELMET)
