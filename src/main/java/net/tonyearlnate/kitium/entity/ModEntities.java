@@ -1,5 +1,6 @@
 package net.tonyearlnate.kitium.entity;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -25,5 +26,6 @@ public class ModEntities {
 
     public static void registerModEntities() {
         Kitium.LOGGER.info("Registering Entities for " + Kitium.MOD_ID);
+        FabricDefaultAttributeRegistry.register(ModEntities.KITIUM_GOLEM_ENTITY_TYPE, KitiumGolemEntity.createKitiumGolemAttributes());
     }
 }
