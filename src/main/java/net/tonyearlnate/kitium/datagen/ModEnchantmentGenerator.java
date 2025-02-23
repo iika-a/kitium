@@ -17,8 +17,8 @@ import net.tonyearlnate.kitium.enchantment.effect.ModEnchantmentEffects;
 
 import java.util.concurrent.CompletableFuture;
 
-public class EnchantmentGenerator extends FabricDynamicRegistryProvider {
-    public EnchantmentGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class ModEnchantmentGenerator extends FabricDynamicRegistryProvider {
+    public ModEnchantmentGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
         System.out.println("REGISTERING ENCHANTS");
     }

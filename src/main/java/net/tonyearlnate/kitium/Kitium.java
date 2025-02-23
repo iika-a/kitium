@@ -6,7 +6,6 @@ import net.minecraft.block.DispenserBlock;
 import net.tonyearlnate.kitium.block.dispenser.LightningBottleDispenserBehavior;
 import net.tonyearlnate.kitium.block.entity.ModBlockEntities;
 import net.tonyearlnate.kitium.block.ModBlocks;
-import net.tonyearlnate.kitium.datagen.EnchantmentGenerator;
 import net.tonyearlnate.kitium.enchantment.effect.ModEnchantmentEffects;
 import net.tonyearlnate.kitium.entity.ModEntities;
 import net.tonyearlnate.kitium.item.ModItemGroups;
