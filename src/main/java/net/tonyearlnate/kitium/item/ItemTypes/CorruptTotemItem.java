@@ -7,7 +7,6 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
 public class CorruptTotemItem extends Item {
@@ -17,7 +16,7 @@ public class CorruptTotemItem extends Item {
     }
 
     public static int negativeToZero(int test) {
-        return (test >= 0) ? test : 0;
+        return Math.max(test, 0);
     }
 
 
@@ -26,9 +25,9 @@ public class CorruptTotemItem extends Item {
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(stack, world, entity, slot, selected);
         PlayerEntity p = (PlayerEntity) entity;
-        LivingEntity e = ((PlayerEntity) entity).getAttacker();
+        LivingEntity e = p.getAttacker();
         if (slot == 0 && e != null) {
-            int urgency = (int)(20 - ((PlayerEntity) entity).getHealth())/5;
+            int urgency = (int)(20 - p.getHealth())/5;
 
             e.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 10, negativeToZero(urgency)));
             if (urgency-2 >= 0) e.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 10,urgency-2));

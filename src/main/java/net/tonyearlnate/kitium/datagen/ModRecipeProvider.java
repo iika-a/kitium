@@ -111,7 +111,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("ABA")
                         .pattern("AAA")
                         .input('A', Items.ECHO_SHARD)
-                        .input('B', ModItems.ENERGIZED_KITIUM)
+                        .input('B', ModItems.ENERGIZED_KITIUM_PANEL)
                         .criterion(hasItem(ModItems.ENERGIZED_KITIUM), conditionsFromItem(ModItems.ENERGIZED_KITIUM))
                         .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
                         .offerTo(recipeExporter);

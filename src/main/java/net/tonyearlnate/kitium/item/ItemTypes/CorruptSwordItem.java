@@ -13,7 +13,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.tonyearlnate.kitium.entity.ModEntities;
 
 public class CorruptSwordItem extends Item {
     public CorruptSwordItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
@@ -34,12 +33,12 @@ public class CorruptSwordItem extends Item {
 
         // Calculate relative movement
         double offsetX = Math.sin(yaw) * forwardOffset + Math.cos(yaw) * leftOffset;
-        double offsetY = upOffset; // Move up or down directly
+        // Move up or down directly
         double offsetZ = Math.cos(yaw) * forwardOffset - Math.sin(yaw) * leftOffset;
 
 
         // Apply the new position
-        Vec3d newPos = user.getPos().add(offsetX, offsetY, offsetZ);
+        Vec3d newPos = user.getPos().add(offsetX, upOffset, offsetZ);
         moved.setPosition(newPos);
     }
 
