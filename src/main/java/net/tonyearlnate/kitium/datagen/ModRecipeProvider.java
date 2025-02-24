@@ -265,6 +265,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME, RecipeCategory.COMBAT, ModItems.ENERGIZED_KITIUM_BOOTS, this, recipeExporter);
                 offerEnergizedKitiumUpgradeRecipe(ModItems.MACE_HUSK, RecipeCategory.COMBAT, ModItems.ENERGIZED_MACE, this, recipeExporter);
 
+                offerCorruptEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_SWORD_FRAME, RecipeCategory.COMBAT, ModItems.CORRUPT_SWORD, this, recipeExporter);
                 offerCorruptEnergizedKitiumUpgradeRecipe(ModItems.MACE_HUSK, RecipeCategory.COMBAT, ModItems.CORRUPT_MACE, this, recipeExporter);
                 offerCorruptEnergizedKitiumUpgradeRecipe(Items.TOTEM_OF_UNDYING, RecipeCategory.COMBAT, ModItems.CORRUPT_TOTEM, this, recipeExporter);
 
