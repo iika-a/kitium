@@ -105,6 +105,10 @@
 
   "enchantment.kitium.thundergod": "Thundergod",
   "enchantment.kitium.soul_siphon": "Soul Siphon",
-  "enchantment.kitium.paralyze" : "Paralyze"
+  "enchantment.kitium.paralyze" : "Paralyze",
 
+  "item.kitium.corrupt_helmet": "Corrupted Helmet",
+  "item.kitium.corrupt_chestplate": "Corrupted Chestplate",
+  "item.kitium.corrupt_leggings": "Corrupted Leggings",
+  "item.kitium.corrupt_boots": "Corrupted Boots"
 }

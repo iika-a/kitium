@@ -6,9 +6,10 @@ e3ff153af23243cf785a26b4f162cd1dd7cb8847 data/kitium/tags/item/corrupt_mace_ench
 20a6b8da37402f2d69b8de20d5c166c9ef23cab8 data/kitium/tags/item/pink_kitium_repair.json
 d4a9417c4e22a763e91da41dde4edd92649da5f9 data/minecraft/tags/item/axes.json
 ff75d4a05daffc25c7caaa7ff15ba041d05edcae data/minecraft/tags/item/enchantable/armor.json
-e5e4a2fc7c7327079ca2e22597f546e305c3efb0 data/minecraft/tags/item/enchantable/foot_armor.json
-99f8bf3008117a5c85c51cdf6dbe3d4d57143b2c data/minecraft/tags/item/enchantable/head_armor.json
-e68cb226aebcf651b5b9840e57a0576665274c0c data/minecraft/tags/item/enchantable/leg_armor.json
+4ab54e7b5a308b9630fff7fb9a605e273f5cc870 data/minecraft/tags/item/enchantable/chest_armor.json
+7398ea3c3c951db9a54b8e941ecfd7c419d289b5 data/minecraft/tags/item/enchantable/foot_armor.json
+9f9508acad1ea75265935b6c99e023af14286e59 data/minecraft/tags/item/enchantable/head_armor.json
+c25b8dae4689b356b916f063b305e2797960bce5 data/minecraft/tags/item/enchantable/leg_armor.json
 4ff06c55c7e1c7e0b578eb74297517859bbed2a5 data/minecraft/tags/item/enchantable/sharp_weapon.json
 4ff06c55c7e1c7e0b578eb74297517859bbed2a5 data/minecraft/tags/item/enchantable/sword.json
 e40470d7a04cfa7809a8ac383d841dfc1514e39a data/minecraft/tags/item/hoes.json

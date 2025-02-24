@@ -12,10 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.tonyearlnate.kitium.Kitium;
 import net.tonyearlnate.kitium.item.ConsumeEffects.ModFoodEffects;
-import net.tonyearlnate.kitium.item.ItemTypes.CorruptMaceItem;
-import net.tonyearlnate.kitium.item.ItemTypes.CorruptSwordItem;
-import net.tonyearlnate.kitium.item.ItemTypes.CorruptTotemItem;
-import net.tonyearlnate.kitium.item.ItemTypes.EnergizedMaceItem;
+import net.tonyearlnate.kitium.item.ItemTypes.*;
 
 public class ModItems {
     public static final Item PINK_KITIUM = registerItem("pink_kitium", new Item(new Item.Settings()
@@ -168,6 +165,20 @@ public class ModItems {
     public static final Item CORRUPT_SWORD = registerItem("corrupt_sword",
             new CorruptSwordItem(ModToolMaterials.ENERGIZED_KITIUM, 1.5f, -1.9f, new Item.Settings().maxCount(1).rarity(Rarity.EPIC).useCooldown(3.0f)
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_sword")))));
+
+   public static final Item CORRUPT_HELMET = registerItem("corrupt_helmet",
+            new CorruptHelmetItem(ModArmorMaterials.CORRUPT, EquipmentType.HELMET, new Item.Settings().maxDamage(EquipmentType.HELMET.getMaxDamage(38))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_helmet")))));
+    public static final Item CORRUPT_CHESTPLATE = registerItem("corrupt_chestplate",
+            new ArmorItem(ModArmorMaterials.CORRUPT, EquipmentType.CHESTPLATE, new Item.Settings().maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(38))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_chestplate")))));
+    public static final Item CORRUPT_LEGGINGS = registerItem("corrupt_leggings",
+            new ArmorItem(ModArmorMaterials.CORRUPT, EquipmentType.LEGGINGS, new Item.Settings().maxDamage(EquipmentType.LEGGINGS.getMaxDamage(38))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_leggings")))));
+    public static final Item CORRUPT_BOOTS = registerItem("corrupt_boots",
+            new ArmorItem(ModArmorMaterials.CORRUPT, EquipmentType.BOOTS, new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(38))
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_boots")))));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Kitium.MOD_ID, name), item);

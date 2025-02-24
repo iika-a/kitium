@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "kitium:corrupt"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "kitium:corrupt"
+      }
+    ]
+  }
+}

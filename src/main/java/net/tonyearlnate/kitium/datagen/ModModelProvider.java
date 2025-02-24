@@ -83,6 +83,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_LEGGINGS_FRAME, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME, Models.GENERATED);
 
+
         itemModelGenerator.register(ModItems.CORRUPT_TOTEM, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CORRUPT_MACE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENERGIZED_MACE, Models.HANDHELD);
@@ -106,6 +107,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ModItems.ENERGIZED_KITIUM_LEGGINGS, ModArmorMaterials.ModEquipmentAssetKeys.ENERGIZED_KITIUM, "leggings", false);
         itemModelGenerator.registerArmor(ModItems.ENERGIZED_KITIUM_BOOTS, ModArmorMaterials.ModEquipmentAssetKeys.ENERGIZED_KITIUM, "boots", false);
         //meowmeow
+
+        itemModelGenerator.registerArmor(ModItems.CORRUPT_HELMET, ModArmorMaterials.ModEquipmentAssetKeys.CORRUPT, "helmet", false);
+        itemModelGenerator.registerArmor(ModItems.CORRUPT_CHESTPLATE, ModArmorMaterials.ModEquipmentAssetKeys.CORRUPT, "chestplate", false);
+        itemModelGenerator.registerArmor(ModItems.CORRUPT_LEGGINGS, ModArmorMaterials.ModEquipmentAssetKeys.CORRUPT, "leggings", false);
+        itemModelGenerator.registerArmor(ModItems.CORRUPT_BOOTS, ModArmorMaterials.ModEquipmentAssetKeys.CORRUPT, "boots", false);
+
 
     }
 }

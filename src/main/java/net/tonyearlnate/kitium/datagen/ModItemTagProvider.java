@@ -90,17 +90,26 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE)
                 .add(ModItems.ENERGIZED_KITIUM_LEGGINGS)
                 .add(ModItems.PINK_KITIUM_LEGGINGS)
-                .add(ModItems.BLUE_KITIUM_LEGGINGS);
+                .add(ModItems.BLUE_KITIUM_LEGGINGS)
+                .add(ModItems.CORRUPT_LEGGINGS);
 
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
                 .add(ModItems.ENERGIZED_KITIUM_HELMET)
                 .add(ModItems.PINK_KITIUM_HELMET)
-                .add(ModItems.BLUE_KITIUM_HELMET);
+                .add(ModItems.BLUE_KITIUM_HELMET)
+                .add(ModItems.CORRUPT_HELMET);
 
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE)
                 .add(ModItems.ENERGIZED_KITIUM_BOOTS)
                 .add(ModItems.PINK_KITIUM_BOOTS)
-                .add(ModItems.BLUE_KITIUM_BOOTS);
+                .add(ModItems.BLUE_KITIUM_BOOTS)
+                .add(ModItems.CORRUPT_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_KITIUM_CHESTPLATE)
+                .add(ModItems.PINK_KITIUM_CHESTPLATE)
+                .add(ModItems.BLUE_KITIUM_CHESTPLATE)
+                .add(ModItems.CORRUPT_CHESTPLATE);
 
         getOrCreateTagBuilder(ModTags.Items.ENERGIZED_ARMOR)
                 .add(ModItems.ENERGIZED_KITIUM_HELMET)

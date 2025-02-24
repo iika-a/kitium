@@ -80,6 +80,11 @@ public class ModItemGroups {
                             entries.add(ModItems.CORRUPT_SWORD);
                             entries.add(ModItems.CORRUPT_TOTEM);
 
+                            entries.add(ModItems.CORRUPT_HELMET);
+                            entries.add(ModItems.CORRUPT_CHESTPLATE);
+                            entries.add(ModItems.CORRUPT_LEGGINGS);
+                            entries.add(ModItems.CORRUPT_BOOTS);
+
                         }).build());
 
         KITIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
