@@ -11,12 +11,10 @@ import net.minecraft.enchantment.effect.EnchantmentEffectTarget;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.ItemTags;
 import net.tonyearlnate.kitium.enchantment.effect.ParalyzeEnchantmentEffect;
 import net.tonyearlnate.kitium.enchantment.effect.SoulSiphonEffect;
 import net.tonyearlnate.kitium.enchantment.effect.ThundergodEffect;
 import net.tonyearlnate.kitium.enchantment.effect.ModEnchantmentEffects;
-import net.tonyearlnate.kitium.item.ModItems;
 import net.tonyearlnate.kitium.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -128,6 +126,6 @@ public class ModEnchantmentGenerator extends FabricDynamicRegistryProvider {
 
     @Override
     public String getName() {
-        return "ReferenceDocEnchantmentGenerator";
+        return "Enchantment Generator";
     }
 }

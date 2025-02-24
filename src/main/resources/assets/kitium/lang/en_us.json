@@ -69,7 +69,7 @@
   "item.kitium.smithing_template.energized_kitium_upgrade.applies_to": "Energized Kitium Equipment Frames",
   "item.kitium.smithing_template.energized_kitium_upgrade.ingredients": "Energized Kitium Panel",
   "item.kitium.smithing_template.energized_kitium_upgrade.base_slot_description": "Add Energized Kitium Armor, Weapon, or Tool frame",
-  "item.kitium.smithing_template.energized_kitium_upgrade.additions_slot_description": "Add Energized Kitium Panel",
+  "item.kitium.smithing_template.energized_kitium_upgrade.additions_slot_description": "Add Energized Kitium or Corrupt Panel",
 
   "block.kitium.pink_kitium_block": "Block of Pink Kitium",
   "block.kitium.blue_kitium_block": "Block of Blue Kitium",
