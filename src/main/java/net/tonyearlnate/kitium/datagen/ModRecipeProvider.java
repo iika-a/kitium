@@ -269,6 +269,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerCorruptEnergizedKitiumUpgradeRecipe(ModItems.MACE_HUSK, RecipeCategory.COMBAT, ModItems.CORRUPT_MACE, this, recipeExporter);
                 offerCorruptEnergizedKitiumUpgradeRecipe(Items.TOTEM_OF_UNDYING, RecipeCategory.COMBAT, ModItems.CORRUPT_TOTEM, this, recipeExporter);
 
+                offerCorruptEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_HELMET_FRAME, RecipeCategory.COMBAT, ModItems.CORRUPT_HELMET, this, recipeExporter);
+                offerCorruptEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_CHESTPLATE_FRAME, RecipeCategory.COMBAT, ModItems.CORRUPT_CHESTPLATE, this, recipeExporter);
+                offerCorruptEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_LEGGINGS_FRAME, RecipeCategory.COMBAT, ModItems.CORRUPT_LEGGINGS, this, recipeExporter);
+                offerCorruptEnergizedKitiumUpgradeRecipe(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME, RecipeCategory.COMBAT, ModItems.CORRUPT_BOOTS, this, recipeExporter);
+
+
             }
         };
     }

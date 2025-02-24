@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "kitium:corrupt_panel",
+  "base": "kitium:energized_kitium_boots_frame",
+  "result": {
+    "count": 1,
+    "id": "kitium:corrupt_boots"
+  },
+  "template": "kitium:energized_kitium_upgrade_smithing_template"
+}

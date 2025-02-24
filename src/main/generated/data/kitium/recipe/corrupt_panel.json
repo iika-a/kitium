@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": "minecraft:echo_shard",
-    "B": "kitium:energized_kitium"
+    "B": "kitium:energized_kitium_panel"
   },
   "pattern": [
     "AAA",
