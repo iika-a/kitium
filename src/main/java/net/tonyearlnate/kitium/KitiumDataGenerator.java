@@ -9,7 +9,7 @@ public class KitiumDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		pack.addProvider(EnchantmentGenerator::new);
+		pack.addProvider(ModEnchantmentGenerator::new);
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModBlockLootTableProvider::new);

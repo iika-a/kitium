@@ -21,12 +21,12 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, PINK_KITIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PINK_KITIUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(6, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                ModOrePlacement.modifiersWithCount(4, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(18))));
         
         register(context, BLUE_KITIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_KITIUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(6, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                ModOrePlacement.modifiersWithCount(3, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(117), YOffset.fixed(127))));
     	}
     
     public static RegistryKey<PlacedFeature> registerKey(String name) {
