@@ -3,7 +3,7 @@
 	"id": "kitium",
 	"version": "${version}",
 	"name": "Kitium",
-	"description": "Mod made by Tony, Earl, and Nate for APCS Portfolio Project #2!",
+	"description": "Mod made by iika, DonutsAreGreat, and NateGrenade for our APCS Portfolio Project #2!",
 	"authors": [
 		"iika",
 		"DonutsAreGreat",
@@ -11,7 +11,7 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/iika-a/unbounded_unknown"
+		"sources": "https://github.com/iika-a/kitium"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/kitium/icon.png",
