@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "kitium:corrupt_panel",
+  "base": "kitium:mace_husk",
+  "result": {
+    "count": 1,
+    "id": "kitium:corrupt_mace"
+  },
+  "template": "kitium:energized_kitium_upgrade_smithing_template"
+}

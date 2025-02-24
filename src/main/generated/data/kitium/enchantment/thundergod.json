@@ -1,0 +1,37 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.kitium.thundergod"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "kitium:thundergod_effect",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.5,
+            "per_level_above_first": 1.0
+          }
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 9,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#kitium:energized_mace_enchantable",
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#kitium:energized_mace_enchantable",
+  "weight": 8
+}

@@ -8,6 +8,8 @@
   "item.kitium.blue_kitium_panel": "Blue Kitium Panel",
   "item.kitium.energized_kitium_panel": "Energized Kitium Panel",
   "item.kitium.pink_kitium_apple": "Pink Kitium Apple",
+  "item.kitium.blue_kitium_apple": "Blue Kitium Apple",
+
 
   "item.kitium.pink_kitium_sword": "Pink Kitium Sword",
   "item.kitium.pink_kitium_pickaxe": "Pink Kitium Pickaxe",
@@ -41,6 +43,15 @@
   "item.kitium.energized_kitium_axe_frame": "Energized Kitium Axe Frame",
   "item.kitium.energized_kitium_shovel_frame": "Energized Kitium Shovel Frame",
   "item.kitium.energized_kitium_hoe_frame": "Energized Kitium Hoe Frame",
+  "item.kitium.energized_kitium_apple": "Energized Kitium Apple",
+  "item.kitium.energized_mace": "Energized Mace",
+  "item.kitium.corrupt_mace": "Corrupt Mace",
+  "item.kitium.corrupt_sword": "Corrupt Blade",
+  "item.kitium.mace_husk": "Mace Husk",
+  "item.kitium.corrupt_panel": "Corrupt Panel",
+  "item.kitium.corrupt_totem": "Corrupt Totem",
+
+
 
   "item.kitium.energized_kitium_helmet": "Energized Kitium Helmet",
   "item.kitium.energized_kitium_chestplate": "Energized Kitium Chestplate",
@@ -58,7 +69,7 @@
   "item.kitium.smithing_template.energized_kitium_upgrade.applies_to": "Energized Kitium Equipment Frames",
   "item.kitium.smithing_template.energized_kitium_upgrade.ingredients": "Energized Kitium Panel",
   "item.kitium.smithing_template.energized_kitium_upgrade.base_slot_description": "Add Energized Kitium Armor, Weapon, or Tool frame",
-  "item.kitium.smithing_template.energized_kitium_upgrade.additions_slot_description": "Add Energized Kitium Panel",
+  "item.kitium.smithing_template.energized_kitium_upgrade.additions_slot_description": "Add Energized Kitium or Corrupt Panel",
 
   "block.kitium.pink_kitium_block": "Block of Pink Kitium",
   "block.kitium.blue_kitium_block": "Block of Blue Kitium",
@@ -90,5 +101,14 @@
   "entity.kitium.kitium_golem": "Kitium Golem",
 
   "itemgroup.kitium.kitium_items": "Kitium Items",
-  "itemgroup.kitium.kitium_blocks": "Kitium Blocks"
+  "itemgroup.kitium.kitium_blocks": "Kitium Blocks",
+
+  "enchantment.kitium.thundergod": "Thundergod",
+  "enchantment.kitium.soul_siphon": "Soul Siphon",
+  "enchantment.kitium.paralyze" : "Paralyze",
+
+  "item.kitium.corrupt_helmet": "Corrupted Helmet",
+  "item.kitium.corrupt_chestplate": "Corrupted Chestplate",
+  "item.kitium.corrupt_leggings": "Corrupted Leggings",
+  "item.kitium.corrupt_boots": "Corrupted Boots"
 }

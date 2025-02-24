@@ -13,7 +13,7 @@ class EnergizedKitiumUpgradeSmithingTemplateItem(settings: Settings) : SmithingT
     UPGRADE_BASE_SLOT_DESCRIPTION_TEXT,
     UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT,
     UPGRADE_EMPTY_BASE_SLOT_TEXTURES,
-    listOf(EMPTY_SLOT_INGOT_TEXTURE),
+    listOf(EMPTY_SLOT_PANEL_TEXTURE),
     settings
 ) {
     companion object {
@@ -26,7 +26,7 @@ class EnergizedKitiumUpgradeSmithingTemplateItem(settings: Settings) : SmithingT
         private val EMPTY_SLOT_SWORD_TEXTURE = Identifier.ofVanilla("container/slot/sword")
         private val EMPTY_SLOT_SHOVEL_TEXTURE = Identifier.ofVanilla("container/slot/shovel")
         private val EMPTY_SLOT_PICKAXE_TEXTURE = Identifier.ofVanilla("container/slot/pickaxe")
-        private val EMPTY_SLOT_INGOT_TEXTURE = Identifier.ofVanilla("container/slot/ingot")
+        private val EMPTY_SLOT_PANEL_TEXTURE = Identifier.of(Kitium.MOD_ID, "container/slot/panel")
 
         private val DESCRIPTION_FORMATTING = Formatting.BLUE
 

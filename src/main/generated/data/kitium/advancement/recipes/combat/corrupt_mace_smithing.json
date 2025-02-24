@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_corrupt_panel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitium:corrupt_panel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_mace_husk": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitium:mace_husk"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:corrupt_mace_smithing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_corrupt_panel",
+      "has_mace_husk"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:corrupt_mace_smithing"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values" : [
+    "kitium:thundergod",
+    "kitium:soul_siphon",
+    "kitium:paralyze",
+    "#minecraft:non_treasure"
+  ]
+}

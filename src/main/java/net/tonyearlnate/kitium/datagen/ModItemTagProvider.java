@@ -58,6 +58,71 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.ENERGIZED_KITIUM_HOE);
 
+
+
+        getOrCreateTagBuilder(ModTags.Items.ENERGIZED_MACE_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_MACE);
+
+        getOrCreateTagBuilder(ModTags.Items.CORRUPT_MACE_ENCHANTABLE)
+                .add(ModItems.CORRUPT_MACE);
+
+        getOrCreateTagBuilder(ItemTags.SWORD_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_MACE)
+                .add(ModItems.CORRUPT_MACE)
+                .add(ModItems.CORRUPT_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_KITIUM_HELMET)
+                .add(ModItems.ENERGIZED_KITIUM_CHESTPLATE)
+                .add(ModItems.ENERGIZED_KITIUM_LEGGINGS)
+                .add(ModItems.ENERGIZED_KITIUM_BOOTS)
+
+                .add(ModItems.PINK_KITIUM_HELMET)
+                .add(ModItems.PINK_KITIUM_CHESTPLATE)
+                .add(ModItems.PINK_KITIUM_LEGGINGS)
+                .add(ModItems.PINK_KITIUM_BOOTS)
+
+                .add(ModItems.BLUE_KITIUM_HELMET)
+                .add(ModItems.BLUE_KITIUM_CHESTPLATE)
+                .add(ModItems.BLUE_KITIUM_LEGGINGS)
+                .add(ModItems.BLUE_KITIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_KITIUM_LEGGINGS)
+                .add(ModItems.PINK_KITIUM_LEGGINGS)
+                .add(ModItems.BLUE_KITIUM_LEGGINGS)
+                .add(ModItems.CORRUPT_LEGGINGS);
+
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_KITIUM_HELMET)
+                .add(ModItems.PINK_KITIUM_HELMET)
+                .add(ModItems.BLUE_KITIUM_HELMET)
+                .add(ModItems.CORRUPT_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_KITIUM_BOOTS)
+                .add(ModItems.PINK_KITIUM_BOOTS)
+                .add(ModItems.BLUE_KITIUM_BOOTS)
+                .add(ModItems.CORRUPT_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_KITIUM_CHESTPLATE)
+                .add(ModItems.PINK_KITIUM_CHESTPLATE)
+                .add(ModItems.BLUE_KITIUM_CHESTPLATE)
+                .add(ModItems.CORRUPT_CHESTPLATE);
+
+        getOrCreateTagBuilder(ModTags.Items.ENERGIZED_ARMOR)
+                .add(ModItems.ENERGIZED_KITIUM_HELMET)
+                .add(ModItems.ENERGIZED_KITIUM_CHESTPLATE)
+                .add(ModItems.ENERGIZED_KITIUM_LEGGINGS)
+                .add(ModItems.ENERGIZED_KITIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.SHARP_WEAPON_ENCHANTABLE)
+                .add(ModItems.ENERGIZED_MACE)
+                .add(ModItems.CORRUPT_MACE)
+                .add(ModItems.CORRUPT_SWORD);
+
+
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.PINK_KITIUM_HELMET)
                 .add(ModItems.PINK_KITIUM_CHESTPLATE)

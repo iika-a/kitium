@@ -3,13 +3,13 @@
   "category": "equipment",
   "key": {
     "B": "kitium:blue_kitium",
-    "E": "kitium:energized_kitium",
+    "I": "minecraft:iron_ingot",
     "P": "kitium:pink_kitium"
   },
   "pattern": [
-    "BEB",
-    " E ",
-    "PEP"
+    "BIB",
+    " I ",
+    "PIP"
   ],
   "result": {
     "count": 1,

@@ -38,8 +38,18 @@ public class ModArmorMaterials {
         map.put(EquipmentType.BODY, 12);
     }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5f, 0.2f, ModTags.Items.ENERGIZED_KITIUM_REPAIR, ModEquipmentAssetKeys.ENERGIZED_KITIUM);
 
+    public static final ArmorMaterial CORRUPT = new ArmorMaterial(37, Util.make(new EnumMap<>(EquipmentType.class), map -> {
+        map.put(EquipmentType.BOOTS, 3);
+        map.put(EquipmentType.LEGGINGS, 7);
+        map.put(EquipmentType.CHESTPLATE, 8);
+        map.put(EquipmentType.HELMET, 4);
+        map.put(EquipmentType.BODY, 12);
+    }), 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3f, 0.25f, ModTags.Items.ENERGIZED_KITIUM_REPAIR, ModEquipmentAssetKeys.CORRUPT);
+
+
     public static class ModEquipmentAssetKeys {
-       public static RegistryKey<EquipmentAsset> PINK_KITIUM = register("pink_kitium");
+        public static final RegistryKey<EquipmentAsset> CORRUPT = register("corrupt");
+        public static RegistryKey<EquipmentAsset> PINK_KITIUM = register("pink_kitium");
        public static RegistryKey<EquipmentAsset> BLUE_KITIUM = register("blue_kitium");
        public static RegistryKey<EquipmentAsset> ENERGIZED_KITIUM = register("energized_kitium");
 
