@@ -15,7 +15,7 @@ import net.tonyearlnate.kitium.Kitium;
 public class ModLootTables {
 
     public static RegistryKey<LootTable> TEST_CHEST_LOOT = RegistryKey.of(RegistryKeys.LOOT_TABLE, Identifier.of(Kitium.MOD_ID, "chests/test_loot"));
-    public static RegistryKey<LootTable> ANCIENT_CITY_CHEST = RegistryKey.of(RegistryKeys.LOOT_TABLE, Identifier.of("minecraft", "chests/ancient_city"));
+
 
 
 }

@@ -34,14 +34,6 @@ public class ModChestLootTableProvider extends SimpleFabricLootTableProvider {
                         )
                 ));
 
-        lootTableBiConsumer.accept(ModLootTables.ANCIENT_CITY_CHEST, LootTable.builder()
-                .pool(LootPool.builder() // One pool
-                        .rolls(ConstantLootNumberProvider.create(2.0f)) // That has two rolls
-                        .with(ItemEntry.builder(Items.DIAMOND) // With an entry that has diamond(s)
-                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f)))) // One diamond
-                        .with(ItemEntry.builder(Items.DIAMOND_SWORD) // With an entry that has a plain diamond sword
-                        )
-                ));
     }
 
 

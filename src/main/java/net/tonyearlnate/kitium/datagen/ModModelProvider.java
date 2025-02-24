@@ -48,8 +48,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_KITIUM_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLUE_KITIUM_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_PANEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORRUPT_PANEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_KITIUM_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLUE_KITIUM_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PINK_KITIUM_SWORD, Models.HANDHELD);
@@ -81,6 +83,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_LEGGINGS_FRAME, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGIZED_KITIUM_BOOTS_FRAME, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.CORRUPT_TOTEM, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPT_MACE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENERGIZED_MACE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPT_SWORD, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.MACE_HUSK, Models.HANDHELD);
+
+
         itemModelGenerator.registerArmor(ModItems.PINK_KITIUM_HELMET, ModArmorMaterials.ModEquipmentAssetKeys.PINK_KITIUM, "helmet", false);
         itemModelGenerator.registerArmor(ModItems.PINK_KITIUM_CHESTPLATE, ModArmorMaterials.ModEquipmentAssetKeys.PINK_KITIUM, "chestplate", false);
         itemModelGenerator.registerArmor(ModItems.PINK_KITIUM_LEGGINGS, ModArmorMaterials.ModEquipmentAssetKeys.PINK_KITIUM, "leggings", false);
@@ -96,5 +106,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ModItems.ENERGIZED_KITIUM_LEGGINGS, ModArmorMaterials.ModEquipmentAssetKeys.ENERGIZED_KITIUM, "leggings", false);
         itemModelGenerator.registerArmor(ModItems.ENERGIZED_KITIUM_BOOTS, ModArmorMaterials.ModEquipmentAssetKeys.ENERGIZED_KITIUM, "boots", false);
         //meowmeow
+
     }
 }

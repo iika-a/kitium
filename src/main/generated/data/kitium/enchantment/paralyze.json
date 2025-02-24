@@ -1,37 +1,35 @@
 {
   "anvil_cost": 1,
   "description": {
-    "translate": "enchantment.kitium.soul_siphon"
+    "translate": "enchantment.kitium.paralyze"
   },
   "effects": {
-    "minecraft:post_attack": [
+    "minecraft:tick": [
       {
-        "affected": "victim",
         "effect": {
-          "type": "kitium:soul_siphon_effect",
+          "type": "kitium:paralyze_effect",
           "amount": {
             "type": "minecraft:linear",
             "base": 0.5,
             "per_level_above_first": 1.0
           }
-        },
-        "enchanted": "attacker"
+        }
       }
     ]
   },
   "max_cost": {
-    "base": 10,
-    "per_level_above_first": 10
+    "base": 12,
+    "per_level_above_first": 6
   },
-  "max_level": 3,
+  "max_level": 4,
   "min_cost": {
-    "base": 9,
-    "per_level_above_first": 10
+    "base": 10,
+    "per_level_above_first": 6
   },
   "primary_items": "#kitium:corrupt_mace_enchantable",
   "slots": [
-    "hand"
+    "armor"
   ],
   "supported_items": "#kitium:corrupt_mace_enchantable",
-  "weight": 8
+  "weight": 12
 }

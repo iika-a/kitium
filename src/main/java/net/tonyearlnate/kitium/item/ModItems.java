@@ -166,7 +166,7 @@ public class ModItems {
     public static final Item CORRUPT_TOTEM = registerItem("corrupt_totem", new CorruptTotemItem(new Item.Settings().maxCount(1).rarity(Rarity.RARE)
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_totem")))));
     public static final Item CORRUPT_SWORD = registerItem("corrupt_sword",
-            new CorruptSwordItem(ModToolMaterials.ENERGIZED_KITIUM, 1f, -1.9f, new Item.Settings().maxCount(1).rarity(Rarity.EPIC).useCooldown(3.0f)
+            new CorruptSwordItem(ModToolMaterials.ENERGIZED_KITIUM, 1.5f, -1.9f, new Item.Settings().maxCount(1).rarity(Rarity.EPIC).useCooldown(3.0f)
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_sword")))));
 
     private static Item registerItem(String name, Item item) {

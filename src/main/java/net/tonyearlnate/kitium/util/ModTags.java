@@ -34,6 +34,8 @@ public class ModTags {
         public static final TagKey<Item> ENERGIZED_KITIUM_REPAIR = createTag("energized_kitium_repair");
         public static final TagKey<Item> ENERGIZED_MACE_ENCHANTABLE = createTag("energized_mace_enchantable");
         public static final TagKey<Item> CORRUPT_MACE_ENCHANTABLE = createTag("corrupt_mace_enchantable");
+        public static final TagKey<Item> ENERGIZED_ARMOR = createTag("corrupt_mace_enchantable");
+
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, name));

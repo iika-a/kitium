@@ -74,6 +74,7 @@ public record ThundergodEffect(EnchantmentLevelBasedValue amount) implements Enc
                 }
                 attacker.fallDistance = 0;
                 attacker.heal(2);
+                attacker.getStackInHand(attacker.getActiveHand()).damage(5, (PlayerEntity) attacker);
             }
         }
     }

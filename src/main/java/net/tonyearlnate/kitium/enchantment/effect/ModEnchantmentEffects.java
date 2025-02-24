@@ -13,11 +13,13 @@ import net.tonyearlnate.kitium.Kitium;
 
 public class ModEnchantmentEffects {
     public static final RegistryKey<Enchantment> THUNDERGOD = of("thundergod");
-    public static MapCodec<ThundergodEffect> LIGHTNING_EFFECT = register("lightning_effect", ThundergodEffect.CODEC);
+    public static MapCodec<ThundergodEffect> THUNDERGOD_EFFECT = register("thundergod_effect", ThundergodEffect.CODEC);
 
     public static final RegistryKey<Enchantment> SOUL_SIPHON = of("soul_siphon");
     public static MapCodec<SoulSiphonEffect> SOUL_SIPHON_EFFECT = register("soul_siphon_effect", SoulSiphonEffect.CODEC);
 
+    public static final RegistryKey<Enchantment> PARALYZE = of("paralyze");
+    public static MapCodec<ParalyzeEnchantmentEffect> PARALYZE_EFFECT = register("paralyze_effect", ParalyzeEnchantmentEffect.CODEC);
 
 
     private static RegistryKey<Enchantment> of(String path) {

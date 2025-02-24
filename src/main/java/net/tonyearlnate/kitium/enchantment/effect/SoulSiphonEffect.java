@@ -54,7 +54,7 @@ public record SoulSiphonEffect(EnchantmentLevelBasedValue amount) implements Enc
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity target, Vec3d pos) {
         if (target instanceof LivingEntity victim) {
             if (context.owner() != null && context.owner() instanceof PlayerEntity player) {
-                float radius = this.amount.getValue(level) * 2;
+                float radius = (this.amount.getValue(level)+1) * 2;
                 float time = 0;
 
                 LivingEntity attacker = ((LivingEntity) target).getAttacker();
@@ -62,11 +62,13 @@ public record SoulSiphonEffect(EnchantmentLevelBasedValue amount) implements Enc
                 float distanceFallen = 0;
                 if (attacker != null) distanceFallen = attacker.fallDistance - 3;
 
-                if (distanceFallen >= 0){
-                    time = (float) (this.amount.getValue(level) * Math.sqrt(distanceFallen));
+                if (distanceFallen >= 3){
+                    time = (float) ((this.amount.getValue(level)+1) * Math.sqrt(distanceFallen-3));
+                    radius = (float) (radius * Math.sqrt(distanceFallen-3));
                 }
                 else {
                     radius = 0;
+                    time = 0;
                 }
 
                 assert attacker != null;
@@ -74,15 +76,16 @@ public record SoulSiphonEffect(EnchantmentLevelBasedValue amount) implements Enc
 
                 for (LivingEntity e : list) {
 
-                    var instance = new StatusEffectInstance(StatusEffects.WITHER, (int) (time * 20), (int) (0 + (this.amount.getValue(level) / 2)), false, true, true);
+                    var instance = new StatusEffectInstance(StatusEffects.WITHER, (int) (time * 20), (int) (0 + ((this.amount.getValue(level)+1) / 2)), false, true, true);
                     e.addStatusEffect(instance);
 
-                    attacker.heal(2 * this.amount.getValue(level));
+                    attacker.heal(3 * (this.amount.getValue(level)+1));
 
                     attacker.getWorld().playSound(null, attacker.getBlockPos(), SoundEvents.ITEM_TRIDENT_THUNDER.value(), SoundCategory.PLAYERS, 0.6f, 1.3f);
 
                 }
                 attacker.fallDistance = 0;
+                attacker.getStackInHand(attacker.getActiveHand()).damage(5, (PlayerEntity) attacker);
             }
         }
     }

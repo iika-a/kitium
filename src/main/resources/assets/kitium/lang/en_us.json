@@ -8,6 +8,8 @@
   "item.kitium.blue_kitium_panel": "Blue Kitium Panel",
   "item.kitium.energized_kitium_panel": "Energized Kitium Panel",
   "item.kitium.pink_kitium_apple": "Pink Kitium Apple",
+  "item.kitium.blue_kitium_apple": "Blue Kitium Apple",
+
 
   "item.kitium.pink_kitium_sword": "Pink Kitium Sword",
   "item.kitium.pink_kitium_pickaxe": "Pink Kitium Pickaxe",
@@ -102,6 +104,7 @@
   "itemgroup.kitium.kitium_blocks": "Kitium Blocks",
 
   "enchantment.kitium.thundergod": "Thundergod",
-  "enchantment.kitium.soul_siphon": "Soul Siphon"
+  "enchantment.kitium.soul_siphon": "Soul Siphon",
+  "enchantment.kitium.paralyze" : "Paralyze"
 
 }
