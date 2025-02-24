@@ -161,12 +161,12 @@ public class ModItems {
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_mace")))));
 
     public static final Item CORRUPT_TOTEM = registerItem("corrupt_totem", new CorruptTotemItem(new Item.Settings().maxCount(1).rarity(Rarity.RARE)
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_totem")))));
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_totem")))));
     public static final Item CORRUPT_SWORD = registerItem("corrupt_sword",
             new CorruptSwordItem(ModToolMaterials.ENERGIZED_KITIUM, 1.5f, -1.9f, new Item.Settings().maxCount(1).rarity(Rarity.EPIC).useCooldown(3.0f)
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_sword")))));
 
-   public static final Item CORRUPT_HELMET = registerItem("corrupt_helmet",
+    public static final Item CORRUPT_HELMET = registerItem("corrupt_helmet",
             new CorruptHelmetItem(ModArmorMaterials.CORRUPT, EquipmentType.HELMET, new Item.Settings().maxDamage(EquipmentType.HELMET.getMaxDamage(38))
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Kitium.MOD_ID, "corrupt_helmet")))));
     public static final Item CORRUPT_CHESTPLATE = registerItem("corrupt_chestplate",
@@ -183,7 +183,7 @@ public class ModItems {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Kitium.MOD_ID, name), item);
     }
-    
+
     public static void registerModItems() {
         Kitium.LOGGER.info("Registering Mod Items for " + Kitium.MOD_ID);
 
